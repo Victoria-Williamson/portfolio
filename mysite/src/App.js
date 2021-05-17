@@ -25,6 +25,7 @@ import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 import Experiences from "./Experiences/Experiences";
 import Projects from "./Projects/Projects";
+import Skills from "./Skills/Skills";
 import { GetApp } from '@material-ui/icons';
 
 
@@ -333,6 +334,7 @@ if (anchor) {
     <Grid item xs={20}>
     <Toolbar id="projects" />
       <Projects/>
+      <Skills/>
     </Grid>
     </Grid>
      
