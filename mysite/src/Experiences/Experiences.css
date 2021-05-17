@@ -1,0 +1,31 @@
+.date
+{
+font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: 30px;
+text-align: center;
+color: #FFFDFD;
+}
+.description
+{
+    max-height: 100px;
+    overflow-y: auto;
+}
+#experience-title
+{
+    width: calc(200px + 10vw);
+    height: calc(30px + 1vh);
+}
+#dot
+{
+    width: 40px;
+    height: 40px;
+}
+.line
+{
+
+    margin: 20px;
+  width: 400px;
+  height: 8px;
+}

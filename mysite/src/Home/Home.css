@@ -1,0 +1,198 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr 1.5fr 0.5fr;
+    grid-template-rows: 0.4fr 1.1fr 0.6fr 0.4fr 0.4fr 3.1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      ". . . ."
+      ". Name Name ."
+      ". Description Description ."
+      ". Button-1 Button-2 ."
+      ". Social-Medias Social-Medias ."
+      ". . . .";
+  }
+  
+  .Name { grid-area: Name; 
+/* Victoria Williamson */
+
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: calc(20px + 5vw);
+text-align: center;
+
+color: #FFFFFF; 
+
+}
+#border 
+{
+  width: calc(1px + 1vw);
+  height: calc(6px + 1vh);
+}
+#bigGridHome
+{
+  position: relative;
+}
+/* Linkedin */
+#LinkedIn-Big
+{
+    /* GitHub */
+margin-bottom: calc(5px + 1vh);
+margin-left: 10px;
+margin-right: 10px;
+width: calc(30px + 2vw);
+height: calc(15px + 1vh);
+left: 0px;
+
+color: #FFFFFF;
+}
+
+#Twitter-Big
+{
+
+  /* GitHub */
+margin-bottom: calc(5px + 1vh);
+text-align: center;
+vertical-align:middle;
+margin-left: 10px;
+margin-right: 10px;
+width: calc(30px + 2vw);
+height: calc(15px + 1vh);
+left: 0px;
+
+color: #FFFFFF;
+  
+}
+
+#Github-Big
+{
+/* GitHub */
+margin-bottom: calc(5px + 1vh);
+text-align: center;
+vertical-align:middle;
+margin-left: 10px;
+margin-right: 10px;
+width: calc(30px + 2vw);
+height: calc(15px + 1vh);
+left: 0px;
+
+color: #FFFFFF;
+/* background-color:red; */
+}
+#grid1Home
+{
+
+}
+  
+  .Description {
+    display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Major"
+    "Grad-Year"
+    "Location";
+  grid-area: Description;
+    /* Computer Science & Statistics Major at the University of Central Florida 2023 Graduate Orlando, FL */
+
+position: absolute;
+width: 980px;
+height: 105px;
+left: 420px;
+top: 458px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: 30px;
+line-height: 35px;
+text-align: center;
+
+color: #FFFDFD;
+
+
+  }
+  
+  .Major { grid-area: Major;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: calc(8px + 1vw);
+    text-align: center;
+    
+    color: #FFFFFF; }
+  
+  .Grad-Year { grid-area: Grad-Year; 
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: calc(8px + 1vw);
+    text-align: center;
+    
+    color: #FFFFFF; }
+  .Location { grid-area: Location;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: calc(8px + 1vw);
+    text-align: center;
+    
+    color: #FFFFFF;  }
+  .Button-1 { grid-area: Button-1;
+    
+position: absolute;
+width: 186px;
+height: 43px;
+left: 702px;
+top: 586px;
+
+}
+  
+  .Button-2 { grid-area: Button-2; /* resume */
+
+    position: absolute;
+    width: 186px;
+    height: 43px;
+    left: 917px;
+    top: 586px;
+    }
+  
+  .Social-Medias { grid-area: Social-Medias; }
+  
+  #gitImg
+  {
+      /* GitHub */
+
+position: absolute;
+width: 61px;
+height: 63px;
+left: 772px;
+top: 652px;
+
+  }
+
+  #twitterImg
+  {
+      /* Twitter */
+
+position: absolute;
+width: 61px;
+height: 63px;
+left: 888px;
+top: 654px;
+
+  }
+
+  #LinkedInImg
+  {
+      /* Linkedin */
+
+position: absolute;
+width: 61px;
+height: 63px;
+left: 1006px;
+top: 652px;
+
+  }

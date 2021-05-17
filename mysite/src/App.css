@@ -1,0 +1,866 @@
+.App {
+  text-align: center;
+  background-color:#272727;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+}
+#bigGrid
+{
+  width: 100vw;
+}
+#contain
+{
+  height: 100vh;
+  width: 100vw;
+  /* background-color: beige; */
+}
+#grid2
+{
+  
+  /* background-color: purple; */
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #FFFFFF;
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #e1e1e1; 
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  position: fixed;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#Resume_Nav_Button
+{
+width: calc(80px + 5vw);
+height: calc(30px + 1vh);
+left: 0px;
+
+color: #FFFFFF;
+}
+
+#Resume_Nav_Box
+{
+/* Rectangle 1 */
+/* Should be colorful */
+position: absolute;
+z-index: -1;
+}
+
+#Resume_Nav_Text
+{
+/* Resume */
+
+position: absolute;
+left: 23.12%;
+right: 9.18%;
+top: 20.93%;
+bottom: 20.74%;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+
+color: #FFFFFF;
+}
+
+#Resume_Nav_Download
+{
+/* file_download */
+
+position: absolute;
+left: 16.67%;
+right: 50.26%;
+top: 16.28%;
+margin-right: 20px;
+bottom: 19.14%;
+}
+
+
+#resume-nav
+{
+  position: absolute;
+  z-index: 2;
+}
+
+#Resume_Nav_Download_Icon
+{
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 71.72%;
+top: 19.35%;
+bottom: 9.81%;
+
+background: #FFFFFF;
+
+}
+
+#border
+{
+ 
+  
+}
+#text{
+  font-size: 28px;
+}
+#border-tab
+{
+  overflow:hidden;
+  align-items: center;
+  text-align: center;
+  width: calc(30px + 5vw);
+  height: calc(20px + 2vh);
+  font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: 14px;
+line-height: 28px;
+text-align: center;
+
+color: #FFFFFF;
+}
+#border-tab-big
+{
+  overflow:hidden;
+  align-items: center;
+  text-align: center;
+  width: calc(30px + 5vw);
+  height: calc(20px + 2vh);
+  font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: 18px;
+line-height: 28px;
+text-align: center;
+
+color: #FFFFFF;
+}
+#border-small
+{
+  width: calc(1px + 1vw);
+  height: calc(1px + 2vh);
+}
+
+#CV_Nav_Button
+{
+  width: calc(80px + 5vw);
+  height: calc(30px + 1vh);
+  left: 0px;
+  
+  color: #FFFFFF;
+
+}
+
+
+#CV_Nav_Box
+{
+/* Rectangle 1 */
+
+position: absolute;
+left: 1.42%;
+right: 1.42%;
+top: 6.25%;
+bottom: 6.25%;
+
+border-radius: 30px;
+}
+
+#CV_Nav_Text
+{
+/* Resume */
+
+position: absolute;
+left: 23.12%;
+right: 9.18%;
+top: 20.93%;
+bottom: 20.74%;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+
+color: #FFFFFF;
+}
+
+#CV_Nav_Download
+{
+/* file_download */
+
+position: absolute;
+left: 16.67%;
+right: 50.26%;
+top: 16.28%;
+bottom: 19.14%;
+}
+
+#Home_Nav
+{
+/* Home */
+
+position: absolute;
+width: 54px;
+height: 23px;
+left: 705px;
+top: 45px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: calc(10px + .5vw);
+line-height: 23px;
+text-align: center;
+
+color: #FFFFFF;
+}
+
+#About_Nav
+{
+/* About */
+
+position: absolute;
+width: 54px;
+height: 23px;
+left: 802px;
+top: 45px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: calc(10px + .5vw);
+line-height: 23px;
+text-align: center;
+
+color: #FFFFFF;
+}
+
+
+#Extra_Nav
+{
+/* Extra Curriculars */
+
+position: absolute;
+width: 151px;
+height: 23px;
+left: 905px;
+top: 45px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: calc(10px + .5vw);
+line-height: 23px;
+text-align: center;
+
+color: #FFFFFF;
+}
+
+#Exper_Nav
+{
+
+/* Experiences */
+
+position: absolute;
+width: 110px;
+height: 23px;
+left: 1099px;
+top: 45px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: calc(10px + .5vw);
+line-height: 23px;
+text-align: center;
+
+color: #FFFFFF;
+}
+
+#Projects_Nav
+{
+/* Projects */
+
+position: absolute;
+width: 75px;
+height: 23px;
+left: 1237px;
+top: 45px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: calc(10px + .5vw);
+line-height: 23px;
+text-align: center;
+
+color: #FFFFFF;
+}
+
+
+#Courses_Nav
+{
+/* Courses */
+
+position: absolute;
+width: 75px;
+height: 23px;
+left: 1340px;
+top: 45px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: calc(10px + .5vw);
+line-height: 23px;
+text-align: center;
+
+color: #FFFFFF;
+}
+@media screen and (max-width: 900px)
+{
+  #toolbar-desktop
+  {
+    position: absolute;
+    top:10px;
+    visibility: hidden;
+  }
+  #toolbar-mobile
+  {
+    position: absolute;
+    left:0px;
+    top:10px;
+    visibility:visible;
+  }
+  #border-tab
+  {
+    overflow:hidden;
+    align-items: center;
+    text-align: center;
+    width: calc(38px + 5vw);
+    height: calc(20px + 2vh);
+    font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: calc(7px + 1vw);
+  line-height: 28px;
+  text-align: center;
+  
+  color: #FFFFFF;
+  }
+}
+@media screen and (min-width: 901px)
+{
+  #toolbar-desktop
+  {
+    left:0px;
+    position: absolute;
+    top:10px;
+    visibility: visible
+  }
+  #toolbar-mobile
+  {
+    position: absolute;
+    top:10px;
+    visibility:hidden;
+  }
+  #border-tab
+  {
+    overflow:hidden;
+    align-items: center;
+    text-align: center;
+    width: calc(30px + 5vw);
+    height: calc(20px + 2vh);
+    font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: calc(4px + 1vw);
+  line-height: 28px;
+  text-align: center;
+  
+  }
+}
+.box
+{
+  width: 100vw;
+  position: absolute;
+  top:100px;
+  display: flex;
+  flex-direction: column;
+}
+#grid3
+{
+  background-color: red;
+
+}
+#grid4
+{
+  background-color: purple;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.4fr 1.6fr 1.6fr 0.4fr;
+  grid-template-rows: 0.4fr 1.6fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". Tool-Div Tool-Div ."
+    ". . . ."
+    ". . . .";
+}
+
+.Tool-Div {
+  display: grid;
+  grid-template-columns: 0.7fr 1.8fr 0.5fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Downloads Tabs Socials";
+  grid-area: Tool-Div;
+}
+
+.Downloads { grid-area: Downloads; }
+
+.Tabs { grid-area: Tabs; margin-top: 10px; position:;}
+
+.Socials { grid-area: Socials; }
+
+/* Linkedin */
+#LinkedIn
+{
+    /* GitHub */
+margin-bottom: calc(5px + 1vh);
+margin-left: 10px;
+margin-right: 10px;
+width: calc(5px + 2vw);
+height: calc(10px + 1vh);
+left: 0px;
+
+color: #FFFFFF;
+}
+
+#Twitter
+{
+
+  /* GitHub */
+margin-bottom: calc(5px + 1vh);
+text-align: center;
+vertical-align:middle;
+margin-left: 10px;
+margin-right: 10px;
+width: calc(5px + 2vw);
+height: calc(10px + 1vh);
+left: 0px;
+
+color: #FFFFFF;
+  
+}
+
+#Github
+{
+/* GitHub */
+margin-bottom: calc(5px + 1vh);
+text-align: center;
+vertical-align:middle;
+margin-left: 10px;
+margin-right: 10px;
+width: calc(5px + 2vw);
+height: calc(10px + 1vh);
+left: 0px;
+
+color: #FFFFFF;
+/* background-color:red; */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.5fr 0.5fr;
+  grid-template-rows: .1fr 0.9fr 1.7fr 2fr 0.8fr 0.6fr 0.7fr 0.6fr 1.7fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . . ."
+    "Toolbar Toolbar Toolbar ."
+    ". . . ."
+    "Names Names Names Names"
+    "Descriptions Descriptions Descriptions Descriptions"
+    "Descriptions Descriptions Descriptions Descriptions"
+    "Downloads-Home Downloads-Home Downloads-Home Downloads-Home"
+    "Socials-Home Socials-Home Socials-Home Socials-Home"
+    ". . . .";
+}
+
+.Toolbar {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 2.5fr 0.5fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". Downloads Tabs Social-Medias";
+  grid-area: Toolbar;
+}
+
+.Tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Home About Extra-Curriculars Experiences Projects Courses";
+  grid-area: Tabs;
+}
+
+.Home {
+  display: grid;
+  grid-template-columns: .2fr 1fr .2fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . .";
+  grid-area: Home;
+  font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: calc(4px + 1vw);
+line-height: 28px;
+text-align: center;
+color: #FFFFFF;
+display:inline-block;
+   position:relative;
+}
+
+.About {
+  display: grid;
+  grid-template-columns: .2fr 1fr .2fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . .";
+  grid-area: About;
+  font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: calc(4px + 1vw);
+line-height: 28px;
+text-align: center;
+color: #FFFFFF;
+display:inline-block;
+   position:relative;
+}
+
+.Extra-Curriculars {
+  display: grid;
+  grid-template-columns: .2fr 1fr .2fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . ."
+    ". . .";
+  grid-area: Extra-Curriculars;
+  font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: calc(5px + 1vw);
+line-height: 28px;
+text-align: center;
+color: #FFFFFF;
+display:inline-block;
+   position:relative;
+}
+
+.Experiences {
+  display: grid;
+  grid-template-columns: .2fr 1fr .2fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . ."
+    ". . .";
+  grid-area: Experiences;
+  font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: calc(4px + 1vw);;
+line-height: 28px;
+text-align: center;
+color: #FFFFFF;
+display:inline-block;
+   position:relative;
+}
+
+.Projects {
+  display: grid;
+  grid-template-columns: .2fr 1fr .2fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . ."
+    ". . .";
+  grid-area: Projects;
+  font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: calc(4px + 1vw);
+line-height: 28px;
+text-align: center;
+color: #FFFFFF;
+display:inline-block;
+   position:relative;
+}
+
+.Courses {
+  display: grid;
+  grid-template-columns: .2fr 1fr .2fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . ."
+    ". . .";
+  grid-area: Courses;
+  font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: 24px;
+line-height: 28px;
+font-size: calc(4px + 1vw);
+text-align: center;
+color: #FFFFFF;
+display:inline-block;
+   position:relative;
+}
+
+.Social-Medias {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Git-Main Twit-Main Linked-Main"
+    "Git-Main Twit-Main Linked-Main";
+  grid-area: Social-Medias;
+}
+
+.Git-Main {
+  display: grid;
+  grid-template-columns: 2fr 0.8fr .2fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . .";
+  grid-area: Git-Main;
+}
+
+.Twit-Main {
+  display: grid;
+  grid-template-columns: .2fr 1fr .2fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . .";
+  grid-area: Twit-Main;
+}
+
+.Linked-Main {
+  display: grid;
+  grid-template-columns: .2fr 1fr .2fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . .";
+  grid-area: Linked-Main;
+}
+
+.Downloads {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "RV-Main CV-Main"
+    "RV-Main CV-Main";
+  grid-area: Downloads;
+}
+
+.RV-Main {
+  display: grid;
+  grid-template-columns: .2fr 1fr .2fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . .";
+  grid-area: RV-Main;
+  font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+color: #FFFFFF;
+display:inline-block;
+   position:relative;
+}
+
+.CV-Main {
+  display: grid;
+  grid-template-columns: 2fr 1fr .2fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . .";
+    font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+display:inline-block;
+   position:relative;
+color: #FFFFFF;
+  grid-area: CV-Main;
+ 
+}
+
+.Names {
+  display: grid;
+  grid-template-columns: 0.2fr 1.3fr .2fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". PlaceNamesHere ."
+    ". PlaceNamesHere .";
+  grid-area: Names;
+}
+
+.PlaceNamesHere {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . ."
+    ". . .";
+  grid-area: PlaceNamesHere;
+}
+
+.Descriptions {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr .2fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". Major ."
+    ". Year ."
+    ". Location .";
+  grid-area: Descriptions;
+}
+
+.Major { grid-area: Major; }
+
+.Year { grid-area: Year; }
+
+.Location { grid-area: Location; }
+
+.Downloads-Home {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.9fr 1.1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". Resume-Home CV-Home ."
+    ". Resume-Home CV-Home .";
+  grid-area: Downloads-Home;
+}
+
+.Resume-Home {
+  display: grid;
+  grid-template-columns: .2fr 1fr .2fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . ."
+    ". . .";
+  grid-area: Resume-Home;
+}
+
+.CV-Home {
+  display: grid;
+  grid-template-columns: .2fr 1fr .2fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . ."
+    ". . .";
+  grid-area: CV-Home;
+}
+
+.Socials-Home {
+  display: grid;
+  grid-template-columns: 1.9fr 0.4fr 0.4fr 0.4fr 1.9fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". Github-Home Twitter-Home LinkedIn-Home ."
+    ". Github-Home Twitter-Home LinkedIn-Home .";
+  grid-area: Socials-Home;
+}
+
+.Github-Home { grid-area: Github-Home; }
+
+.Twitter-Home { grid-area: Twitter-Home; }
+
+.LinkedIn-Home { grid-area: LinkedIn-Home; }
+
