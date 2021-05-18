@@ -6,6 +6,12 @@
   position: fixed;
   overflow-y: auto;
   overflow-x: hidden;
+  margin-bottom: 10px;
+
+}
+#spacing
+{
+  height: 50px;
 
 }
 #bigGrid
@@ -193,7 +199,7 @@ color: #FFFFFF;
 #border-small
 {
   width: calc(1px + 1vw);
-  height: calc(1px + 2vh);
+  height: calc(20px + 2vh);
 }
 
 #CV_Nav_Button
@@ -858,6 +864,11 @@ color: #FFFFFF;
   grid-area: Socials-Home;
 }
 
+#bottomApp
+{
+  position: absolute;
+  margin-bottom: 50px;
+}
 .Github-Home { grid-area: Github-Home; }
 
 .Twitter-Home { grid-area: Twitter-Home; }

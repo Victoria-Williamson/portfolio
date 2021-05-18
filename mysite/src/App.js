@@ -208,9 +208,6 @@ if (anchor) {
     Projects
   </Button>
 </Grid>
-<Button id="border-tab-big" onClick={HomeButton}> 
-    Courses
-  </Button>
 <Grid id="grid2" item xs = {20}>
       <div id="LinkedIn">
       <a href="http://www.linkedin.com/in/victoria-n-williamson">
@@ -289,12 +286,9 @@ if (anchor) {
   <div id="border-tab">
     Projects
   </div>
+  
 </Grid>
-<Grid id="grid2" item xs={20}>
-  <div id="border-tab">
-    Courses
-  </div>
-</Grid>
+
 
         </Grid>
         <Grid item xs={6} sm={3}>
@@ -334,10 +328,17 @@ if (anchor) {
     <Grid item xs={20}>
     <Toolbar id="projects" />
       <Projects/>
-      <Skills/>
     </Grid>
     </Grid>
-     
+
+    <AppBar id="bottomApp" position="static" color="primary">
+            <Toolbar>
+              <Typography variant="body1" color="inherit">
+               
+              </Typography>
+            </Toolbar>
+        </AppBar>
+        <div id="spacing"/>
     </div>
   );
 }
