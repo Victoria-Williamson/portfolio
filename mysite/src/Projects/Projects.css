@@ -8,6 +8,14 @@
     width: calc(100px + 10vw);
     height: calc(30px + 1vh);
 }
+#time
+{
+  font-style: italic;
+}
+#card-img
+{
+  height: 200px;
+}
 #project-grid
 {
     position: absolute;
@@ -19,7 +27,7 @@
   
   .image {
     display: block;
-    width: calc(200px + 10vw);
+    width: calc(50px + 10vw);
     height: auto;
   }
   
