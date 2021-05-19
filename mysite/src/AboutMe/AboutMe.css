@@ -59,7 +59,7 @@ background-position: center center;              /* optional, center the image *
     /* Rectangle 9 */
 max-width: 1163px;
 width: calc(100px + 60vw);
-height: 450px;
+height: 280px;
 z-index: -1;
 background: #4169E1;
 border-radius: 20px;
@@ -80,7 +80,7 @@ color: #FFFFFF;
     
     max-width: 1130px;
     width: calc(100px + 60vw - 20px);
-    max-height: 425px;;
+    max-height: 260px;;
     position: absolute;
     margin-top: 10px;
     margin-right: 10px;
@@ -134,7 +134,7 @@ color: #FFFFFF;
     
     max-width: 1130px;
     width: calc(100px + 60vw - 40px);
-    max-height: 425px;;
+    max-height: 260px;
     position: absolute;
     margin-top: 10px;
     margin-right: 10px;

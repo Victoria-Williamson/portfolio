@@ -12,6 +12,7 @@ import TimelineDot from '@material-ui/lab/TimelineDot';
 import FastfoodIcon from '@material-ui/icons/Fastfood';
 import LaptopMacIcon from '@material-ui/icons/LaptopMac';
 import HotelIcon from '@material-ui/icons/Hotel';
+import Card from 'react-bootstrap/Card';
 import RepeatIcon from '@material-ui/icons/Repeat';
 import Paper from '@material-ui/core/Paper';
 import ReactNotification from 'react-notifications-component';
@@ -24,11 +25,35 @@ import 'react-toastify/dist/ReactToastify.css';
 import ProgressCircle from "./ProgressCircle";
 import Twitter from "../Home/Twitter.png";
 
+const data =  {
+  img: "https://lh3.googleusercontent.com/pw/ACtC-3ej1Hq6IOxshfBV8Fr4Pk2ybc7vpgnjbWvLDFpLaVp_P-VDMBVwSxqKgqeFBvTXRVGxQbzkETRqaCwf5buWHEh87B-bOMpqMNrq_VYEJnq9jxi2MF9o9d0Rd0Z4n4A75GKkLErD33qAqm2x76j-NkAnvw=w1269-h912-no?authuser=0",
+  title: "Project Title",
+  languages: ["Java", "JavaScript", "Swift"],
+  purpose: "Work",
+  link: "https://github.com/Victoria-Williamson",
+  author: "Me",
+  description: "Maecenas non enim mattis, consectetur nunc et, dapibus sem. Phasellus cursus porta augue, ac consectetur ipsum porttitor sit amet. In vel pulvinar arcu. Pellentesque nibh metus, efficitur a molestie sit amet, vehicula a nisi. Aenean interdum pretium lorem nec molestie. In hac habitasse platea dictumst. In sed sodales neque, mattis vulputate mauris. Nunc a lorem auctor, pulvinar massa ut, efficitur odio. Etiam blandit arcu vitae erat rhoncus porta. In eget gravida ligula. Sed id congue orci.",
+};
 const useStyles = makeStyles((theme) => ({
     paper1: {
       padding: '6px 16px',
       backgroundColor: '#272727',
-      color: '#FFFFFF'
+      color: '#FFFFFF',
+      alignContent: "center",
+      alignItems: "center",
+      textAlign: "center",
+    },
+    title:
+    {
+      alignContent: "center",
+      alignItems: "center",
+      textAlign: "center",
+    },
+    text:
+    {
+      alignContent: "center",
+      alignItems: "center",
+      textAlign: "center",
     },
     paper2: {
         padding: '6px 16px',
@@ -57,41 +82,37 @@ function Experiences()
  
     const experienceData = 
     [
-      {
-        title: "August 2019 : Something Award",
-        information: "Some Information About this Thing",
-        link: "https://google.com"
-    },
         {
-          title: "August 2019 : Something Award",
-          information: "Some Information About this Thing",
-          link: "https://google.com"
-      },
-        {
-            title: "August 2019 : Something Award",
-            information: "Some Information About this Thing",
-            link: "https://google.com"
+            title: "Undergraduate Research",
+            date:"March 2020 - Current",
+            information: "Started Undergraduate Research Position at the UCF Department of Computer Science where I develp Web and Mobile applications",
+            link: "https://upload.wikimedia.org/wikipedia/en/thumb/8/81/University_of_Central_Florida_seal.svg/1200px-University_of_Central_Florida_seal.svg.png"
         },
         {
-          title: "August 2019 : Something Award",
-          information: "Some Information About this Thing",
-          link: "https://google.com"
+          title: "Mentor",
+          date: "August 2020 - Current",
+          information: "Started Mentoring Underclassmen through ACM-W. Through this I help them adjust to college, become organized, plan class schedules, and get involved on campus.",
+          link: "https://ucfacmw.org/img/logos/ACM&ACMW-logo.png"
       },
         {
-            title: "August 2019 : Something Award",
-            information: "Some Information About this Thing",
-            link: "https://google.com"
+            title: "Lead Hackathon Organizer",
+            date: "November 2020 - Current",
+            information: "As lead hackathon organizer I am charge of the 36-hour Hackathon hosted annually at UCF. With this role I have created a person goal to make Hackathons more diverse by reaching out to organizations for underepresented groups and more inclusive by making the event more begineer friendly",
+            link: "https://club.knighthacks.org/static/knightHacksLogoGold-94df7bdce2a0594a5551f9659074a00c.svg"
         },
         {
-            title: "August 2019 : Something Award",
+            title: "Selected as NACME Coorporate Scholar by UPS",
+            date: "May 2021",
             information: "Some Information About this Thing",
-            link: "https://google.com"
+            link: "https://mma.prnewswire.com/media/967123/NACME_Logo.jpg?p=publish"
         },
         {
-          title: "August 2019 : Something Award",
+          title: "Selected as NACME Coorporate Scholar by UPS",
+          date: "June 2021 - August 2021",
           information: "Some Information About this Thing",
-          link: "https://google.com"
+          link: "https://1000logos.net/wp-content/uploads/2021/04/UPS-logo.png"
       },
+ 
     ]
 
     function showAlert(experience)
@@ -138,14 +159,24 @@ function Experiences()
                       <TimelineConnector />
                     </TimelineSeparator>
                     <TimelineContent>
-                      <Paper elevation={3} className={classes.paper1}>
-                        <Typography variant="h6" component="h1">
-                        {exp.title}
-                          <br/>
-                          <InfoIcon onClick={ () => showAlert(exp)}/>
-                        </Typography>
-                        
-                      </Paper>
+              
+                        <Card className={classes.paper1}>
+                      <Card.Img id="exp-img" variant="top" src={exp.link}/>
+    <Card.Header> </Card.Header>
+    <Card.Body>
+      <Card.Title className={classes.title}> {exp.title}
+         
+      </Card.Title>
+      <Card.Text className={classes.title}>
+      <text id="time" >{exp.date}</text>
+      <br/>
+       {exp.information}
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+          
+    </Card.Footer>
+  </Card>
                     </TimelineContent>
                   </TimelineItem>
               ))}

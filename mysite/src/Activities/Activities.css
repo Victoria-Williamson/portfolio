@@ -18,12 +18,11 @@ height: calc(30px + 1vh);
 }
 #block
 {
-    height: calc(300px);
-    width: calc(100px + 50vw);
+    height: calc(200px);
+    width: calc(200px + 23vw);
     border: 10px solid;
     border-image-slice: 1;
     border-width: 5px;
-    border-image-source: linear-gradient(to left, #1DA1F2, #A749BC,#D12784, #D62C49);
 }
 .info
 {

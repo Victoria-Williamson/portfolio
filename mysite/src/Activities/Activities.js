@@ -3,6 +3,7 @@ import "./Activities.css";
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import {Carousel} from "react-bootstrap";
+import borderImage from "./borderImage.png";
 function Activities()
 {
     const useStyles = makeStyles({
@@ -49,30 +50,19 @@ function Activities()
   spacing={4}>
       <Grid item xs={10}>
       <Carousel>
-  <Carousel.Item>
-    <div id="block"
-    />
+  <Carousel.Item >
+    <img id = "block" src={borderImage}/>
     <Carousel.Caption>
-    <h3>First slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <h3>Lead Hackathon Organizer</h3>
+      <p>KnightHacks</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
-  <div id="block"
-    />
+  <img id = "block" src={borderImage}/>
 
     <Carousel.Caption>
-      <h3>Second slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
-  <div id="block"
-    />
-
-    <Carousel.Caption>
-      <h3>Third slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      <h3>Mentor</h3>
+      <p>ACM-W</p>
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>

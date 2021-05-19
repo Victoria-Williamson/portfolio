@@ -50,7 +50,7 @@ function AboutMe()
             <Grid item>
                 <div id="infoBoxOne">
                     <div id="infoBoxOneText">
-                   In vel enim consectetur, eleifend quam et, eleifend ante. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec id libero in est tincidunt tempor. Praesent finibus magna nec libero convallis luctus. Proin tempus, metus ut ornare finibus, diam felis semper justo, ac malesuada nisi neque non arcu. In semper, erat vel iaculis accumsan, odio augue venenatis lacus, id tincidunt eros velit sed sem. Nullam ultrices pulvinar faucibus. Suspendisse potenti. Aenean accumsan, mauris ac facilisis ultricies, lorem ante dapibus eros, tempus ultrices sapien nisl eu libero. Proin accumsan tortor fermentum quam pretium, vel viverra dolor interdum. Maecenas a eros quis nisl tempor pretium vitae vitae neque. Integer ultricies tempus eros, quis bibendum turpis iaculis ut. Curabitur lobortis urna ut sagittis sodales. Nunc in arcu ac velit lacinia sollicitudin. Nullam quis accumsan elit, a hendrerit sem. Mauris finibus diam turpis, id imperdiet mi malesuada nec
+                    Hi, I'm Victoria Williamson! I am currently a third-year student majoring in computer science and statistics at the University of Central Florida.  I first became interested in programming after taking AP Computer Science Principles my sophomore year of high school, and ended up loving it! Since, then I have signed up for numerous hackathons, worked in research, and explored numerous areas of computer science through technical electives. Through this journey, I have gained an interest in web development, data science, and machine learning.
                     </div>
                 </div>
 
@@ -65,7 +65,7 @@ function AboutMe()
       <Grid item>
           <div id="infoBoxTwo">
               <div id="infoBoxTwoText">
-              In vel enim consectetur, eleifend quam et, eleifend ante. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec id libero in est tincidunt tempor. Praesent finibus magna nec libero convallis luctus. Proin tempus, metus ut ornare finibus, diam felis semper justo, ac malesuada nisi neque non arcu. In semper, erat vel iaculis accumsan, odio augue venenatis lacus, id tincidunt eros velit sed sem. Nullam ultrices pulvinar faucibus. Suspendisse potenti. Aenean accumsan, mauris ac facilisis ultricies, lorem ante dapibus eros, tempus ultrices sapien nisl eu libero. Proin accumsan tortor fermentum quam pretium, vel viverra dolor interdum. Maecenas a eros quis nisl tempor pretium vitae vitae neque. Integer ultricies tempus eros, quis bibendum turpis iaculis ut. Curabitur lobortis urna ut sagittis sodales. Nunc in arcu ac velit lacinia sollicitudin. Nullam quis accumsan elit, a hendrerit sem. Mauris finibus diam turpis, id imperdiet mi malesuada nec
+              When I'm not working on classes I am typically playing video-games, exploring Orlando, reading, or getting involved on campus. Since moving to Orlando from a small town in North Carolina, I've been trying to use my free time to explore the numerous amusment parks here and themed resturants. In the future I hope to add onto this site by getting more involved with technical writing, starting a medium blog, and a youtube account !
               </div>
           </div>
       </Grid>
