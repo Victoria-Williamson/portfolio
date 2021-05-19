@@ -127,6 +127,12 @@ color: #FFFFFF;
 }
     
 }
+#heading
+{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+}
 @media screen and (min-width: 901px)
 {
     #infoBoxOneText
@@ -141,7 +147,6 @@ color: #FFFFFF;
     margin-left: 10px;
     margin-bottom: 10px;
     overflow-y: auto;
-    
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;

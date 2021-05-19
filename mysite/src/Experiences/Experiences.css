@@ -16,17 +16,26 @@ color: #FFFDFD;
 {
     width: calc(200px + 10vw);
     height: calc(30px + 1vh);
+    background-color: ;
+}
+#timeline
+{
+    height: calc(400px + 2vw);
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 #dot
 {
     width: 40px;
     height: 40px;
 }
+.element::-webkit-scrollbar { width: 0 !important }
 @media screen and (min-width: 901px)
 {
     #exp-img
     {
-        width: calc(100px + 20vw);
+        width: 300px;
+        max-width: 300px;
         height: auto;
     }
 }
@@ -34,7 +43,8 @@ color: #FFFDFD;
 {
     #exp-img
     {
-        width: calc(100px + 20vw);
+       
+        width: 250px;
         height: auto;
     }
 }

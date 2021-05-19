@@ -286,7 +286,6 @@ if (anchor) {
   <div id="border-tab">
     Projects
   </div>
-  
 </Grid>
 
 
@@ -329,16 +328,15 @@ if (anchor) {
     <Toolbar id="projects" />
       <Projects/>
     </Grid>
-    </Grid>
-
-    <AppBar id="bottomApp" position="static" color="primary">
+    <AppBar position="static" color="primary">
             <Toolbar>
               <Typography variant="body1" color="inherit">
                
               </Typography>
             </Toolbar>
         </AppBar>
-        <div id="spacing"/>
+    </Grid>
+   
     </div>
   );
 }

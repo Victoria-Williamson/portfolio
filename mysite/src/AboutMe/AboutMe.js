@@ -50,7 +50,16 @@ function AboutMe()
             <Grid item>
                 <div id="infoBoxOne">
                     <div id="infoBoxOneText">
-                    Hi, I'm Victoria Williamson! I am currently a third-year student majoring in computer science and statistics at the University of Central Florida.  I first became interested in programming after taking AP Computer Science Principles my sophomore year of high school, and ended up loving it! Since, then I have signed up for numerous hackathons, worked in research, and explored numerous areas of computer science through technical electives. Through this journey, I have gained an interest in web development, data science, and machine learning.
+                        <h1 id="heading">  Hi, I'm Victoria Williamson!  </h1>
+                        <h2>
+                        I first became interested in programming after taking AP Computer Science Principles my sophomore year of high school  and ended up loving it! 
+                            </h2> 
+                            <h3>
+                            Since then I have: 
+                            signed up for numerous hackathons, and explored numerous areas of computer science through technical electives.
+                            Through this journey, I have gained an interest in web development, data science, and machine learning.
+                            </h3>
+                            
                     </div>
                 </div>
 
@@ -65,7 +74,7 @@ function AboutMe()
       <Grid item>
           <div id="infoBoxTwo">
               <div id="infoBoxTwoText">
-              When I'm not working on classes I am typically playing video-games, exploring Orlando, reading, or getting involved on campus. Since moving to Orlando from a small town in North Carolina, I've been trying to use my free time to explore the numerous amusment parks here and themed resturants. In the future I hope to add onto this site by getting more involved with technical writing, starting a medium blog, and a youtube account !
+            <h3> When I'm not working on classes I am typically playing video-games, exploring Orlando, reading, or getting involved on campus. Since moving to Orlando from a small town in North Carolina, I've been trying to use my free time to explore the numerous amusment parks here and themed resturants. In the future I hope to add onto this site by getting more involved with technical writing, starting a medium blog, and a youtube account !</h3> 
               </div>
           </div>
       </Grid>

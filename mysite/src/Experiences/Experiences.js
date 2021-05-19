@@ -7,12 +7,14 @@ import TimelineItem from '@material-ui/lab/TimelineItem';
 import TimelineSeparator from '@material-ui/lab/TimelineSeparator';
 import TimelineConnector from '@material-ui/lab/TimelineConnector';
 import TimelineContent from '@material-ui/lab/TimelineContent';
+import Toolbar from '@material-ui/core/Toolbar';
 import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
 import TimelineDot from '@material-ui/lab/TimelineDot';
 import FastfoodIcon from '@material-ui/icons/Fastfood';
 import LaptopMacIcon from '@material-ui/icons/LaptopMac';
 import HotelIcon from '@material-ui/icons/Hotel';
 import Card from 'react-bootstrap/Card';
+import Popover from '@material-ui/core/Popover';
 import RepeatIcon from '@material-ui/icons/Repeat';
 import Paper from '@material-ui/core/Paper';
 import ReactNotification from 'react-notifications-component';
@@ -22,8 +24,9 @@ import Typography from '@material-ui/core/Typography';
 import InfoIcon from '@material-ui/icons/Info';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import ProgressCircle from "./ProgressCircle";
 import Twitter from "../Home/Twitter.png";
+import Button from '@material-ui/core/Button';
+import ButtonGroup from '@material-ui/core/ButtonGroup';
 
 const data =  {
   img: "https://lh3.googleusercontent.com/pw/ACtC-3ej1Hq6IOxshfBV8Fr4Pk2ybc7vpgnjbWvLDFpLaVp_P-VDMBVwSxqKgqeFBvTXRVGxQbzkETRqaCwf5buWHEh87B-bOMpqMNrq_VYEJnq9jxi2MF9o9d0Rd0Z4n4A75GKkLErD33qAqm2x76j-NkAnvw=w1269-h912-no?authuser=0",
@@ -41,13 +44,11 @@ const useStyles = makeStyles((theme) => ({
       color: '#FFFFFF',
       alignContent: "center",
       alignItems: "center",
-      textAlign: "center",
     },
     title:
     {
       alignContent: "center",
       alignItems: "center",
-      textAlign: "center",
     },
     text:
     {
@@ -73,6 +74,10 @@ const useStyles = makeStyles((theme) => ({
     secondaryTail: {
       backgroundColor: theme.palette.secondary.main,
     },
+    btn:{
+      color: '#FFFFFF',
+      
+    }
   }));
 function Experiences()
 {
@@ -83,30 +88,35 @@ function Experiences()
     const experienceData = 
     [
         {
+            id:"UR", 
             title: "Undergraduate Research",
             date:"March 2020 - Current",
             information: "Started Undergraduate Research Position at the UCF Department of Computer Science where I develp Web and Mobile applications",
             link: "https://upload.wikimedia.org/wikipedia/en/thumb/8/81/University_of_Central_Florida_seal.svg/1200px-University_of_Central_Florida_seal.svg.png"
         },
         {
+          id:"ACM-W",
           title: "Mentor",
           date: "August 2020 - Current",
           information: "Started Mentoring Underclassmen through ACM-W. Through this I help them adjust to college, become organized, plan class schedules, and get involved on campus.",
           link: "https://ucfacmw.org/img/logos/ACM&ACMW-logo.png"
       },
         {
+            id:"KnightHacks",
             title: "Lead Hackathon Organizer",
             date: "November 2020 - Current",
             information: "As lead hackathon organizer I am charge of the 36-hour Hackathon hosted annually at UCF. With this role I have created a person goal to make Hackathons more diverse by reaching out to organizations for underepresented groups and more inclusive by making the event more begineer friendly",
             link: "https://club.knighthacks.org/static/knightHacksLogoGold-94df7bdce2a0594a5551f9659074a00c.svg"
         },
         {
+          id:"NACME",
             title: "Selected as NACME Coorporate Scholar by UPS",
             date: "May 2021",
             information: "Some Information About this Thing",
             link: "https://mma.prnewswire.com/media/967123/NACME_Logo.jpg?p=publish"
         },
         {
+          id:"UPS",
           title: "Selected as NACME Coorporate Scholar by UPS",
           date: "June 2021 - August 2021",
           information: "Some Information About this Thing",
@@ -114,7 +124,18 @@ function Experiences()
       },
  
     ]
-
+    function GoTo(id)
+    {
+      console.log("Clicked", id);
+      var anchor = document.querySelector("#timeline-cover");
+      var element =document.querySelector("#" + id);
+      var pos = element.getBoundingClientRect();
+      var top = element.offsetTop;
+      element.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+      console.log(pos.top);
+      anchor.scrollTop = pos.top;
+      document.getElementById('timeline-cover').scrollTop = 0
+  }
     function showAlert(experience)
     {
         console.log("Alert");
@@ -146,13 +167,24 @@ function Experiences()
 </svg>
 
           </div> </Grid>
+          <Grid item>
+          <ButtonGroup  color ="secondary" aria-label="outlined secondary button group">
+        <Button className={classes.btn} onClick={() => GoTo("UR")} >1</Button>
+        <Button className={classes.btn} onClick={() => GoTo("ACM-W")}>2</Button>
+        <Button className={classes.btn} onClick={() => GoTo("KnightHacks")} >3</Button>
+        <Button className={classes.btn} onClick={() =>GoTo("NACME")}>4</Button>
+        <Button className={classes.btn} onClick={() => GoTo("UPS")}>5</Button>
+      </ButtonGroup>
+          </Grid>
           <Grid item xs={20}>
-          <div>
+            <Toolbar id="timeline-cover">
+          <div id="timeline">
           <Timeline align="alternate">
               {experienceData.map((exp) => 
               (  
                
                   <TimelineItem>
+                     <Toolbar id={exp.id}/>
                     <TimelineSeparator>
                       <TimelineDot>
                       </TimelineDot>
@@ -182,6 +214,7 @@ function Experiences()
               ))}
          </Timeline>
          </div>
+         </Toolbar>
           </Grid>
     </Grid>
 
