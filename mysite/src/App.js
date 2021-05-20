@@ -141,7 +141,7 @@ if (anchor) {
   spacing={1}>
           <Grid id="grid1" item xs={20}>
                {/* Reusme Button*/}
-               <a href="https://drive.google.com/file/d/1JIaehXoPsvEST1lEOvR9rTu3MtrORi3U/view?usp=sharing" download>
+               <a href="https://drive.google.com/file/d/1JIaehXoPsvEST1lEOvR9rTu3MtrORi3U/view?usp=sharing" target="_blank">
       <div id="Resume_Nav_Button" >
       <svg preserveAspectRatio="none" viewBox="0 0 186 43" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M2.64429 21.5C2.64429 11.1101 11.0669 2.6875 21.4568 2.6875H164.543C174.933 2.6875 183.355 11.1101 183.355 21.5V21.5C183.355 31.8899 174.933 40.3125 164.543 40.3125H21.4568C11.0669 40.3125 2.64429 31.8899 2.64429 21.5V21.5Z" stroke="url(#paint0_linear)" stroke-width="5"/>
@@ -210,7 +210,7 @@ if (anchor) {
 </Grid>
 <Grid id="grid2" item xs = {20}>
       <div id="LinkedIn">
-      <a href="http://www.linkedin.com/in/victoria-n-williamson">
+      <a href="http://www.linkedin.com/in/victoria-n-williamson" target="_blank">
       <svg preserveAspectRatio="none" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="20" cy="20" r="20" fill="#1DA1F2"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M14.7747 10.2839C14.7747 11.529 13.8267 12.5366 12.3442 12.5366C10.9194 12.5366 9.97132 11.529 10.0007 10.2839C9.97132 8.97828 10.9193 8 12.3726 8C13.8267 8 14.7463 8.97828 14.7747 10.2839ZM10.1199 28.8191V14.3162H14.6271V28.8181H10.1199V28.8191Z" fill="white"/>
@@ -222,7 +222,7 @@ if (anchor) {
 </Grid>
 <Grid id="grid1" item xs = {20}>
 <div id="Twitter">
-<a href="http://www.twitter.com">
+<a href="http://www.twitter.com" target="_blank">
 <svg preserveAspectRatio="none" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="20" cy="20" r="20" fill="#D12784"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M32 12.3086C31.1177 12.7006 30.1681 12.9646 29.1722 13.0838C30.1889 12.4742 30.9697 11.5095 31.3368 10.36C30.3865 10.9247 29.3314 11.3335 28.2107 11.5551C27.3123 10.5984 26.0316 10 24.6165 10C21.8975 10 19.6928 12.2047 19.6928 14.9237C19.6928 15.3092 19.7368 15.6852 19.8208 16.046C15.7283 15.8412 12.1005 13.8805 9.67189 10.9015C9.24792 11.6287 9.00553 12.4742 9.00553 13.3766C9.00553 15.0845 9.87347 16.5916 11.1958 17.4747C10.3878 17.4491 9.62949 17.2275 8.96473 16.8587V16.9203C8.96473 19.3066 10.663 21.296 12.9141 21.7496C12.5013 21.8616 12.0661 21.9224 11.6174 21.9224C11.2998 21.9224 10.991 21.8912 10.6902 21.8336C11.3166 23.7895 13.1357 25.2134 15.2899 25.2534C13.6052 26.5733 11.4822 27.3612 9.17512 27.3612C8.77675 27.3612 8.38477 27.338 8 27.2916C10.1791 28.6884 12.7669 29.5043 15.5475 29.5043C24.6037 29.5043 29.5562 22.0016 29.5562 15.4956C29.5562 15.282 29.5522 15.0693 29.5418 14.8589C30.5049 14.1629 31.34 13.2958 32 12.3086Z" fill="white"/>
@@ -233,7 +233,7 @@ if (anchor) {
 </Grid>
 
 <Grid id="grid2" item xs={20}>
-  <a href="http://https://github.com/Victoria-Williamson">
+  <a href="http://https://github.com/Victoria-Williamson" target="_blank">
      <div id="Github">
      <svg preserveAspectRatio="none" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="20" cy="20" r="20" fill="#D62C49"/>
