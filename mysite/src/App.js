@@ -1,32 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+
 import Home from "./Home/Home";
 import Activities from "./Activities/Activities";
-import PropTypes from 'prop-types';
+import Experiences from "./Experiences/Experiences";
+import AboutMe from "./AboutMe/AboutMe";
+import Projects from "./Projects/Projects";
+
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
-import CssBaseline from '@material-ui/core/CssBaseline';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
-import Box from '@material-ui/core/Box';
-import Container from '@material-ui/core/Container';
-import Fab from '@material-ui/core/Fab';
-import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 import Zoom from '@material-ui/core/Zoom'
 import ReactNotification from 'react-notifications-component';
-import GetAppIcon from '@material-ui/icons/GetApp';
-import prettyboarder from "./boarder.png";
-import GitHub from "./GitHub.png";
-import LinkedIn from "./Linkedin.png";
-import Twitter from "./Twitter.png";
-import AboutMe from "./AboutMe/AboutMe";
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
-import Experiences from "./Experiences/Experiences";
-import Projects from "./Projects/Projects";
-import Skills from "./Skills/Skills";
-import { GetApp } from '@material-ui/icons';
+
 
 
 function App(props) {
