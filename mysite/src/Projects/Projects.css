@@ -8,9 +8,15 @@
     width: calc(100px + 10vw);
     height: calc(30px + 1vh);
 }
+#body
+{
+  overflow-y: auto;
+  height: 200px;
+}
 #time
 {
   font-style: italic;
+  
 }
 #card-img
 {
@@ -83,4 +89,8 @@ font-weight: bolder;
   {
       height: 2px;
       width: 1px;
+  }
+  #footer
+  {
+    /* height: 80px; */
   }

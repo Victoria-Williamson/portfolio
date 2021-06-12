@@ -9,13 +9,15 @@ import GridListTileBar from '@material-ui/core/GridListTileBar';
 import IconButton from '@material-ui/core/IconButton';
 import StarBorderIcon from '@material-ui/icons/StarBorder';
 import Container from '@material-ui/core/Container';
+import InfoIcon from '@material-ui/icons/Info';
 import Card from 'react-bootstrap/Card';
+import Accordion from 'react-bootstrap/Accordion';
 import Button from '@material-ui/core/Button';
 import Chip from '@material-ui/core/Chip';
 import WebIcon from '@material-ui/icons/Web';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
-
+import projectInformation from "./projects_info";
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
@@ -73,54 +75,6 @@ function Projects()
         {x: "Java"},
     ]
     const classes = useStyles();
-    const titleData = 
-    [
-         {
-            img: "https://lh3.googleusercontent.com/pw/ACtC-3ej1Hq6IOxshfBV8Fr4Pk2ybc7vpgnjbWvLDFpLaVp_P-VDMBVwSxqKgqeFBvTXRVGxQbzkETRqaCwf5buWHEh87B-bOMpqMNrq_VYEJnq9jxi2MF9o9d0Rd0Z4n4A75GKkLErD33qAqm2x76j-NkAnvw=w1269-h912-no?authuser=0",
-            title: "Project Title",
-            languages: ["Java", "JavaScript", "Swift"],
-            purpose: "Work",
-            link: "https://github.com/Victoria-Williamson",
-            author: "Me",
-            description: "Maecenas non enim mattis, consectetur nunc et, dapibus sem. Phasellus cursus porta augue, ac consectetur ipsum porttitor sit amet. In vel pulvinar arcu. Pellentesque nibh metus, efficitur a molestie sit amet, vehicula a nisi. Aenean interdum pretium lorem nec molestie. In hac habitasse platea dictumst. In sed sodales neque, mattis vulputate mauris. Nunc a lorem auctor, pulvinar massa ut, efficitur odio. Etiam blandit arcu vitae erat rhoncus porta. In eget gravida ligula. Sed id congue orci.",
-        },
-        {
-            img: "https://lh3.googleusercontent.com/pw/ACtC-3ej1Hq6IOxshfBV8Fr4Pk2ybc7vpgnjbWvLDFpLaVp_P-VDMBVwSxqKgqeFBvTXRVGxQbzkETRqaCwf5buWHEh87B-bOMpqMNrq_VYEJnq9jxi2MF9o9d0Rd0Z4n4A75GKkLErD33qAqm2x76j-NkAnvw=w1269-h912-no?authuser=0",
-            title: "Project Title",
-            languages: ["Java", "JavaScript", "Swift"],
-            purpose: "Work",
-            link: "https://github.com/Victoria-Williamson",
-            author: "Me",
-            description: "Maecenas non enim mattis, consectetur nunc et, dapibus sem. Phasellus cursus porta augue, ac consectetur ipsum porttitor sit amet. In vel pulvinar arcu. Pellentesque nibh metus, efficitur a molestie sit amet, vehicula a nisi. Aenean interdum pretium lorem nec molestie. In hac habitasse platea dictumst. In sed sodales neque, mattis vulputate mauris. Nunc a lorem auctor, pulvinar massa ut, efficitur odio. Etiam blandit arcu vitae erat rhoncus porta. In eget gravida ligula. Sed id congue orci.",
-        },
-        {
-            img: "https://lh3.googleusercontent.com/pw/ACtC-3ej1Hq6IOxshfBV8Fr4Pk2ybc7vpgnjbWvLDFpLaVp_P-VDMBVwSxqKgqeFBvTXRVGxQbzkETRqaCwf5buWHEh87B-bOMpqMNrq_VYEJnq9jxi2MF9o9d0Rd0Z4n4A75GKkLErD33qAqm2x76j-NkAnvw=w1269-h912-no?authuser=0",
-            title: "Project Title",
-            languages: ["Java", "JavaScript", "Swift"],
-            purpose: "Work",
-            link: "https://github.com/Victoria-Williamson",
-            author: "Me",
-            description: "Maecenas non enim mattis, consectetur nunc et, dapibus sem. Phasellus cursus porta augue, ac consectetur ipsum porttitor sit amet. In vel pulvinar arcu. Pellentesque nibh metus, efficitur a molestie sit amet, vehicula a nisi. Aenean interdum pretium lorem nec molestie. In hac habitasse platea dictumst. In sed sodales neque, mattis vulputate mauris. Nunc a lorem auctor, pulvinar massa ut, efficitur odio. Etiam blandit arcu vitae erat rhoncus porta. In eget gravida ligula. Sed id congue orci.",
-        },
-        {
-            img: "https://lh3.googleusercontent.com/pw/ACtC-3ej1Hq6IOxshfBV8Fr4Pk2ybc7vpgnjbWvLDFpLaVp_P-VDMBVwSxqKgqeFBvTXRVGxQbzkETRqaCwf5buWHEh87B-bOMpqMNrq_VYEJnq9jxi2MF9o9d0Rd0Z4n4A75GKkLErD33qAqm2x76j-NkAnvw=w1269-h912-no?authuser=0",
-            title: "Project Title",
-            languages: ["Java", "JavaScript", "Swift"],
-            purpose: "Work",
-            link: "https://github.com/Victoria-Williamson",
-            author: "Me",
-            description: "Maecenas non enim mattis, consectetur nunc et, dapibus sem. Phasellus cursus porta augue, ac consectetur ipsum porttitor sit amet. In vel pulvinar arcu. Pellentesque nibh metus, efficitur a molestie sit amet, vehicula a nisi. Aenean interdum pretium lorem nec molestie. In hac habitasse platea dictumst. In sed sodales neque, mattis vulputate mauris. Nunc a lorem auctor, pulvinar massa ut, efficitur odio. Etiam blandit arcu vitae erat rhoncus porta. In eget gravida ligula. Sed id congue orci.",
-        },
-        {
-            img: "https://lh3.googleusercontent.com/pw/ACtC-3ej1Hq6IOxshfBV8Fr4Pk2ybc7vpgnjbWvLDFpLaVp_P-VDMBVwSxqKgqeFBvTXRVGxQbzkETRqaCwf5buWHEh87B-bOMpqMNrq_VYEJnq9jxi2MF9o9d0Rd0Z4n4A75GKkLErD33qAqm2x76j-NkAnvw=w1269-h912-no?authuser=0",
-            title: "Project Title",
-            languages: ["Java", "JavaScript", "Swift"],
-            purpose: "Work",
-            link: "https://github.com/Victoria-Williamson",
-            author: "Me",
-            description: "Maecenas non enim mattis, consectetur nunc et, dapibus sem. Phasellus cursus porta augue, ac consectetur ipsum porttitor sit amet. In vel pulvinar arcu. Pellentesque nibh metus, efficitur a molestie sit amet, vehicula a nisi. Aenean interdum pretium lorem nec molestie. In hac habitasse platea dictumst. In sed sodales neque, mattis vulputate mauris. Nunc a lorem auctor, pulvinar massa ut, efficitur odio. Etiam blandit arcu vitae erat rhoncus porta. In eget gravida ligula. Sed id congue orci.",
-        },
-    ];
     return(
     <div>   
   <Grid container
@@ -156,7 +110,7 @@ function Projects()
   alignItems="center"
   wrap="wrap"
   spacing={2}>
-      {titleData.map((data) =>
+      {projectInformation.map((data) =>
       <Grid item xs={0}>
             <Card
     bg={"light"}
@@ -164,26 +118,41 @@ function Projects()
     style={{ width: '18rem' }}
     className="mb-2"
   >
+      
+      
     <Card.Img id="card-img" variant="top" src={data.img}/>
-    <Card.Header> <div> <a><WebIcon  style={{ fontSize: 40, padding:"5px" }}/></a> <a><GitHubIcon  style={{ fontSize: 40, padding:"5px" }}/></a> </div> </Card.Header>
-    <Card.Body>
-      <Card.Title> Portfolio Webste Project 
-         
+    
+    <Card.Header> 
+      {/* <div><a><WebIcon  style={{ fontSize: 40, padding:"5px" }}/></a> 
+    <a href={data.link}><GitHubIcon  style={{ fontSize: 40, padding:"5px" }}/></a> 
+    </div>  */}
+         {data.languages.map((lan) => 
+       <Chip size="small" label={lan}/>
+      )}
+    </Card.Header>
+    <Card.Body id="body">
+      <Card.Title> {data.title}
       </Card.Title>
+    
       <Card.Text>
-      <text id="time"> May 2020 - Current</text>
+      <text id="time"> {data.timeline} </text>
       <br/>
-        Some quick example text to build on the card title and make up the bulk
-        of the card's content.
+        {data.description}
       </Card.Text>
     </Card.Body>
-    <Card.Footer>
-            <Chip size="small" label={"JS"}/>
-            <Chip  size="small" label={"Swift"}/>
-            <Chip  size="small" label={"React-Native"}/>
-            <Chip  size="small" label={"Tensorflow"}/>
-            <Chip  size="small" label={"React"}/>
-            <Chip  size="small" label={"Python"}/>
+    <Card.Footer id="footer">
+    <Accordion defaultActiveKey="0">
+  <Card>
+    <Card.Header>
+      <Accordion.Toggle as={Button} variant="link" eventKey="0">
+          <InfoIcon/>
+      </Accordion.Toggle>
+    </Card.Header>
+    <Accordion.Collapse eventKey="0">
+      <Card.Body>Hello! I'm the body</Card.Body>
+    </Accordion.Collapse>
+  </Card>
+</Accordion>
     </Card.Footer>
   </Card>
 

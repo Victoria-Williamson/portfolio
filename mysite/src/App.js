@@ -5,7 +5,7 @@ import Activities from "./Activities/Activities";
 import Experiences from "./Experiences/Experiences";
 import AboutMe from "./AboutMe/AboutMe";
 import Projects from "./Projects/Projects";
-
+import Example from "./Header";
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
