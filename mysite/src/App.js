@@ -7,6 +7,7 @@ import AboutMe from "./AboutMe/AboutMe";
 import Projects from "./Projects/Projects";
 import Nav from "./Header";
 import AppBar from '@material-ui/core/AppBar';
+import GetAppIcon from '@material-ui/icons/GetApp';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
@@ -120,6 +121,7 @@ if (anchor) {
            <ReactNotification/>
       <AppBar color="primary">
         <Nav/>
+       
       </AppBar>
       
      
