@@ -76,8 +76,8 @@ function Projects()
     ]
     const classes = useStyles();
     return(
-    <div>   
-  <Grid container
+    <div>  
+      <Grid container
   direction="column"
   justify="center"
   alignItems="center"
@@ -100,65 +100,59 @@ function Projects()
 
           </div>
       </Grid>
-  </Grid>
-  <Grid item xs={5}>
-      text
-  </Grid>
-  <Grid container
-  direction="row"
-  justify="center"
-  alignItems="center"
-  wrap="wrap"
-  spacing={2}>
-      {projectInformation.map((data) =>
-      <Grid item xs={0}>
-            <Card
-    bg={"light"}
-    text={'black'}
-    style={{ width: '18rem' }}
-    className="mb-2"
-  >
-      
-      
-    <Card.Img id="card-img" variant="top" src={data.img}/>
-    
-    <Card.Header> 
-      {/* <div><a><WebIcon  style={{ fontSize: 40, padding:"5px" }}/></a> 
-    <a href={data.link}><GitHubIcon  style={{ fontSize: 40, padding:"5px" }}/></a> 
-    </div>  */}
-         {data.languages.map((lan) => 
-       <Chip size="small" label={lan}/>
-      )}
-    </Card.Header>
-    <Card.Body id="body">
-      <Card.Title> {data.title}
-      </Card.Title>
-    
-      <Card.Text>
-      <text id="time"> {data.timeline} </text>
-      <br/>
-        {data.description}
-      </Card.Text>
-    </Card.Body>
-    <Card.Footer id="footer">
-    <Accordion defaultActiveKey="0">
-  <Card>
-    <Card.Header>
-      <Accordion.Toggle as={Button} variant="link" eventKey="0">
-          <InfoIcon/>
-      </Accordion.Toggle>
-    </Card.Header>
-    <Accordion.Collapse eventKey="0">
-      <Card.Body>Hello! I'm the body</Card.Body>
-    </Accordion.Collapse>
-  </Card>
-</Accordion>
-    </Card.Footer>
-  </Card>
+  </Grid> 
+  <div class="mt-8 bg-gradient-to-r from-red-500 via-pink-500 to-indigo-500 m8">
+	
+  <div class="container w-full max-w-6xl mx-auto px-2 py-8">
+    <div class="flex flex-wrap -mx-2">
+      <div class="w-full md:w-1/3 px-2 pb-12">
+        <div class="h-full bg-white rounded overflow-hidden shadow-md hover:shadow-lg relative smooth">
+          <a href="#" class="no-underline hover:no-underline">
+              <img src="https://lh3.googleusercontent.com/pw/ACtC-3ej1Hq6IOxshfBV8Fr4Pk2ybc7vpgnjbWvLDFpLaVp_P-VDMBVwSxqKgqeFBvTXRVGxQbzkETRqaCwf5buWHEh87B-bOMpqMNrq_VYEJnq9jxi2MF9o9d0Rd0Z4n4A75GKkLErD33qAqm2x76j-NkAnvw=w1269-h912-no?authuser=0" class="h-48 w-full rounded-t shadow-lg"/>
+              <div class="p-6 h-auto md:h-48">	
+                <p class="text-gray-600 text-xs md:text-sm"> FEATURED PROJECT </p>
+                <div class="font-bold text-xl text-gray-900"> Project Title </div>
+                <p class="text-gray-800 font-serif text-base mb-5 max-h-1/5 overflow-y-auto">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.  
+                </p>
+              </div>
+          </a>
+        </div>
+      </div>
+      <div class="w-full md:w-1/3 px-2 pb-12">
+        <div class="h-full bg-white rounded overflow-hidden shadow-md hover:shadow-lg relative smooth">
+          <a href="#" class="no-underline hover:no-underline">
+              <img src="https://lh3.googleusercontent.com/pw/ACtC-3ej1Hq6IOxshfBV8Fr4Pk2ybc7vpgnjbWvLDFpLaVp_P-VDMBVwSxqKgqeFBvTXRVGxQbzkETRqaCwf5buWHEh87B-bOMpqMNrq_VYEJnq9jxi2MF9o9d0Rd0Z4n4A75GKkLErD33qAqm2x76j-NkAnvw=w1269-h912-no?authuser=0" class="h-48 w-full rounded-t shadow"/>
+              <div class="p-6 h-auto md:h-48">	
+              <p class="text-gray-600 text-xs md:text-sm"> FEATURED PROJECT </p>
+                <div class="font-bold text-xl text-gray-900"> Project Title </div>
+                <p class="text-gray-800 font-serif text-base mb-5 max-h-1/5 overflow-y-auto">
+                  Lorem ipsum dolor sit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula. 
+                </p>
+              </div>
+          </a>
+        </div>
+      </div>
+      <div class="w-full md:w-1/3 px-2 pb-12">
+        <div class="h-full bg-white rounded overflow-hidden shadow-md hover:shadow-lg relative smooth">
+          <a href="#" class="no-underline hover:no-underline">
+              <img src="https://lh3.googleusercontent.com/pw/ACtC-3ej1Hq6IOxshfBV8Fr4Pk2ybc7vpgnjbWvLDFpLaVp_P-VDMBVwSxqKgqeFBvTXRVGxQbzkETRqaCwf5buWHEh87B-bOMpqMNrq_VYEJnq9jxi2MF9o9d0Rd0Z4n4A75GKkLErD33qAqm2x76j-NkAnvw=w1269-h912-no?authuser=0" class="h-48 w-full rounded-t shadow"/>
+              <div class="p-6 h-auto md:h-48">	
+              <p class="text-gray-600 text-xs md:text-sm"> FEATURED PROJECT </p>
+                <div class="font-bold text-xl text-gray-900"> Project Title </div>
+                <p class="text-gray-800 font-serif text-base mb-5 max-h-1/5 overflow-y-auto">
+                  Mollis pretium integer eros et dui orci, lectus nec elit sagittis neque. Dignissim ac nullam semper aliquet volutpat, ut scelerisque.
+                </p>
+              </div>
+             
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  </Grid>
-      )}
-      </Grid>
+
+  </div>
   </div>);
 }
 export default Projects;

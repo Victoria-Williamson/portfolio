@@ -169,11 +169,11 @@ function Experiences()
           </div> </Grid>
           <Grid item>
           <ButtonGroup  color ="secondary" aria-label="outlined secondary button group">
-        <Button className={classes.btn} onClick={() => GoTo("UR")} >1</Button>
-        <Button className={classes.btn} onClick={() => GoTo("ACM-W")}>2</Button>
-        <Button className={classes.btn} onClick={() => GoTo("KnightHacks")} >3</Button>
-        <Button className={classes.btn} onClick={() =>GoTo("NACME")}>4</Button>
-        <Button className={classes.btn} onClick={() => GoTo("UPS")}>5</Button>
+        <Button className={classes.btn} onClick={() => GoTo("UR")} > UCF </Button>
+        <Button className={classes.btn} onClick={() => GoTo("ACM-W")}>ACM-W</Button>
+        <Button className={classes.btn} onClick={() => GoTo("KnightHacks")} >KnightHacks</Button>
+        <Button className={classes.btn} onClick={() =>GoTo("NACME")}>NACME</Button>
+        <Button className={classes.btn} onClick={() => GoTo("UPS")}>UPS</Button>
       </ButtonGroup>
           </Grid>
           <Grid item xs={20}>

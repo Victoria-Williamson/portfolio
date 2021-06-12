@@ -33,7 +33,7 @@ function Nav() {
                     href="#activities"
                     className="text-gray-50 no-underline hover:text-pink-500 hover:no-underline text-center h-10 p-0 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out px-3 py-2 rounded-md text-xl font-bold font-bold"
                   >
-                    Activites
+                    Activities
                   </a>
 
                   <a
@@ -155,7 +155,7 @@ function Nav() {
                   href="#activities"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  Activites
+                  Extra-Curriculars
                 </a>
 
                 <a
