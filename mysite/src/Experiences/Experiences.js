@@ -39,7 +39,11 @@ const data =  {
 };
 const useStyles = makeStyles((theme) => ({
     paper1: {
-      padding: '6px 16px',
+      [theme.breakpoints.down('md')]: {
+        width:"calc(300px + 10vw)",
+      },
+      
+      padding: '2px 1px',
       backgroundColor: '#272727',
       color: '#FFFFFF',
       alignContent: "center",
@@ -199,10 +203,12 @@ function Experiences()
       <Card.Title className={classes.title}> {exp.title}
          
       </Card.Title>
-      <Card.Text className={classes.title}>
+      <Card.Text className="w-full">
       <text id="time" >{exp.date}</text>
       <br/>
+      <body class=" max-w-full max-h-full mx-4 space-y-2 bg-transparent rounded-l flex space--4 text-white "> 
        {exp.information}
+       </body>
       </Card.Text>
     </Card.Body>
     <Card.Footer>

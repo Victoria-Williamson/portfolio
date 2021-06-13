@@ -76,8 +76,8 @@ function Projects()
     ]
     const classes = useStyles();
     return(
-    <div>  
-      <Grid container
+    <div>   
+  <Grid container
   direction="column"
   justify="center"
   alignItems="center"
@@ -100,17 +100,15 @@ function Projects()
 
           </div>
       </Grid>
-      <Grid>
-        
-      </Grid>
-  </Grid> 
-  <div class="mt-8 bg-gradient-to-r from-red-500 via-pink-500 to-indigo-500 ">
-	
+  </Grid>
+  <Grid item xs={5}>
+      text
+  </Grid>
   <Grid container
   direction="row"
   justify="center"
   alignItems="center"
-  wrap="no-wrap"
+  wrap="wrap"
   spacing={2}>
       {projectInformation.map((data) =>
       <Grid item xs={0}>
@@ -121,7 +119,7 @@ function Projects()
     className="mb-2"
   >
       
-   
+      
     <Card.Img id="card-img" variant="top" src={data.img}/>
     
     <Card.Header> 
@@ -142,14 +140,25 @@ function Projects()
         {data.description}
       </Card.Text>
     </Card.Body>
+    <Card.Footer id="footer">
+    <Accordion defaultActiveKey="0">
+  <Card>
+    <Card.Header>
+      <Accordion.Toggle as={Button} variant="link" eventKey="0">
+          <InfoIcon/>
+      </Accordion.Toggle>
+    </Card.Header>
+    <Accordion.Collapse eventKey="0">
+      <Card.Body>Hello! I'm the body</Card.Body>
+    </Accordion.Collapse>
+  </Card>
+</Accordion>
+    </Card.Footer>
   </Card>
 
   </Grid>
       )}
       </Grid>
-
-  </div>
-  
   </div>);
 }
 export default Projects;

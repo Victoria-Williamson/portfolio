@@ -49,14 +49,11 @@ function AboutMe()
       </Grid>
             <Grid item>
              
-                <body class="text-center max-w-5xl max-h-full mx-4 space-y-2 bg-darkBlue rounded-l flex space--4 "> 
-    <div class="mx-24 frounded-lg text-gray-50 text-4xl"> 
-    <text class="my-4 text-3xl md:text-2xl text-white font-bold leading-tight text-center md:text-left  m-8">
-            Hi I'm Victoria Williamson !
+                <body class=" max-w-7xl max-h-full mx-4 space-y-2 bg-transparent rounded-l flex space--4 "> 
+    <text class="my-4 lg:text-3xl sm:text-xl md:text-2xl text-white 0 font-normal sleading-tight text-center md:text-left  m-8 text-left">Hi I'm Victoria Williamson !
             I first became interested in programming after taking AP Computer Science Principles my sophomore year of high school and ended up loving it!
     Since then I have: signed up for numerous hackathons, and explored numerous areas of computer science through technical electives. Through this journey, I have gained an interest in web development, data science, and machine learning.
    </text>
-    </div>
 </body> 
                 
 
@@ -69,12 +66,10 @@ function AboutMe()
   wrap="nowrap"
   spacing={5}>
       <Grid item>
-      <body class="text-center max-w-7xl max-h-full mx-4 space-y-2 bg-lightBlue rounded-l leading-snug"> 
-    <div class="mx-24 frounded-lg text-gray-50 text-4xl"> 
-    <text class="my-4 text-3xl md:text-2xl text-white font-bold leading-tight text-center md:text-left leading-snug m-8">
+      <body class=" max-w-7xl max-h-full mx-4 space-y-2 bg-transparent rounded-l flex space--4 "> 
+    <text class="my-4 lg:text-3xl sm:text-xl md:text-2xl text-white 0 font-normal leading-tight text-center md:text-left  m-8">
     When I'm not working on classes I am typically playing video-games, exploring Orlando, reading, or getting involved on campus. Since moving to Orlando from a small town in North Carolina, I've been trying to use my free time to explore the numerous amusment parks here and themed resturants. In the future I hope to add onto this site by getting more involved with technical writing, starting a medium blog, and a youtube account !
    </text>
-    </div>
 </body> 
       </Grid>
   </Grid>

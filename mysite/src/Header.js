@@ -19,33 +19,38 @@ function Nav() {
             
            
          
-                <div className="ml-10 flex items-baseline space-x-4">
+                <div className="ml-10 md:ml-4 flex items-baseline space-x-4">
                 <div className="flex items-center space-x-4">
                 </div>
                   <a
                     href="#home"
-                    className="text-gray-50 no-underline hover:text-pink-500 hover:no-underline text-center h-10 p-0 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out px-3 py-2 rounded-md text-xl font-bold font-bold"
+                    className="text-gray-50 no-underline hover:text-pink-500 hover:no-underline text-center h-10 p-0 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out px-3 py-2 rounded-md text-base md:text-l font-bold font-bold"
                   >
                     Home
                   </a>
-
+                  <a
+                    href="#about"
+                    className="text-gray-50 no-underline hover:text-pink-500 hover:no-underline text-center h-10 p-0 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out px-3 py-2 rounded-md text-base md:text-l font-bold font-bold"
+                  >
+                    About
+                  </a>
                   <a
                     href="#activities"
-                    className="text-gray-50 no-underline hover:text-pink-500 hover:no-underline text-center h-10 p-0 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out px-3 py-2 rounded-md text-xl font-bold font-bold"
+                    className="text-gray-50 no-underline hover:text-pink-500 hover:no-underline text-center h-10 p-0 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out px-3 py-2 rounded-md text-base md:text-l font-bold font-bold"
                   >
                     Activities
                   </a>
 
                   <a
                     href="#experiences"
-                    className="text-gray-50 no-underline hover:text-pink-500 hover:no-underline text-center h-10 p-0 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out px-3 py-2 rounded-md text-xl font-bold font-bold"
+                    className="text-gray-50 no-underline hover:text-pink-500 hover:no-underline text-center h-10 p-0 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out px-3 py-2 rounded-md text-base md:text-l font-bold font-bold"
                   >
                     Experiences
                   </a>
 
                   <a
                     href="#projects"
-                    className="text-gray-50 no-underline hover:text-pink-500 hover:no-underline text-center h-10 p-0 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out px-3 py-2 rounded-md text-xl font-bold font-bold"
+                    className="text-gray-50 no-underline hover:text-pink-500 hover:no-underline text-center h-10 p-0 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out px-3 py-2 rounded-md text-base md:text-l font-bold font-bold"
                   >
                     Projects
                   </a>
@@ -150,7 +155,12 @@ function Nav() {
                 >
                   Home
                 </a>
-
+                <a
+                  href="#about"
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                >
+                  About
+                </a>
                 <a
                   href="#activities"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
