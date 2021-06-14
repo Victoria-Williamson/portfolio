@@ -14,7 +14,7 @@ function Activities()
 
       const classes = useStyles();
     return (
-        <div>
+        <div class="mt-4">
               <Grid container
   direction="column"
   justify="center"
@@ -53,16 +53,16 @@ function Activities()
   <Carousel.Item >
     <img id = "block" src={borderImage}/>
     <Carousel.Caption>
-    <h3>Lead Hackathon Organizer</h3>
-      <p>KnightHacks</p>
+    <h3 className="text-3xl font-bold text-white">Lead Hackathon Organizer</h3>
+      <p className="text-1xl font-bold text-white">KnightHacks</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
   <img id = "block" src={borderImage}/>
 
     <Carousel.Caption>
-      <h3>Mentor</h3>
-      <p>ACM-W</p>
+    <h3 className="text-3xl font-bold text-white">Mentor </h3>
+      <p className="text-1xl font-bold text-white">ACM-W</p>
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>

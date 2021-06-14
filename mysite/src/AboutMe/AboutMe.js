@@ -10,7 +10,7 @@ function AboutMe()
 //       <div id="infoBoxTwoText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla varius velit sed semper. In eget dapibus massa. Nulla aliquet orci lectus, sit amet placerat ipsum ornare quis. Phasellus feugiat, nisl vel ultrices aliquet, risus ipsum convallis elit, ut vestibulum odio eros quis libero. Etiam fringilla, mag.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla varius velit sed semper. In eget dapibus massa. Nulla aliquet orci lectus, sit  amet, consectetur adipiscing elit. Sed fringilla varius </div>
 //   </div>
     return (
-        <div>
+        <div class="mt-4">
               <Grid container
   direction="column"
   justify="center"
@@ -45,34 +45,19 @@ function AboutMe()
   wrap="wrap"
   spacing={5}>
       <Grid item>
-          <div border-solid id="selfie"/>
+          <div border-solid id="selfie" className="h-36 w-36 md:h-72 md:w-72"/>
       </Grid>
             <Grid item>
              
-                <body class=" max-w-7xl max-h-full mx-4 space-y-2 bg-transparent rounded-l flex space--4 "> 
-    <text class="my-4 lg:text-3xl sm:text-xl md:text-2xl text-white 0 font-normal sleading-tight text-center md:text-left  m-8 text-left">Hi I'm Victoria Williamson !
+                <body id="textInfo" class=" max-w-7xl h-80 mx-4 space-y-2  bg-transparent rounded-l flex space--4 "> 
+    <text class="overflow-y-auto  my-4 lg:text-2xl sm:text-xl md:text-2xl text-white 0 font-normal leading-tight m-8 text-left font-bold">Hi I'm Victoria Williamson !
             I first became interested in programming after taking AP Computer Science Principles my sophomore year of high school and ended up loving it!
-    Since then I have: signed up for numerous hackathons, and explored numerous areas of computer science through technical electives. Through this journey, I have gained an interest in web development, data science, and machine learning.
+    Since then I have: signed up for numerous hackathons, and explored numerous areas of computer science through technical electives. Through this journey, I have gained an interest in web development, data science, and machine learning.  When I'm not working on classes I am typically playing video-games, exploring Orlando, reading, or getting involved on campus. Since moving to Orlando from a small town in North Carolina, I've been trying to use my free time to explore the numerous amusment parks here and themed resturants. In the future I hope to add onto this site by getting more involved with technical writing, starting a medium blog, and a youtube account !
    </text>
 </body> 
-                
-
+            
       </Grid>
       </Grid>
-      <Grid container
-  direction="row"
-  justify="center"
-  alignItems="center"
-  wrap="nowrap"
-  spacing={5}>
-      <Grid item>
-      <body class=" max-w-7xl max-h-full mx-4 space-y-2 bg-transparent rounded-l flex space--4 "> 
-    <text class="my-4 lg:text-3xl sm:text-xl md:text-2xl text-white 0 font-normal leading-tight text-center md:text-left  m-8">
-    When I'm not working on classes I am typically playing video-games, exploring Orlando, reading, or getting involved on campus. Since moving to Orlando from a small town in North Carolina, I've been trying to use my free time to explore the numerous amusment parks here and themed resturants. In the future I hope to add onto this site by getting more involved with technical writing, starting a medium blog, and a youtube account !
-   </text>
-</body> 
-      </Grid>
-  </Grid>
       </div>
     
         

@@ -7,7 +7,6 @@
   overflow-y: auto;
   overflow-x: hidden;
   margin-bottom: 10px;
-
 }
 #spacing
 {
@@ -24,6 +23,8 @@
   width: 100vw;
   /* background-color: beige; */
 }
+
+
 #grid2
 {
   

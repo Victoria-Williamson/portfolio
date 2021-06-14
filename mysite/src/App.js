@@ -1,5 +1,4 @@
 import './App.css';
-
 import Home from "./Home/Home";
 import Activities from "./Activities/Activities";
 import Experiences from "./Experiences/Experiences";
@@ -158,7 +157,9 @@ if (anchor) {
             </Toolbar>
         </AppBar>
     </Grid>
-   
+    {/* <div class="relative h-32 w-full ...">
+  <div class="absolute bottom-0 right-0 h-16 w-full text-center  p-4 text-white"> </div>
+</div> */}
     </div>
   );
 }

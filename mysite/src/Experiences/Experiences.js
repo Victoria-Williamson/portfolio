@@ -24,7 +24,6 @@ import Typography from '@material-ui/core/Typography';
 import InfoIcon from '@material-ui/icons/Info';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Twitter from "../Home/Twitter.png";
 import Button from '@material-ui/core/Button';
 import ButtonGroup from '@material-ui/core/ButtonGroup';
 
@@ -102,7 +101,7 @@ function Experiences()
           id:"ACM-W",
           title: "Mentor",
           date: "August 2020 - Current",
-          information: "Started Mentoring Underclassmen through ACM-W. Through this I help them adjust to college, become organized, plan class schedules, and get involved on campus.",
+          information: "Started Mentoring Underclassmen through ACM-W. Through this I help them adjust to college, become organized, plan class schedules, and get involved on campustarted Mentoring Underclassmen through ACM-W. Through this I help them adjust to college, become organized, plan class schedules, and get involved on campus.",
           link: "https://ucfacmw.org/img/logos/ACM&ACMW-logo.png"
       },
         {
@@ -114,14 +113,14 @@ function Experiences()
         },
         {
           id:"NACME",
-            title: "Selected as NACME Coorporate Scholar by UPS",
+            title: "Coorporate Scholar",
             date: "May 2021",
             information: "Some Information About this Thing",
             link: "https://mma.prnewswire.com/media/967123/NACME_Logo.jpg?p=publish"
         },
         {
           id:"UPS",
-          title: "Selected as NACME Coorporate Scholar by UPS",
+          title: "Intern",
           date: "June 2021 - August 2021",
           information: "Some Information About this Thing",
           link: "https://1000logos.net/wp-content/uploads/2021/04/UPS-logo.png"
@@ -135,11 +134,12 @@ function Experiences()
       var element =document.querySelector("#" + id);
       var pos = element.getBoundingClientRect();
       var top = element.offsetTop;
-      element.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+      element.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
       console.log(pos.top);
       anchor.scrollTop = pos.top;
       document.getElementById('timeline-cover').scrollTop = 0
   }
+  var exp = experienceData;
     function showAlert(experience)
     {
         console.log("Alert");
@@ -147,7 +147,9 @@ function Experiences()
     }
     const classes = useStyles();
     return(
-        <div>
+        <div class="mt-4">
+          
+
             <ToastContainer autoClose={false}/>
  <Grid container
   direction="column"
@@ -172,53 +174,151 @@ function Experiences()
 
           </div> </Grid>
           <Grid item>
-          <ButtonGroup  color ="secondary" aria-label="outlined secondary button group">
-        <Button className={classes.btn} onClick={() => GoTo("UR")} > UCF </Button>
-        <Button className={classes.btn} onClick={() => GoTo("ACM-W")}>ACM-W</Button>
-        <Button className={classes.btn} onClick={() => GoTo("KnightHacks")} >KnightHacks</Button>
-        <Button className={classes.btn} onClick={() =>GoTo("NACME")}>NACME</Button>
-        <Button className={classes.btn} onClick={() => GoTo("UPS")}>UPS</Button>
-      </ButtonGroup>
+        <div  class="text-2xl md:text-l sm:text-l inline-block text-gray-50 font-bold no-underline hover:text-pink-500 hover:text-underline text-center h-10 p-0 md:h-auto md:p-4 m-2 transform hover:scale-125 duration-300 ease-in-out" > UCF </div>
+        <div  onClick={() => GoTo("ACM-W")} class="text-2xl md:text-l sm:text-l inline-block text-gray-50 font-bold no-underline hover:text-pink-500 hover:text-underline text-center h-10 p-0 md:h-auto md:p-4 transform hover:scale-125 m-2  duration-300 ease-in-out"> ACM-W </div>
+        <text onClick={() => GoTo("KnightHacks")}  class="k text-2xl md:text-l sm:text-l inline-block text-gray-50 font-bold no-underline hover:text-pink-500 hover:text-underline text-center h-10 p-0 md:h-auto md:p-4 transform hover:scale-125 duration-300 m-2 ease-in-out"> KnightHacks </text>
+        <text  onClick={() =>GoTo("NACME")} class="inline-block text-2xl md:text-l sm:text-l text-gray-50 font-bold no-underline hover:text-pink-500 hover:text-underline text-center h-10 p-0 md:h-auto md:p-4 transform hover:scale-125 duration-300 m-2 ease-in-out"> NACME </text>
+        <text   onClick={() => GoTo("UPS")} class="inline-block k text-2xl md:text-l sm:text-l text-gray-50 font-bold no-underline hover:text-pink-500 hover:text-underline text-center h-10 p-0 md:h-auto md:p-4 transform hover:scale-125 duration-300 m-2 ease-in-out"> UPS </text>
+
           </Grid>
           <Grid item xs={20}>
             <Toolbar id="timeline-cover">
           <div id="timeline">
-          <Timeline align="alternate">
-              {experienceData.map((exp) => 
-              (  
-               
-                  <TimelineItem>
-                     <Toolbar id={exp.id}/>
-                    <TimelineSeparator>
-                      <TimelineDot>
-                      </TimelineDot>
-                      <TimelineConnector />
-                    </TimelineSeparator>
-                    <TimelineContent>
-              
-                        <Card className={classes.paper1}>
-                      <Card.Img id="exp-img" variant="top" src={exp.link}/>
-    <Card.Header> </Card.Header>
-    <Card.Body>
-      <Card.Title className={classes.title}> {exp.title}
-         
-      </Card.Title>
-      <Card.Text className="w-full">
-      <text id="time" >{exp.date}</text>
-      <br/>
-      <body class=" max-w-full max-h-full mx-4 space-y-2 bg-transparent rounded-l flex space--4 text-white "> 
-       {exp.information}
-       </body>
-      </Card.Text>
-    </Card.Body>
-    <Card.Footer>
-          
-    </Card.Footer>
-  </Card>
-                    </TimelineContent>
-                  </TimelineItem>
-              ))}
-         </Timeline>
+     
+          <div class="container">
+          <div
+            class="flex flex-col md:grid grid-cols-9 mx-auto p-2 text-blue-50"
+          >
+            
+           {/* Right Start */}
+           <Toolbar id={experienceData[4].id}/>
+           <div id="test2" class="flex flex-row-reverse md:contents">
+              <div
+                class="bg-transparent col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md"
+              >
+                <div class="max-h-96 max-w-96 overflow-ellipsis overflow-hidden ..."> 
+                <text class="font-bold text-2xl text-white"> UPS </text>
+                <img src={experienceData[4].link} className="object-scale-down h-48 w-full"/>
+                <div className="font-bold text-2xl text-center max-w-full overflow-ellipsis overflow-hidden max-h-full mx-4 space-y-2 bg-transparent text-white "> {experienceData[4].title}
+      </div>
+      <text className="italic font-bold text-x"> {experienceData[4].date} </text>
+     
+                </div>
+                 
+              </div>
+              <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
+                <div class="h-full w-6 flex items-center justify-center">
+                <div class="h-full w-1  mb-2 mt-2 absolute top-7  bg-white pointer-events-none"></div>
+                </div>
+                <div
+                  class="w-6 h-6 absolute top-0  rounded-full text-center bg-gradient-to-r from-purple-600 via-darkPink to-pink-500 shadow"
+                ></div>
+              </div>
+            </div>
+            
+            {/*Left Start*/}
+            <Toolbar id={experienceData[3].id}/>
+            <div class="flex md:contents">
+              <div class="col-start-5 col-end-6 mr-10 md:mx-auto relative">
+                <div class="h-full w-6 flex items-center justify-center">
+                <div class="h-full w-1  absolute top-10  mb-2 mt-5  bg-white pointer-events-none"></div>
+                </div>
+                <div
+                  class="w-6 h-6 absolute top-0 mt-5  rounded-full text-center bg-gradient-to-r from-purple-600 via-darkPink to-pink-500 shadow"
+                ></div>
+                
+              </div>
+              <div
+                class="bg-transparent col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md text-center "
+              >
+               <div class="max-h-96 max-w-96 overflow-ellipsis overflow-hidden ..."> 
+                <text class="font-bold text-2xl text-white"> NACME </text>
+                <img src={experienceData[3].link} className="object-scale-down h-48 w-full"/>
+                <div className="font-bold text-2xl text-center max-w-full overflow-ellipsis overflow-hidden max-h-full mx-4 space-y-2 bg-transparent text-white "> {experienceData[3].title}
+      </div>
+      <text className="italic font-bold text-x"> {experienceData[3].date} </text>
+     
+                </div>
+              </div>
+            </div>
+            <Toolbar id={experienceData[2].id}/>
+            <div class="flex flex-row-reverse md:contents">
+              <div
+                class="bg-transparent col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md"
+              >
+              <div class="max-h-96 max-w-96 overflow-ellipsis overflow-hidden ..."> 
+                <text class="font-bold text-2xl text-white"> KnigtHacks </text>
+                <img src={experienceData[2].link} className="object-scale-down h-48 w-full"/>
+                <div className="font-bold text-2xl text-center truncate  max-w-full max-h-full mx-4 space-y-2 bg-transparent text-white "> {experienceData[2].title}
+      </div>
+      <text className="italic font-bold text-x"> {experienceData[2].date} </text>
+     
+                </div>
+                 
+              </div>
+              <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
+                <div class="h-full w-6 flex items-center justify-center">
+                <div class="h-3/4 w-1  mb-5 mt-5 absolute top-10  bg-white "></div>
+                </div>
+                <div
+                  class="w-6 h-6 absolute top-10  rounded-full text-center bg-gradient-to-r from-purple-600 via-darkPink to-pink-500 shadow"
+                ></div>
+              </div>
+            </div>
+            
+            {/*Left Start*/}
+            <Toolbar id={experienceData[1].id}/>
+            <div class="flex md:contents">
+              <div class="col-start-5 col-end-6 mr-10 md:mx-auto relative">
+                <div class="h-full w-6 flex items-center justify-center">
+                <div class="h-full w-1  mb-3 mt-5 absolute top-5  bg-white "></div>
+                </div>
+                <div
+                  class="w-6 h-6 absolute top-5  rounded-full text-center bg-gradient-to-r from-purple-600 via-darkPink to-pink-500 shadow"
+                ></div>
+                
+              </div>
+              <div
+                class="bg-transparent col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md text-center "
+              >
+                <div class="max-h-96 max-w-96 overflow-ellipsis overflow-hidden ..."> 
+                <text class="font-bold text-2xl text-white"> ACM-W </text>
+                <img src={experienceData[1].link} className="object-scale-down h-48 w-full"/>
+                <div className="font-bold text-2xl text-center truncate  max-w-full max-h-full mx-4 space-y-2 bg-transparent text-white "> {experienceData[1].title}
+      </div>
+      <text className="italic font-bold text-x"> {experienceData[1].date} </text>
+     
+                </div>
+              </div>
+            </div>
+            <Toolbar id={experienceData[0].id}/>
+            <div class="flex flex-row-reverse md:contents">
+              <div
+                class="bg-transparent col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md"
+              >
+              <div class="max-h-96 max-w-96 overflow-ellipsis overflow-hidden ..."> 
+                <text class="font-bold text-2xl text-white"> UCF</text>
+                <img src={experienceData[0].link} className="object-scale-down h-48 w-full"/>
+                <div className="font-bold text-2xl text-center truncate  max-w-full max-h-full mx-4 space-y-2 bg-transparent text-white "> {experienceData[0].title}
+      </div>
+      <text className="italic font-bold text-x"> {experienceData[0].date} </text>
+     
+                </div>
+              </div>
+              <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
+                <div class="h-full w-6 flex items-center justify-center">
+                <div class="h-full w-1  mb-2 mt-4 absolute top-16  bg-white pointer-events-none"></div>
+                </div>
+                <div
+                  class="w-6 h-6 absolute top-10  rounded-full text-center bg-gradient-to-r from-purple-600 via-darkPink to-pink-500 shadow"
+                ></div>
+              </div>
+            </div>
+           
+          </div>
+        </div>
+            
+
          </div>
          </Toolbar>
           </Grid>

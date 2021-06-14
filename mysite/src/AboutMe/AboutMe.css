@@ -13,6 +13,10 @@ color: #FFFCFC;
 
 
 }
+#text-info
+{
+    background-color: transparent;
+}
 #Extras
 {
 width: calc(200px + 10vw);
@@ -43,10 +47,9 @@ background: linear-gradient(271.17deg, #1DA1F2 55.03%, #A749BC 71.94%, #D12784 8
 #selfie
 {
 
-width: 364px;
-height: 338px;
 border-radius: 200px;
 background: #FFFFFF;
+box-shadow: 0 0 40px #A749BC;
 
 background-image: url("./me.jpg");
 background-size:     cover;                      /* <------ */

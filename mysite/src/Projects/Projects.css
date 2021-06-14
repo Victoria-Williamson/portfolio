@@ -18,6 +18,41 @@
   font-style: italic;
   
 }
+@-webkit-keyframes highlightBg {
+  0% {
+    box-shadow: 0 0 40px whitesmoke;
+  }
+  50% {
+     box-shadow: 0 0 40px transparent;
+  }
+  to {
+      box-shadow: 0 0 40px whitesmoke;
+  
+  }
+}
+
+@keyframes highlightBg {
+  0% {
+    box-shadow: 0 0 40px whitesmoke;
+  }
+  50% {
+     box-shadow: 0 0 40px transparent;
+  }
+  to {
+      box-shadow: 0 0 40px whitesmoke;
+  
+  }
+}
+
+.highlight {
+/*     box-shadow: 0 0 0 2px #FF4081; */
+-webkit-animation: highlightBg 1s linear;
+-o-animation: highlightBg 1s linear;
+animation: highlightBg 1s linear;
+-webkit-animation-iteration-count: 3;
+-o-animation-iteration-count: 3;
+animation-iteration-count: 3
+}
 #card-img
 {
   height: 200px;
@@ -26,6 +61,7 @@
 {
     position: absolute;
 }
+
 .container {
     position: relative;
     width: 50%;
