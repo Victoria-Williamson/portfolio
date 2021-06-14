@@ -1,14 +1,31 @@
-# Portfolio [ Still in Progress ] 
-Site Link : [ Still working on getting site certificiates ] http://me.victoriawilliamson.com/ 
-## Current Site Features :
+# [PORTFOLIO]
 
-### About Me Section
-### Extra-Curriculars Section
-### Experiences Section
-### Projects Section
+# Portfolio [ Still in Progress ]
 
-## Future Additions Planned :
+[Victoria-Williamson/portfolio](https://github.com/Victoria-Williamson/portfolio)
 
-## Articles / Videos / Sites that helped :
-https://sarahdoody.medium.com/8-ux-mistakes-to-avoid-on-your-ux-portfolio-website-4d6dd437cf21
+[React App](https://victoria-williamson.github.io/portfolio/#home)
 
+## Frameworks used ( Current and Previous )
+
+![%5BPORTFOLIO%5D%20f8719bd3c6ce499cb341b6489535f722/Untitled.png](%5BPORTFOLIO%5D%20f8719bd3c6ce499cb341b6489535f722/Untitled.png)
+
+![%5BPORTFOLIO%5D%20f8719bd3c6ce499cb341b6489535f722/Untitled%201.png](%5BPORTFOLIO%5D%20f8719bd3c6ce499cb341b6489535f722/Untitled%201.png)
+
+![https://anf.al/assets/blog-images/2021-03-06-tailwindcss-review-by-a-backend-developer/tailwindcss.png](https://anf.al/assets/blog-images/2021-03-06-tailwindcss-review-by-a-backend-developer/tailwindcss.png)
+
+![%5BPORTFOLIO%5D%20f8719bd3c6ce499cb341b6489535f722/Untitled%202.png](%5BPORTFOLIO%5D%20f8719bd3c6ce499cb341b6489535f722/Untitled%202.png)
+
+## Current and Planned Site Features :
+
+### ✅ About Me Section
+
+### ✅ Extra-Curriculars Section
+
+### ✅ Experiences Section
+
+### ✅ Projects Section
+
+### ❌ HTML Resume Section
+
+### ❌ Contact Me Section
