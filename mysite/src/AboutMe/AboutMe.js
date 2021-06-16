@@ -51,8 +51,7 @@ function AboutMe()
              
                 <body id="textInfo" class=" max-w-7xl h-80 mx-4 space-y-2  bg-transparent rounded-l flex space--4 "> 
     <text class="overflow-y-auto  my-4 lg:text-2xl sm:text-xl md:text-2xl text-white 0 font-normal leading-tight m-8 text-left font-bold">Hi I'm Victoria Williamson !
-            I first became interested in programming after taking AP Computer Science Principles my sophomore year of high school and ended up loving it!
-    Since then I have: signed up for numerous hackathons, and explored numerous areas of computer science through technical electives. Through this journey, I have gained an interest in web development, data science, and machine learning.  When I'm not working on classes I am typically playing video-games, exploring Orlando, reading, or getting involved on campus. Since moving to Orlando from a small town in North Carolina, I've been trying to use my free time to explore the numerous amusment parks here and themed resturants. In the future I hope to add onto this site by getting more involved with technical writing, starting a medium blog, and a youtube account !
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec eros gravida, blandit lorem at, sollicitudin quam. Curabitur eleifend ante at metus rutrum, non faucibus felis pretium. Cras malesuada lacus vel orci aliquam, quis ultricies nisl sagittis. Morbi magna nunc, egestas at placerat a, tempor ac est. Pellentesque lacinia, nulla et rutrum semper, leo elit sodales nisi, non accumsan ex dolor ut ante. Proin a tellus dui.
    </text>
 </body> 
             

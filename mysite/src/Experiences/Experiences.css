@@ -20,8 +20,10 @@ color: #FFFDFD;
 }
 #timeline
 {
-    height: calc(800px - 2vh);
-    max-height: 800px;
+    height: calc(600px - 2vh);
+    max-height: 600px;
+    margin-left: 5px;
+    margin-right: 5px;
     overflow-y: auto;
     
 }
@@ -35,8 +37,8 @@ color: #FFFDFD;
 {
     #exp-img
     {
-        width: 300px;
-        max-width: 300px;
+        width: 20rem;
+        
         height: auto;
     }
 }
@@ -45,7 +47,7 @@ color: #FFFDFD;
     #exp-img
     {
        
-        width: 250px;
+        width:10rem;
         height: auto;
     }
 }

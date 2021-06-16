@@ -8,6 +8,8 @@ import TimelineSeparator from '@material-ui/lab/TimelineSeparator';
 import TimelineConnector from '@material-ui/lab/TimelineConnector';
 import TimelineContent from '@material-ui/lab/TimelineContent';
 import Toolbar from '@material-ui/core/Toolbar';
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
 import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
 import TimelineDot from '@material-ui/lab/TimelineDot';
 import FastfoodIcon from '@material-ui/icons/Fastfood';
@@ -39,7 +41,10 @@ const data =  {
 const useStyles = makeStyles((theme) => ({
     paper1: {
       [theme.breakpoints.down('md')]: {
-        width:"calc(300px + 10vw)",
+        width:"20rem",
+      },
+      [theme.breakpoints.up('md')]: {
+        width:"rem",
       },
       
       padding: '2px 1px',
@@ -94,35 +99,35 @@ function Experiences()
             id:"UR", 
             title: "Undergraduate Research",
             date:"March 2020 - Current",
-            information: "Started Undergraduate Research Position at the UCF Department of Computer Science where I develp Web and Mobile applications",
+            information: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec eros gravida, blandit lorem at, sollicitudin quam. Curabitur eleifend ante at metus rutrum, non faucibus felis pretium. Cras malesuada lacus vel orci aliquam, quis ultricies nisl sagittis. Morbi magna nunc, egestas at placerat a, tempor ac est. Pellentesque lacinia, nulla et rutrum semper, leo elit sodales nisi, non accumsan ex dolor ut ante. Proin a tellus dui.",
             link: "https://upload.wikimedia.org/wikipedia/en/thumb/8/81/University_of_Central_Florida_seal.svg/1200px-University_of_Central_Florida_seal.svg.png"
         },
         {
           id:"ACM-W",
           title: "Mentor",
           date: "August 2020 - Current",
-          information: "Started Mentoring Underclassmen through ACM-W. Through this I help them adjust to college, become organized, plan class schedules, and get involved on campustarted Mentoring Underclassmen through ACM-W. Through this I help them adjust to college, become organized, plan class schedules, and get involved on campus.",
+          information: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec eros gravida, blandit lorem at, sollicitudin quam. Curabitur eleifend ante at metus rutrum, non faucibus felis pretium. Cras malesuada lacus vel orci aliquam, quis ultricies nisl sagittis. Morbi magna nunc, egestas at placerat a, tempor ac est. Pellentesque lacinia, nulla et rutrum semper, leo elit sodales nisi, non accumsan ex dolor ut ante. Proin a tellus dui.",
           link: "https://ucfacmw.org/img/logos/ACM&ACMW-logo.png"
       },
         {
             id:"KnightHacks",
             title: "Lead Hackathon Organizer",
             date: "November 2020 - Current",
-            information: "As lead hackathon organizer I am charge of the 36-hour Hackathon hosted annually at UCF. With this role I have created a person goal to make Hackathons more diverse by reaching out to organizations for underepresented groups and more inclusive by making the event more begineer friendly",
+           information: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec eros gravida, blandit lorem at, sollicitudin quam. Curabitur eleifend ante at metus rutrum, non faucibus felis pretium. Cras malesuada lacus vel orci aliquam, quis ultricies nisl sagittis. Morbi magna nunc, egestas at placerat a, tempor ac est. Pellentesque lacinia, nulla et rutrum semper, leo elit sodales nisi, non accumsan ex dolor ut ante. Proin a tellus dui.",
             link: "https://club.knighthacks.org/static/knightHacksLogoGold-94df7bdce2a0594a5551f9659074a00c.svg"
         },
         {
           id:"NACME",
             title: "Coorporate Scholar",
             date: "May 2021",
-            information: "Some Information About this Thing",
+            information: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec eros gravida, blandit lorem at, sollicitudin quam. Curabitur eleifend ante at metus rutrum, non faucibus felis pretium. Cras malesuada lacus vel orci aliquam, quis ultricies nisl sagittis. Morbi magna nunc, egestas at placerat a, tempor ac est. Pellentesque lacinia, nulla et rutrum semper, leo elit sodales nisi, non accumsan ex dolor ut ante. Proin a tellus dui.",
             link: "https://mma.prnewswire.com/media/967123/NACME_Logo.jpg?p=publish"
         },
         {
           id:"UPS",
           title: "Intern",
           date: "June 2021 - August 2021",
-          information: "Some Information About this Thing",
+          information: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec eros gravida, blandit lorem at, sollicitudin quam. Curabitur eleifend ante at metus rutrum, non faucibus felis pretium. Cras malesuada lacus vel orci aliquam, quis ultricies nisl sagittis. Morbi magna nunc, egestas at placerat a, tempor ac est. Pellentesque lacinia, nulla et rutrum semper, leo elit sodales nisi, non accumsan ex dolor ut ante. Proin a tellus dui.",
           link: "https://1000logos.net/wp-content/uploads/2021/04/UPS-logo.png"
       },
  
@@ -183,147 +188,87 @@ function Experiences()
           </Grid>
           <Grid item xs={20}>
             <Toolbar id="timeline-cover">
-          <div id="timeline">
-     
-          <div class="container">
-          <div
-            class="flex flex-col md:grid grid-cols-9 mx-auto p-2 text-blue-50"
-          >
-            
-           {/* Right Start */}
-           <Toolbar id={experienceData[4].id}/>
-           <div id="test2" class="flex flex-row-reverse md:contents">
-              <div
-                class="bg-transparent col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md"
-              >
-                <div class="max-h-96 max-w-96 overflow-ellipsis overflow-hidden ..."> 
-                <text class="font-bold text-2xl text-white"> UPS </text>
-                <img src={experienceData[4].link} className="object-scale-down h-48 w-full"/>
-                <div className="font-bold text-2xl text-center max-w-full overflow-ellipsis overflow-hidden max-h-full mx-4 space-y-2 bg-transparent text-white "> {experienceData[4].title}
-      </div>
-      <text className="italic font-bold text-x"> {experienceData[4].date} </text>
-     
-                </div>
-                 
-              </div>
-              <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
-                <div class="h-full w-6 flex items-center justify-center">
-                <div class="h-full w-1  mb-2 mt-2 absolute top-7  bg-white pointer-events-none"></div>
-                </div>
-                <div
-                  class="w-6 h-6 absolute top-0  rounded-full text-center bg-gradient-to-r from-purple-600 via-darkPink to-pink-500 shadow"
-                ></div>
-              </div>
-            </div>
-            
-            {/*Left Start*/}
-            <Toolbar id={experienceData[3].id}/>
-            <div class="flex md:contents">
-              <div class="col-start-5 col-end-6 mr-10 md:mx-auto relative">
-                <div class="h-full w-6 flex items-center justify-center">
-                <div class="h-full w-1  absolute top-10  mb-2 mt-5  bg-white pointer-events-none"></div>
-                </div>
-                <div
-                  class="w-6 h-6 absolute top-0 mt-5  rounded-full text-center bg-gradient-to-r from-purple-600 via-darkPink to-pink-500 shadow"
-                ></div>
-                
-              </div>
-              <div
-                class="bg-transparent col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md text-center "
-              >
-               <div class="max-h-96 max-w-96 overflow-ellipsis overflow-hidden ..."> 
-                <text class="font-bold text-2xl text-white"> NACME </text>
-                <img src={experienceData[3].link} className="object-scale-down h-48 w-full"/>
-                <div className="font-bold text-2xl text-center max-w-full overflow-ellipsis overflow-hidden max-h-full mx-4 space-y-2 bg-transparent text-white "> {experienceData[3].title}
-      </div>
-      <text className="italic font-bold text-x"> {experienceData[3].date} </text>
-     
-                </div>
-              </div>
-            </div>
-            <Toolbar id={experienceData[2].id}/>
-            <div class="flex flex-row-reverse md:contents">
-              <div
-                class="bg-transparent col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md"
-              >
-              <div class="max-h-96 max-w-96 overflow-ellipsis overflow-hidden ..."> 
-                <text class="font-bold text-2xl text-white"> KnigtHacks </text>
-                <img src={experienceData[2].link} className="object-scale-down h-48 w-full"/>
-                <div className="font-bold text-2xl text-center truncate  max-w-full max-h-full mx-4 space-y-2 bg-transparent text-white "> {experienceData[2].title}
-      </div>
-      <text className="italic font-bold text-x"> {experienceData[2].date} </text>
-     
-                </div>
-                 
-              </div>
-              <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
-                <div class="h-full w-6 flex items-center justify-center">
-                <div class="h-3/4 w-1  mb-5 mt-5 absolute top-10  bg-white "></div>
-                </div>
-                <div
-                  class="w-6 h-6 absolute top-10  rounded-full text-center bg-gradient-to-r from-purple-600 via-darkPink to-pink-500 shadow"
-                ></div>
-              </div>
-            </div>
-            
-            {/*Left Start*/}
-            <Toolbar id={experienceData[1].id}/>
-            <div class="flex md:contents">
-              <div class="col-start-5 col-end-6 mr-10 md:mx-auto relative">
-                <div class="h-full w-6 flex items-center justify-center">
-                <div class="h-full w-1  mb-3 mt-5 absolute top-5  bg-white "></div>
-                </div>
-                <div
-                  class="w-6 h-6 absolute top-5  rounded-full text-center bg-gradient-to-r from-purple-600 via-darkPink to-pink-500 shadow"
-                ></div>
-                
-              </div>
-              <div
-                class="bg-transparent col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md text-center "
-              >
-                <div class="max-h-96 max-w-96 overflow-ellipsis overflow-hidden ..."> 
-                <text class="font-bold text-2xl text-white"> ACM-W </text>
-                <img src={experienceData[1].link} className="object-scale-down h-48 w-full"/>
-                <div className="font-bold text-2xl text-center truncate  max-w-full max-h-full mx-4 space-y-2 bg-transparent text-white "> {experienceData[1].title}
-      </div>
-      <text className="italic font-bold text-x"> {experienceData[1].date} </text>
-     
-                </div>
-              </div>
-            </div>
-            <Toolbar id={experienceData[0].id}/>
-            <div class="flex flex-row-reverse md:contents">
-              <div
-                class="bg-transparent col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md"
-              >
-              <div class="max-h-96 max-w-96 overflow-ellipsis overflow-hidden ..."> 
-                <text class="font-bold text-2xl text-white"> UCF</text>
-                <img src={experienceData[0].link} className="object-scale-down h-48 w-full"/>
-                <div className="font-bold text-2xl text-center truncate  max-w-full max-h-full mx-4 space-y-2 bg-transparent text-white "> {experienceData[0].title}
-      </div>
-      <text className="italic font-bold text-x"> {experienceData[0].date} </text>
-     
-                </div>
-              </div>
-              <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
-                <div class="h-full w-6 flex items-center justify-center">
-                <div class="h-full w-1  mb-2 mt-4 absolute top-16  bg-white pointer-events-none"></div>
-                </div>
-                <div
-                  class="w-6 h-6 absolute top-10  rounded-full text-center bg-gradient-to-r from-purple-600 via-darkPink to-pink-500 shadow"
-                ></div>
-              </div>
-            </div>
-           
+            <div id="timeline">
+            <VerticalTimeline>
+   
+  <VerticalTimelineElement
+    className="vertical-timeline-element--work "
+    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+    date="June 2021 - August 2021"
+  >
+     <Toolbar id={experienceData[4].id}/>
+     <img src={experienceData[4].link} class="h-auto w-auto"/>
+    <h3 className="vertical-timeline-element-title font-bold">{experienceData[4].id}</h3>
+    <h4 className="vertical-timeline-element-subtitle font-bold">{experienceData[4].title}</h4>
+    <p>
+      {experienceData[4].information}
+    </p>
+  </VerticalTimelineElement>
+ 
+  <VerticalTimelineElement
+    className="vertical-timeline-element--work"
+    date="May 2021"
+    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+
+  >
+     <Toolbar id={experienceData[3].id}/>
+     <img src={experienceData[3].link} class="h-auto w-auto"/>
+    <h3 className="vertical-timeline-element-title font-bold">{experienceData[3].id}</h3>
+    <h4 className="vertical-timeline-element-subtitle font-bold">{experienceData[3].title}</h4>
+    <p>
+      {experienceData[3].information}
+    </p>
+  </VerticalTimelineElement>
+  
+  <VerticalTimelineElement
+    className="vertical-timeline-element--work"
+    date="November 2020 - Present "
+    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+  
+  >
+    <Toolbar id={experienceData[2].id}/>
+    <img src={experienceData[2].link} class="h-auto w-auto"/>
+    <h3 className="vertical-timeline-element-title font-bold ">{experienceData[2].id}</h3>
+    <h4 className="vertical-timeline-element-subtitle font-bold">{experienceData[2].title}</h4>
+    <p>
+      {experienceData[2].information}
+    </p>
+  </VerticalTimelineElement>
+ 
+  <VerticalTimelineElement
+    className="vertical-timeline-element--work"
+    date="August 2020 - Present"
+    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+    
+  >
+     <Toolbar id={experienceData[1].id}/>
+     <img src={experienceData[1].link} class="h-auto w-auto"/>
+     <h3 className="vertical-timeline-element-title font-bold">{experienceData[1].id}</h3>
+    <h4 className="vertical-timeline-element-subtitle font-bold">{experienceData[1].title} </h4>
+    <p>
+      {experienceData[1].information}
+    </p>
+  </VerticalTimelineElement>
+  
+  <VerticalTimelineElement
+    className="vertical-timeline-element--education"
+    date="March 2020 "
+    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+   
+  >
+    <Toolbar id={experienceData[0].id}/>
+    <img src={experienceData[0].link} class="h-auto w-auto"/>
+    <h3 className="vertical-timeline-element-title font-bold"> Undergraduate Researcher </h3>
+    <h4 className="vertical-timeline-element-subtitle font-bold">{experienceData[0].title} </h4>
+    <p>
+      {experienceData[0].information}
+    </p>
+  </VerticalTimelineElement>
+</VerticalTimeline>
           </div>
-        </div>
-            
-
-         </div>
-         </Toolbar>
-          </Grid>
+          </Toolbar>
     </Grid>
-
+    </Grid>
         </div>
     );
 }

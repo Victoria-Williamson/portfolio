@@ -27,9 +27,9 @@ function Home()
           <div class="text-center xl:text-9xl md:text-7xl  text-4xl text-white font-bold mt-4"> Victoria Williamson</div>
     
           <Grid id="grid1Home" item xs={20}>
-      <div class="text-center xl:text-5xl lg:text-3xl sm:text-xl text-white font-bold"> Computer Science & Statistics Major at the University of Central Florida</div>
-      <div class="text-center xl:text-5xl lg:text-3xl sm:text-xl text-white font-bold">May 2023 Graduate</div>
-      <div class="text-center xl:text-5xl lg:text-3xl sm:text-xl text-white font-bold">Orlando,FL</div>
+      <div class="text-center xl:text-4xl lg:text-3xl sm:text-xl text-white font-bold"> Computer Science & Statistics Major at the University of Central Florida</div>
+      <div class="text-center xl:text-4xl lg:text-3xl sm:text-xl text-white font-bold">May 2023 Graduate</div>
+      <div class="text-center xl:text-4xl lg:text-3xl sm:text-xl text-white font-bold">Orlando,FL</div>
           </Grid>
           <Grid>
                   <div id="border"/>
@@ -41,15 +41,17 @@ function Home()
           spacing={5}>
                 <Grid item xs ={20}>
               
-               <div class="rounded-full text-white bg-gradient-to-r from-purple-600 via-violet to-themePink  hover:from-indigo-500 to-blue-500 text-white font-bold py-2 px-4 rounded focus:ring transform transition hover:scale-105 duration-300 ease-in-out">
-               <a href="https://drive.google.com/file/d/1mhIYjhgXDBt8YCmbvYiqKpsECknlD6kt/view?usp=sharing" target="_blank"
-                class="text-white"
-                type="button"
+                <a href="https://drive.google.com/file/d/1mhIYjhgXDBt8YCmbvYiqKpsECknlD6kt/view?usp=sharing" target="_blank"
+
+               
               >
+               <div class="rounded-full text-white bg-gradient-to-r from-purple-600 via-violet to-themePink  hover:from-indigo-500 to-blue-500 text-white font-bold py-2 px-4 rounded focus:ring transform transition hover:scale-105 duration-300 ease-in-out">
+              
                 Resume
                 <GetAppIcon/>
-              </a>
+              
                </div>
+               </a>
             
            
       </Grid>

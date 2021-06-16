@@ -26,6 +26,7 @@
     "react-scripts": "4.0.3",
     "react-scroll": "^1.8.2",
     "react-toastify": "^7.0.4",
+    "react-vertical-timeline-component": "^3.3.3",
     "scroll-to-element": "^2.0.3",
     "strap": "^0.1.0",
     "web-vitals": "^1.1.2"

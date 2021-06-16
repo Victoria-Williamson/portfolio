@@ -71,7 +71,7 @@ allProjects.map((data)=>
   {
     web.push(data);
   }
-  if(data.type === "Machine Learning")
+  else if(data.type === "Machine Learning")
   {
     ml.push(data);
   }
@@ -127,8 +127,9 @@ function Projects()
     <div class="mt-4"> 
     <div onClick={() => {
       console.log("open");
-      setOpenList(true)}}class="shadow-2xl text-center sticky text-pink-500 hover:text-pink-800 right-0 ml-4 rounded-full h-12 w-12 z-40 top-20 bg-white ...">
-    <svg class="absolute  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 fill-current my-auto mx-auto " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z"/></svg>
+      setOpenList(true)}}class="shadow-2xl text-center sticky text-pink-500 hover:text-pink-800 right-0 ml-2 rounded-full h-12 w-12 z-40 top-20 bg-white ...">
+    <svg class="absolute  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 fill-current my-auto mx-auto " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M6 12c0 1.657-1.343 3-3 3s-3-1.343-3-3 1.343-3 3-3 3 1.343 3 3zm9 0c0 1.657-1.343 3-3 3s-3-1.343-3-3 1.343-3 3-3 3 1.343 3 3zm9 0c0 1.657-1.343 3-3 3s-3-1.343-3-3 1.343-3 3-3 3 1.343 3 3z"/></svg>
+    
 </div>
 <div id="projectInfo">
     <Transition.Root show={openList} as={Fragment}>
@@ -177,159 +178,67 @@ function Projects()
                 </Transition.Child>
                 <div className="h-full mt-14 flex flex-col py-6 bg-white shadow-xl overflow-y-scroll">
                   <div className="px-4 sm:px-6">
-                    <Dialog.Title className="uppercase text-1xl text-center font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-purple-600 via-darkPink to-blue-500 ">{info.title}
+                    <Dialog.Title className="uppercase text-1xl text-center font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-purple-600 via-darkPink to-blue-500 ">Projects
             
                   <div class="text-center">
         <text class="uppercase text-2xl text-center font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-purple-600 via-darkPink to-blue-500 ">
         Web Development Projects
-        </text>
-       <div class="ml-3">
-       <ul class=" list-disc text-1xl text-left font-bold">
+        </text> 
+      <div class="flex flex-wrap justify-center">
+      
         {web.map((data) =>
         
-        <li>
+   
           <button onClick={(e) => {
             goToElement(e);
             setOpenList(false);
           }}>
-          <text class="text-black text-md font-base hover:text-pink-500"> {data.title} </text>
+          <span class="inline-block hover:text-violet bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{data.title} </span>
+  
           </button>
-        </li>
-      
         )}
-        </ul>
+       
        </div>
-      
-      </div>
-      <div class="text-center">
-        <text class="uppercase text-2xl text-center font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-purple-600 via-darkPink to-blue-500 ">
+       <text class="uppercase text-2xl text-center font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-purple-600 via-darkPink to-blue-500 ">
         Machine Learning Projects
-        </text>
-       <div class="ml-3">
-       <ul class=" list-disc text-1xl text-left font-bold">
-        {web.map((data) =>
+        </text> 
+      <div class="flex flex-wrap justify-center">
+      
+        {ml.map((data) =>
         
-        <li>
-   <text class="text-black text-md font-base"> {data.title} </text>
-        </li>
-      
-        )}
-        </ul>
-       </div>
-      
-      </div>
-      <div class="text-center">
-        <text class="uppercase text-2xl text-center font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-purple-600 via-darkPink to-blue-500 ">
-        Other Projects
-        </text>
-       <div class="ml-3">
-       <ul class=" list-disc text-1xl text-left font-bold">
-        {other.map((data) =>
-        
-        <li>
-   <text class="text-black text-md font-base"> {data.title} </text>
-        </li>
-      
-        )}
-        </ul>
-       </div>
-      
-      </div><div class="text-center">
-        <text class="uppercase text-2xl text-center font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-purple-600 via-darkPink to-blue-500 ">
-        Web Development Projects
-        </text>
-       <div class="ml-3">
-       <ul class=" list-disc text-1xl text-left font-bold">
-        {web.map((data) =>
-        
-        <li>
-          <button class={data.title} onClick={(e) => {
-            console.log(e);
-          
+   
+          <button onClick={(e) => {
             goToElement(e);
             setOpenList(false);
           }}>
-          <text class="text-black text-md font-base hover:text-pink-500"> {data.title} </text>
+          <span class="inline-block hover:text-violet bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{data.title} </span>
+  
           </button>
-        </li>
-      
         )}
-        </ul>
+       
        </div>
+       <text class="uppercase text-2xl text-center font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-purple-600 via-darkPink to-blue-500 ">
+        Other
+        </text> 
+      <div class="flex flex-wrap justify-center">
       
-      </div>
-      <div class="text-center">
-        <text class="uppercase text-2xl text-center font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-purple-600 via-darkPink to-blue-500 ">
-        Machine Learning Projects
-        </text>
-       <div class="ml-3">
-       <ul class=" list-disc text-1xl text-left font-bold">
-        {web.map((data) =>
-        
-        <li>
-   <text class="text-black text-md font-base"> {data.title} </text>
-        </li>
-      
-        )}
-        </ul>
-       </div>
-      
-      </div>
-      <div class="text-center">
-        <text class="uppercase text-2xl text-center font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-purple-600 via-darkPink to-blue-500 ">
-        Other Projects
-        </text>
-       <div class="ml-3">
-       <ul class=" list-disc text-1xl text-left font-bold">
         {other.map((data) =>
         
-        <li>
-   <text class="text-black text-md font-base"> {data.title} </text>
-        </li>
-      
+   
+          <button onClick={(e) => {
+            goToElement(e);
+            setOpenList(false);
+          }}>
+          <span class="inline-block hover:text-violet bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{data.title} </span>
+  
+          </button>
         )}
-        </ul>
+       
        </div>
-      
       </div>
        </Dialog.Title>
                   </div>
                   <div className="overflow-y-auto  relative flex-1 px-4 sm:px-6 text-center mb-20 ">
-                    {/* Replace with your content */}
-                    {/* <div class="grid grid-cols-3 gap-4 ">
-                        <div class="col-span-3 text-center">
-                       
-                        {info.languages.map((lan) => 
-       <Chip size="small" label={lan}/>
-      )}
-                        </div>
-                        <div class="bg-red-500 w-1/2 h-1/2"></div>
-                        <div class="text-center">3</div>
-                        <div class="col-span-2 ...">4</div>
-                        <div class="...">5</div>
-                        <div class="...">6</div>
-                        <div class="col-span-2 ...">7</div>
-                      </div> */}
-                      <text class=" text-lg font-bold text-center font-extrabold"> TechStack </text>
-                     
-                       <div class="flex flex-wrap justify-center">
-         {info.languages.map((lan) => 
-         
-         <div class="flex justify-center items-center m-1 font-medium py-1 px-2 bg-white rounded-full text-gray-700 bg-gray-100 border border-gray-300 ">
-         <div class="text-md font-bold leading-none max-w-full flex-initial"> {lan} </div>
-     </div>
-      )}
-      </div>
-      <img src={info.img}/>
-      
-                      <text class="text-lg font-bold text-center font-extrabold"> Summary </text>
-                      <br/>
-                      <text class=" text-sm  text-left"> {info.summary} </text>
-                      <br/>
-                      <text class="text-lg font-bold text-center font-extrabold"> Skills Gained </text>
-                      <br/>
-                      <text class=" text-sm"> {info.learned} </text>
-                      
                     <div className="absolute inset-0 px-4 sm:px-6">
                       <div className="h-full" aria-hidden="true" />
                     </div>
@@ -611,68 +520,23 @@ function Projects()
       <div id={data.title.replace(/\s/g, '')}> 
          
        <div class="p-10">  
-   
-   <div class="max-w-sm  w-72 rounded overflow-hidden shadow-lg">
-     <img class="w-full" class="lazy" src={data.img} alt="Mountain"/>
-     <div class="px-6 py-4 bg-white ">
-     <a id="link" class="inline-block text-darkPink no-underline hover:text-pink-500 hover:text-underline text-center h-10 p-0 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out m-2"
+       <img class="shadow rounded-full w-72 object-fill h-72 align-middle border-non" src={data.img} alt="Mountain"/>
+   <div class="max-w-sm  mt-4 w-72 rounded overflow-hidden shadow-lg">
+    
+     <div class="px-6 py-4 text-white ">
+     <a id="link" class="inline-block font-bold text-pink-500 no-underline hover:text-pink-300 hover:text-underline text-center h-10 p-0 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out m-2"
            onClick={() => getProjectInfo(data)}
           >
-            <svg class="fill-current h-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-.001 5.75c.69 0 1.251.56 1.251 1.25s-.561 1.25-1.251 1.25-1.249-.56-1.249-1.25.559-1.25 1.249-1.25zm2.001 12.25h-4v-1c.484-.179 1-.201 1-.735v-4.467c0-.534-.516-.618-1-.797v-1h3v6.265c0 .535.517.558 1 .735v.999z"/></svg>
-            
-          </a>
-     {(() => {
-        if (data.github) {
-          return (
-            <a id="link" class="inline-block text-darkPink no-underline hover:text-pink-500 hover:text-underline text-center h-10 p-0 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out m-2"
-            href={data.github}
-          >
-              <svg  class="fill-current h-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-            
-          </a>
-          )
-        } })()}
-        {(() => {if (data.link) {
-          return (
-            <a id="link" class="inline-block text-darkPink no-underline hover:text-pink-500 hover:text-underline text-center h-10 p-0 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out m-2"
-            href={data.link}
-          >
-             <svg  class="fill-current h-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 0v24h24v-24h-24zm22 22h-20v-16h20v16zm-1-15h-18v14h18v-14zm-10 5.649l-3.229 1.351 3.229 1.347v1.653l-5-2.201v-1.599l5-2.2v1.649zm7 2.15l-5 2.201v-1.653l3.229-1.347-3.229-1.351v-1.649l5 2.201v1.598z"/></svg>
-            
-          </a>
-          )
-        } 
-      })()}
-       {(() => {
-        if (data.site){
-          return (
-            <a id="link" class="inline-block text-darkPink no-underline hover:text-pink-500 hover:text-underline text-center h-10 p-0 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out m-2"
-            href={data.site}
-          >
-            <svg  class="fill-current h-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M22 6v16h-20v-16h20zm2-6h-24v24h24v-24zm-11 11v1.649l3.229 1.351-3.229 1.347v1.653l5-2.201v-1.599l-5-2.2zm-7 2.201v1.599l5 2.2v-1.653l-3.229-1.347 3.229-1.351v-1.649l-5 2.201z"/></svg>
-            
-          </a>
-          )
-        }
-      })()}
-       <div class="font-bold text-xl mb-2"> {data.title} </div>
-       <p class="text-gray-700 text-base">
-        {data.description}
-       </p>
-     </div>
+       <text class="text-2xl"> {data.title} </text>
+       </a>
+       <br/>
+       <text> 2020 &#8226; Personal <br/> </text>
+       {data.description}
+       <br/>
      
-     <div class="px-6 pt-4 pb-2 bg-white">
-     {data.languages.map((lan) => 
-        
-        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700  mb-2">{lan} </span>
-
-     )}
-      <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 bg-gradient-to-r from-pink-900 via-darkPink to-pink-500 text-center text-white text-sm">
-        {data.type}
-          </span>
     
-     </div>
    </div>
+ </div>
  </div>
       
   
