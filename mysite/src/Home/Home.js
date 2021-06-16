@@ -58,23 +58,23 @@ function Home()
     return <div class="mt-20">
           
           <main className=" flex flex-wrap mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28 items-center">
-            <div className="grid grid-flow-row auto-row-max sm:text-center lg:text-left lg:w-2/6 xl:w-1/2 lg:ml-5 lg:mr-5">
+            <div className="grid grid-flow-row auto-row-max sm:text-center lg:text-left lg:w-1/2 xl:w-1/2  px-2 ">
             <h1 className=" text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
                 <span className="block xl:inline text-white">Victoria Williamson</span>
                 
               </h1>
               
-              <p className="mt-3 text-base text-white sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+              <p className="mt-3 text-base text-white sm:mt-5 sm:text-lg sm:mx-auto md:mt-5 md:text-md lg:mx-0">
               Hi I'm Victoria Williamson ! I first became interested in programming after taking AP Computer Science Principles my sophomore year of high school and ended up loving it! Since then I have: signed up for numerous hackathons, and explored numerous areas of computer science through technical electives. Through this journey, I have gained an interest in web development, data science, and machine learning.
               </p>
-              <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+              <div className="mt-0 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
                  
                 </div>
                 <div class="grid grid-rows-2  gap-4 mt-3 sm:mt-0 sm:ml-3">
   <div><a
-                    href="#"
-                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white  bg-gradient-to-r from-purple-600 via-violet to-themePink  hover:from-indigo-500 to-blue-500 text-white font-bold py-2 px-4 rounded focus:ring transform transition hover:scale-105 duration-300 ease-in-out md:py-4 md:text-lg md:px-10"
+                    href="https://drive.google.com/file/d/1mhIYjhgXDBt8YCmbvYiqKpsECknlD6kt/view?usp=sharing"
+                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-lg font-medium rounded-md text-white  bg-gradient-to-r from-purple-600 via-violet to-themePink  hover:from-indigo-500 to-blue-500 text-white font-bold py-2 px-4 rounded focus:ring transform transition hover:scale-105 duration-300 ease-in-out md:py-4 md:text-lg md:px-10 font-extrabold"
                   >
                     Resume <GetAppIcon/>
                   </a></div>
@@ -140,6 +140,7 @@ function Home()
           alt=""
         />
       </div>
+     
       
   </div>
 }
