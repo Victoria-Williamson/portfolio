@@ -179,11 +179,15 @@ function Experiences()
 
           </div> </Grid>
           <Grid item>
+          <text   onClick={() => GoTo("UPS")} class="inline-block k text-2xl md:text-l sm:text-l text-gray-50 font-bold no-underline hover:text-pink-500 hover:text-underline text-center h-10 p-0 md:h-auto md:p-4 transform hover:scale-125 duration-300 m-2 ease-in-out"> UPS </text>
+          <text  onClick={() =>GoTo("NACME")} class="inline-block text-2xl md:text-l sm:text-l text-gray-50 font-bold no-underline hover:text-pink-500 hover:text-underline text-center h-10 p-0 md:h-auto md:p-4 transform hover:scale-125 duration-300 m-2 ease-in-out"> NACME </text>
+          <text onClick={() => GoTo("KnightHacks")}  class="k text-2xl md:text-l sm:text-l inline-block text-gray-50 font-bold no-underline hover:text-pink-500 hover:text-underline text-center h-10 p-0 md:h-auto md:p-4 transform hover:scale-125 duration-300 m-2 ease-in-out"> KnightHacks </text>
+          <div  onClick={() => GoTo("ACM-W")} class="text-2xl md:text-l sm:text-l inline-block text-gray-50 font-bold no-underline hover:text-pink-500 hover:text-underline text-center h-10 p-0 md:h-auto md:p-4 transform hover:scale-125 m-2  duration-300 ease-in-out"> ACM-W </div>
         <div  class="text-2xl md:text-l sm:text-l inline-block text-gray-50 font-bold no-underline hover:text-pink-500 hover:text-underline text-center h-10 p-0 md:h-auto md:p-4 m-2 transform hover:scale-125 duration-300 ease-in-out" > UCF </div>
-        <div  onClick={() => GoTo("ACM-W")} class="text-2xl md:text-l sm:text-l inline-block text-gray-50 font-bold no-underline hover:text-pink-500 hover:text-underline text-center h-10 p-0 md:h-auto md:p-4 transform hover:scale-125 m-2  duration-300 ease-in-out"> ACM-W </div>
-        <text onClick={() => GoTo("KnightHacks")}  class="k text-2xl md:text-l sm:text-l inline-block text-gray-50 font-bold no-underline hover:text-pink-500 hover:text-underline text-center h-10 p-0 md:h-auto md:p-4 transform hover:scale-125 duration-300 m-2 ease-in-out"> KnightHacks </text>
-        <text  onClick={() =>GoTo("NACME")} class="inline-block text-2xl md:text-l sm:text-l text-gray-50 font-bold no-underline hover:text-pink-500 hover:text-underline text-center h-10 p-0 md:h-auto md:p-4 transform hover:scale-125 duration-300 m-2 ease-in-out"> NACME </text>
-        <text   onClick={() => GoTo("UPS")} class="inline-block k text-2xl md:text-l sm:text-l text-gray-50 font-bold no-underline hover:text-pink-500 hover:text-underline text-center h-10 p-0 md:h-auto md:p-4 transform hover:scale-125 duration-300 m-2 ease-in-out"> UPS </text>
+        
+       
+       
+        
 
           </Grid>
           <Grid item xs={20}>
@@ -197,7 +201,7 @@ function Experiences()
     date="June 2021 - August 2021"
   >
      <Toolbar id={experienceData[4].id}/>
-     <img src={experienceData[4].link} class="h-auto w-auto"/>
+     <img src={experienceData[4].link} class="h-auto w-auto "/>
     <h3 className="vertical-timeline-element-title font-bold">{experienceData[4].id}</h3>
     <h4 className="vertical-timeline-element-subtitle font-bold">{experienceData[4].title}</h4>
     <p>

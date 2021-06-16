@@ -428,11 +428,17 @@ function Projects()
       
                       <text class="text-lg font-bold text-center font-extrabold"> Summary </text>
                       <br/>
-                      <text class=" text-sm  text-left"> {info.summary} </text>
+                      <div class="text-left">
+ <text class=" text-sm  text-left"> {info.summary} </text>
+                      </div>
+                     
                       <br/>
                       <text class="text-lg font-bold text-center font-extrabold"> Skills Gained </text>
                       <br/>
-                      <text class=" text-sm"> {info.learned} </text>
+                      <ul class="list-disc text-left ml-3">
+                     
+                      </ul>
+                    
                       
                     <div className="absolute inset-0 px-4 sm:px-6">
                       <div className="h-full" aria-hidden="true" />
@@ -530,7 +536,7 @@ function Projects()
        <text class="text-2xl"> {data.title} </text>
        </a>
        <br/>
-       <text> 2020 &#8226; Personal <br/> </text>
+       <text> {data.year} &#8226; {data.purpose} <br/> </text>
        {data.description}
        <br/>
      
