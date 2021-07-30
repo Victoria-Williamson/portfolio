@@ -20,64 +20,6 @@ import Grid from '@material-ui/core/Grid';
 
 function App(props) {
 
-  function HomeButton()
-  {
-    console.log("Clicked");
-    var anchor = document.querySelector("#home");
-  
-  
-  if (anchor) {
-    anchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    document.getElementById("home").scrollTop -= 10;
-  }
-}
-
-  function AboutButton()
-  {
-    console.log("Clicked");
-    var anchor = document.querySelector("#about");
-  
-  
-  if (anchor) {
-    anchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }
-}
-
-  function ActivitiesButton()
-  {
-    console.log("Clicked");
-    var anchor = document.querySelector("#activities");
-  
-  
-  if (anchor) {
-    anchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }
-}
-
-function ExperiencesButton()
-{
-  console.log("Clicked");
-  var anchor = document.querySelector("#experiences");
-
-
-if (anchor) {
-  anchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
-}
-}
-
-function ProjectsButton()
-{
-  console.log("Clicked");
-  var anchor = document.querySelector("#projects");
-
-
-if (anchor) {
-  anchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
-}
-}
-  var desktopVisibillity;
-  var mobileVisibillity;
-
   const useStyles = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
@@ -119,14 +61,13 @@ if (anchor) {
     <div className="App">
            <ReactNotification/>
       <AppBar color="primary">
-        <Nav/>
-       
+        <Nav/>  
       </AppBar>
       <Toolbar id="home" />
       <div class="grid grid-flow-row auto-rows-auto margin-auto">
-        <div className="lg:h-screen">
+      
       <Home />
-      </div>
+     
       <Toolbar id="about"/>
       <AboutMe  />
       <Toolbar id="activities"/>
@@ -136,7 +77,7 @@ if (anchor) {
       <Toolbar id="projects" />
       <Projects/>
 </div>
-<section class="text-gray-600 body-font relative">
+{/* <section class="text-gray-600 body-font relative">
   <div class="container lg:px-5 py-24 mx-auto">
     <div class="flex flex-col text-center w-full mb-12">
       <h1 class="sm:text-3xl text-2xl font-bold title-font  text-white">Contact Me</h1>
@@ -170,7 +111,7 @@ if (anchor) {
       </div>
     </div>
   </div>
-</section>
+</section> */}
     <footer class="text-gray-600 body-font">
   <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
     <text class="text-white text-xl"> Victoria Williamson </text>

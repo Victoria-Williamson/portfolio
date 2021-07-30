@@ -20,11 +20,9 @@ color: #FFFDFD;
 }
 #timeline
 {
-    height: calc(600px - 2vh);
-    max-height: 600px;
-    margin-left: 5px;
-    margin-right: 5px;
+    height: 700px;
     overflow-y: auto;
+    margin: 10px;
     
 }
 #dot

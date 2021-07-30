@@ -130,6 +130,13 @@ function Experiences()
           information: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec eros gravida, blandit lorem at, sollicitudin quam. Curabitur eleifend ante at metus rutrum, non faucibus felis pretium. Cras malesuada lacus vel orci aliquam, quis ultricies nisl sagittis. Morbi magna nunc, egestas at placerat a, tempor ac est. Pellentesque lacinia, nulla et rutrum semper, leo elit sodales nisi, non accumsan ex dolor ut ante. Proin a tellus dui.",
           link: "https://1000logos.net/wp-content/uploads/2021/04/UPS-logo.png"
       },
+      {
+        id:"UPS Hackathon",
+        title: "Participant",
+        date: "June 2021 - August 2021",
+        information: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec eros gravida, blandit lorem at, sollicitudin quam. Curabitur eleifend ante at metus rutrum, non faucibus felis pretium. Cras malesuada lacus vel orci aliquam, quis ultricies nisl sagittis. Morbi magna nunc, egestas at placerat a, tempor ac est. Pellentesque lacinia, nulla et rutrum semper, leo elit sodales nisi, non accumsan ex dolor ut ante. Proin a tellus dui.",
+        link: "https://1000logos.net/wp-content/uploads/2021/04/UPS-logo.png"
+    },
  
     ]
     function GoTo(id)
@@ -142,6 +149,7 @@ function Experiences()
       element.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
       console.log(pos.top);
       anchor.scrollTop = pos.top;
+      var el = document.querySelector("#experiences");
       document.getElementById('timeline-cover').scrollTop = 0
   }
   var exp = experienceData;
@@ -155,45 +163,68 @@ function Experiences()
         <div class="mt-4">
               <div class="h-auto  grid grid-rows-2 items-center justify-center grid-flow-col gap-4 text-center">
   <div class="text-gradient font-extrabold text-white text-4xl font-bold"> Experiences <div>
-      </div> <div class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 mt-1 h-2  w-96">  </div> </div>
+      </div> <div class="bg-gradient-to-r from-darkPink via-darkOrange to-darkGreen mt-2 h-3  w-96">  </div> </div>
       </div>
+{/* <div class="flex flex-row items-center justify-center">
+<text   onClick={() => GoTo("UPS")} class="inline-block k text-lg  text-gray-50 font-bold no-underline hover:text-pink-500 hover:text-underline text-center h-10 p-0 md:h-auto md:p-4 transform hover:scale-125 duration-300 m-2 ease-in-out"> UPS Hackathon </text>
+          <text   onClick={() => GoTo("UPS")} class="inline-block k text-lg  text-gray-50 font-bold no-underline hover:text-pink-500 hover:text-underline text-center h-10 p-0 md:h-auto md:p-4 transform hover:scale-125 duration-300 m-2 ease-in-out"> UPS </text>
+          <text  onClick={() =>GoTo("NACME")} class="inline-block text-lg  text-gray-50 font-bold no-underline hover:text-pink-500 hover:text-underline text-center h-10 p-0 md:h-auto md:p-4 transform hover:scale-125 duration-300 m-2 ease-in-out"> NACME </text>
+          <text onClick={() => GoTo("KnightHacks")}  class="k text-lg inline-block text-gray-50 font-bold no-underline hover:text-pink-500 hover:text-underline text-center h-10 p-0 md:h-auto md:p-4 transform hover:scale-125 duration-300 m-2 ease-in-out"> KnightHacks </text>
+          <div  onClick={() => GoTo("ACM-W")} class="text-lginline-block text-gray-50 font-bold no-underline hover:text-pink-500 hover:text-underline text-center h-10 p-0 md:h-auto md:p-4 transform hover:scale-125 m-2  duration-300 ease-in-out"> ACM-W </div>
+        <div  class="text-lg inline-block text-gray-50 font-bold no-underline hover:text-pink-500 hover:text-underline text-center h-10 p-0 md:h-auto md:p-4 m-2 transform hover:scale-125 duration-300 ease-in-out" > UCF </div>
+</div> */}
+<div id="timeline">
 
-            <ToastContainer autoClose={false}/>
- <Grid container
-  direction="column"
-  justify="center"
-  alignItems="center"
-  wrap="nowrap"
-  spacing={5}
+
+<VerticalTimeline>
+            <VerticalTimelineElement
+    className="vertical-timeline-element--work "
+    iconStyle={{ background: 'rgb(178, 179, 64)', color: '#fff' }}
+    date="June 2021 - August 2021"
   >
-      
-          <Grid item>
-          <text   onClick={() => GoTo("UPS")} class="inline-block k text-2xl md:text-l sm:text-l text-gray-50 font-bold no-underline hover:text-pink-500 hover:text-underline text-center h-10 p-0 md:h-auto md:p-4 transform hover:scale-125 duration-300 m-2 ease-in-out"> UPS </text>
-          <text  onClick={() =>GoTo("NACME")} class="inline-block text-2xl md:text-l sm:text-l text-gray-50 font-bold no-underline hover:text-pink-500 hover:text-underline text-center h-10 p-0 md:h-auto md:p-4 transform hover:scale-125 duration-300 m-2 ease-in-out"> NACME </text>
-          <text onClick={() => GoTo("KnightHacks")}  class="k text-2xl md:text-l sm:text-l inline-block text-gray-50 font-bold no-underline hover:text-pink-500 hover:text-underline text-center h-10 p-0 md:h-auto md:p-4 transform hover:scale-125 duration-300 m-2 ease-in-out"> KnightHacks </text>
-          <div  onClick={() => GoTo("ACM-W")} class="text-2xl md:text-l sm:text-l inline-block text-gray-50 font-bold no-underline hover:text-pink-500 hover:text-underline text-center h-10 p-0 md:h-auto md:p-4 transform hover:scale-125 m-2  duration-300 ease-in-out"> ACM-W </div>
-        <div  class="text-2xl md:text-l sm:text-l inline-block text-gray-50 font-bold no-underline hover:text-pink-500 hover:text-underline text-center h-10 p-0 md:h-auto md:p-4 m-2 transform hover:scale-125 duration-300 ease-in-out" > UCF </div>
-        
-       
-       
-        
+     <Toolbar id={"UPS-Hackathon"}/>
+     <div className="h-auto w-auto">
+     <img src={experienceData[5].link} class="object-contain h-48 w-full "/>
+     </div>
+     <div class="mt-2">
 
-          </Grid>
-          <Grid item xs={20}>
-            <Toolbar id="timeline-cover">
-            <div id="timeline">
-            <VerticalTimeline>
-   
+         <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"> JavaScript </span>
+         <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"> React </span>
+         <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"> Figma </span>
+         <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"> CSS </span>
+         <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"> HTML </span>
+
+     </div>
+        
+    <h3 className="vertical-timeline-element-title font-bold">{experienceData[5].id}</h3>
+    <h4 className="vertical-timeline-element-subtitle font-bold">{experienceData[5].title}</h4>
+    <p>
+    <ul class="list-disc text-left ml-3">
+      <li> Worked with 3 other employees to create a customer experience related project.</li>
+      <li> Developed a UX Wireframe to present a prototype of the solution</li>
+      <li> Awarded Best Foot Forward for having the highest User Experience and Presentation Score</li>
+     <li> Delivered presentations to the CEO, CIEO, and Vice Presidents of the company.</li>
+
+      </ul>
+    </p>
+  </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--work "
-    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+    iconStyle={{ background: 'rgb(178, 179, 64)', color: '#fff' }}
     date="June 2021 - August 2021"
   >
      <Toolbar id={experienceData[4].id}/>
      <div className="h-auto w-auto">
      <img src={experienceData[4].link} class="object-contain h-48 w-full "/>
      </div>
-    
+     <div class="mt-2">
+     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"> Python </span>
+         <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"> JavaScript </span>
+         <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"> CSS </span>
+         <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"> HTML </span>
+
+     </div>
+        
     <h3 className="vertical-timeline-element-title font-bold">{experienceData[4].id}</h3>
     <h4 className="vertical-timeline-element-subtitle font-bold">{experienceData[4].title}</h4>
     <p>
@@ -207,13 +238,19 @@ function Experiences()
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
     date="May 2021"
-    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+    iconStyle={{ background: 'rgb(178, 179, 64)', color: '#fff' }}
 
   >
      <Toolbar id={experienceData[3].id}/>
      <div className="h-auto w-auto">
+       
      <img src={experienceData[3].link} class="object-contain h-48 w-full "/>
      </div>
+     <div class="mt-2">
+     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"> Diversity and Inclusion </span>
+     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"> Professional Development </span>
+     </div>
+    
     <h3 className="vertical-timeline-element-title font-bold">{experienceData[3].id}</h3>
     <h4 className="vertical-timeline-element-subtitle font-bold">{experienceData[3].title}</h4>
     <p>
@@ -227,13 +264,18 @@ function Experiences()
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
     date="November 2020 - Present "
-    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+    iconStyle={{ background: 'rgb(178, 179, 64)', color: '#fff' }}
   
   >
     <Toolbar id={experienceData[2].id}/>
     <div className="h-auto w-auto">
      <img src={experienceData[2].link} class="object-contain h-48 w-full "/>
      </div>
+     <div class="mt-2">
+     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"> Diversity and Inclusion </span>
+     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"> Leadership </span>
+     </div>
+    
     <h3 className="vertical-timeline-element-title font-bold ">{experienceData[2].id}</h3>
     <h4 className="vertical-timeline-element-subtitle font-bold">{experienceData[2].title}</h4>
     <p>
@@ -247,12 +289,16 @@ function Experiences()
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
     date="August 2020 - Present"
-    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+    iconStyle={{ background: 'rgb(178, 179, 64)', color: '#fff' }}
     
   >
      <Toolbar id={experienceData[1].id}/>
      <div className="h-auto w-auto">
      <img src={experienceData[1].link} class="object-contain h-48 w-full "/>
+     </div>
+     <div class="mt-2">
+     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"> Diversity and Inclusion </span>
+     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"> Leadership </span>
      </div>
      <h3 className="vertical-timeline-element-title font-bold">{experienceData[1].id}</h3>
     <h4 className="vertical-timeline-element-subtitle font-bold">{experienceData[1].title} </h4>
@@ -268,12 +314,20 @@ function Experiences()
   <VerticalTimelineElement
     className="vertical-timeline-element--education"
     date="March 2020 "
-    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+    iconStyle={{ background: 'rgb(178, 179, 64)', color: '#fff' }}
    
   >
     <Toolbar id={experienceData[0].id}/>
     <div className="h-auto w-auto">
      <img src={experienceData[0].link} class="object-contain h-48 w-full "/>
+     </div>
+     <div class="mt-2">
+     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"> Web Development </span>
+     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"> App Development </span>
+     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"> React </span>
+     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"> React-Native </span>
+     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"> JS,CSS,HTML </span>
+     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"> Swift,Java </span>
      </div>
     <h3 className="vertical-timeline-element-title font-bold"> Undergraduate Researcher </h3>
     <h4 className="vertical-timeline-element-subtitle font-bold">{experienceData[0].title} </h4>
@@ -287,10 +341,7 @@ function Experiences()
     </p>
   </VerticalTimelineElement>
 </VerticalTimeline>
-          </div>
-          </Toolbar>
-    </Grid>
-    </Grid>
+</div>
         </div>
     );
 }

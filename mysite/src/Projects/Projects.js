@@ -18,7 +18,6 @@ import { Fragment} from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import { XIcon } from '@heroicons/react/outline'
 import Paper from '@material-ui/core/Paper';
-import ProjectInfo from "./ProjectsInfo";
 import Typography from '@material-ui/core/Typography';
 import { projectInformation, allProjects}  from "./projects_info";
 
@@ -103,11 +102,13 @@ function Projects()
       
       var name = e.target.innerHTML.replace(/\s/g, '');
       console.log(name);
+
       var element = document.querySelector("#" + name);
       element.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
       setOpenList(false);
       element.classList.add('highlight');
   
+
       setTimeout(() => element.classList.remove('highlight'), 3000)
     
     }
@@ -128,7 +129,7 @@ function Projects()
     <div class="mt-4"> 
     <div onClick={() => {
       console.log("open");
-      setOpenList(true)}}class="shadow-2xl text-center sticky text-pink-500 hover:text-pink-800 right-0 ml-2 rounded-full h-12 w-12 z-40 top-20 bg-white ...">
+      setOpenList(true)}}class="shadow-2xl text-center sticky text-darkOrange hover:text-lightOrange right-0 ml-2 rounded-full h-12 w-12 z-40 top-20 bg-white ...">
     <svg class="absolute  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 fill-current my-auto mx-auto " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M6 12c0 1.657-1.343 3-3 3s-3-1.343-3-3 1.343-3 3-3 3 1.343 3 3zm9 0c0 1.657-1.343 3-3 3s-3-1.343-3-3 1.343-3 3-3 3 1.343 3 3zm9 0c0 1.657-1.343 3-3 3s-3-1.343-3-3 1.343-3 3-3 3 1.343 3 3z"/></svg>
     
 </div>
@@ -179,11 +180,12 @@ function Projects()
                 </Transition.Child>
                 <div className="h-full mt-14 flex flex-col py-6 bg-white shadow-xl overflow-y-scroll">
                   <div className="px-4 sm:px-6">
-                    <Dialog.Title className="uppercase text-1xl text-center font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-purple-600 via-darkPink to-blue-500 ">Projects
+                    <Dialog.Title className="text-1xl text-center font-extrabold text-themeBlack ">
+                    
             
                   <div class="text-center">
-        <text class="uppercase text-2xl text-center font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-purple-600 via-darkPink to-blue-500 ">
-        Web Development Projects
+        <text class="uppercase text-lg text-center font-extrabold  text-darkPink">
+        Web Development 
         </text> 
       <div class="flex flex-wrap justify-center">
       
@@ -194,13 +196,13 @@ function Projects()
             goToElement(e);
             setOpenList(false);
           }}>
-          <span class="inline-block hover:text-violet bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{data.title} </span>
+          <span class="inline-block hover:text-violet bg-darkPink rounded-full px-3 py-1 text-sm font-bold text-white font-black mr-2 mb-2">{data.title} </span>
   
           </button>
         )}
        
        </div>
-       <text class="uppercase text-2xl text-center font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-purple-600 via-darkPink to-blue-500 ">
+       <text class="uppercase text-lg text-center font-extrabold  text-darkOrange">
         Machine Learning Projects
         </text> 
       <div class="flex flex-wrap justify-center">
@@ -212,13 +214,13 @@ function Projects()
             goToElement(e);
             setOpenList(false);
           }}>
-          <span class="inline-block hover:text-violet bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{data.title} </span>
+          <span class="inline-block hover:text-violet bg-darkOrange text-white font-black rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{data.title} </span>
   
           </button>
         )}
        
        </div>
-       <text class="uppercase text-2xl text-center font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-purple-600 via-darkPink to-blue-500 ">
+       <text class="uppercase text-lg text-center font-extrabold  text-darkGreen">
         Other
         </text> 
       <div class="flex flex-wrap justify-center">
@@ -230,7 +232,7 @@ function Projects()
             goToElement(e);
             setOpenList(false);
           }}>
-          <span class="inline-block hover:text-violet bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{data.title} </span>
+          <span class="inline-block bg-darkGreen  rounded-full px-3 py-1 text-sm font-black text-white mr-2 mb-2">{data.title} </span>
   
           </button>
         )}
@@ -300,7 +302,9 @@ function Projects()
                 </Transition.Child>
                 <div className="h-full mt-14 flex flex-col py-6 bg-white shadow-xl overflow-y-scroll">
                   <div className="px-4 sm:px-6">
-                    <Dialog.Title className="uppercase text-1xl text-center font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-purple-600 via-darkPink to-blue-500 ">{info.title}
+                    <Dialog.Title className=" text-1xl text-center font-extrabold text-grey-500 ">
+                    <div class="bg-gradient-to-r from-darkPink via-darkOrange to-darkGreen  mt-1 h-5  w-full mb-2"/>
+                      {info.title}
                     {/* <div class="h-10 bg-gradient-to-br from-purple-600 to-darkPink text-center text-white font-extrabold text-xl">
         {info.type}
           </div> */}
@@ -457,7 +461,7 @@ function Projects()
     </div>
     <div class="h-auto  grid grid-rows-2 items-center justify-center grid-flow-col gap-4 text-center">
   <div class="text-gradient font-extrabold text-white text-4xl font-bold"> Projects <div>
-      </div> <div class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 mt-1 h-2  w-96">  </div> </div>
+      </div> <div class="bg-gradient-to-r from-darkPink via-darkOrange to-darkGreen mt-2 h-3  w-96"> </div> </div>
       </div>
       <div class="h-auto  grid grid-rows-2 items-center justify-center grid-flow-col gap-4 text-center">
   <div class="text-gradient font-extrabold text-white text-3xl font-bold"> Featured Projects <div>
@@ -474,7 +478,7 @@ function Projects()
         
       </Grid>
   </Grid> 
-  <div class="mt-8 bg-gradient-to-r from-purple-600 via-darkPink to-pink-500 ">
+  <div class="mt-8 bg-gradient-to-r from-darkPink via-darkOrange to-darkGreen">
 	<div class=" grid grid cols-3 gap-4">
     
   </div>
@@ -487,7 +491,7 @@ function Projects()
       {projectInformation.map((data) =>
       <Grid item xs={0}>
         <div class="p-10">  
-   
+ 
     <div class="max-w-sm  w-72 rounded overflow-hidden shadow-lg">
       <img class="w-full" class="lazy" src={data.img} alt="Mountain"/>
       <div class="px-6 py-4 bg-white ">
@@ -514,37 +518,91 @@ function Projects()
       </div>
       
   <div class="mt-8"/>
-  <div class="h-auto  grid grid-rows-2 items-center justify-center grid-flow-col gap-4 text-center">
+  <div class="h-auto  grid grid-rows-2 items-center justify-center grid-flow-col gap-10 text-center">
   <div class="text-gradient font-extrabold text-white text-3xl font-bold"> All Projects <div>
       </div> </div>
       </div>
-  <div class="flex flex-wrap flex-initial flex-row justify-center">
+  <div class="flex flex-wrap flex-row gap-3 items-center justify-center">
       {allProjects.map((data) =>
+      {
+        if(data.type === "Web Development")
+  {
+          return (
+            <div id={data.title.replace(/\s/g, '')}> 
+  <a id="link" class="hover:no-underline "
+      onClick={() => getProjectInfo(data)}
+     >
+    <div class="w-80 m-5 h-72 bg-gradient-to-r from-darkPink via-darkPink to-lightPink rounded-lg font-bold text-4xl text-white flex  justify-center flex-col items-center text-center p-3 transition duration-500 ease-in-out 0 transform hover:-translate-y-1 hover:no-underline hover:scale-110 ">
+      <div class="hover:hidden">
+        
+      </div>
+      <text class="text-center block hover:hidden"> {data.title} </text>
+      <text class="text-2xl font-medium block hover:hidden"> {data.type}  </text>
       
+      </div>
+      </a>
+      </div>
+          )
+  }
+  else if(data.type === "Machine Learning")
+  {
+    return (
       <div id={data.title.replace(/\s/g, '')}> 
-         
-       <div class="p-10">  
-       <img class="shadow rounded-full w-72 object-fill h-72 align-middle border-non" src={data.img} alt="Mountain"/>
-   <div class="max-w-sm  mt-4 w-72 rounded overflow-hidden shadow-lg">
-    
-     <div class="px-6 py-4 text-white ">
-     <a id="link" class="inline-block font-bold text-pink-500 no-underline hover:text-pink-300 hover:text-underline text-center h-10 p-0 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out m-2"
-           onClick={() => getProjectInfo(data)}
-          >
-       <text class="text-2xl"> {data.title} </text>
-       </a>
-       <br/>
-       <text> {data.year} &#8226; {data.purpose} <br/> </text>
-       {data.description}
-       <br/>
-     
-    
-   </div>
- </div>
- </div>
-      
+<a id="link" class=" hover:no-underline "
+onClick={() => getProjectInfo(data)}
+>
+<div class="w-80 m-5 h-72 bg-gradient-to-r from-darkOrange via-darkOrange to-lightOrange rounded-lg font-bold text-4xl text-white flex  justify-center flex-col items-center text-center p-3 transition duration-500 ease-in-out 0 transform hover:-translate-y-1 hover:no-underline hover:scale-110 ">
+<div class="hover:hidden">
   
-  </div>
+</div>
+<text class="text-center block hover:hidden"> {data.title} </text>
+<text class="text-2xl font-medium block hover:hidden"> {data.type}  </text>
+
+</div>
+</a>
+</div>
+    )
+  }
+  else
+  {
+    return (
+      <div id={data.title.replace(/\s/g, '')}> 
+<a id="link" class=" hover:no-underline"
+onClick={() => getProjectInfo(data)}
+>
+<div class="w-80 m-5 h-72 bg-gradient-to-r from-darkGreen via-darkGreen to-lightGreen rounded-lg font-bold text-4xl text-white flex  justify-center flex-col items-center text-center p-3 transition duration-500 ease-in-out 0 transform hover:-translate-y-1 hover:no-underline hover:scale-110 ">
+<div class="hover:hidden">
+  
+</div>
+<text class="text-center block hover:hidden"> {data.title} </text>
+<text class="text-2xl font-medium block hover:hidden"> {data.type}  </text>
+
+</div>
+</a>
+</div>
+    )
+  }
+
+  
+  <div id={data.title.replace(/\s/g, '')}> 
+  <a id="link" class="inline-block font-bold text-pink-500 no-underline hover:text-pink-300 hover:text-underline text-center h-10 p-0 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out m- hover:no-underline"
+      onClick={() => getProjectInfo(data)}
+     >
+    <div class="w-80 m-5 h-72 bg-gradient-to-r from-darkPink via-darkPink to-lightPink rounded-lg font-bold text-4xl text-white flex  justify-center flex-col items-center text-center p=3">
+      <div class="hover:hidden">
+        
+      </div>
+      <text class="text-center block hover:hidden"> {data.title} </text>
+      <text class="text-2xl font-medium block hover:hidden"> {data.type}  </text>
+      
+      </div>
+      </a>
+      </div>
+
+}
+      
+       
+     
       )}
 
 </div>

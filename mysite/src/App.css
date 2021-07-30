@@ -3,6 +3,8 @@
   background-color:#272727;
   height: 100vh;
   width: 100vw;
+  padding:0px;
+  margin: 0px;
   position: fixed;
   overflow-y: auto;
   overflow-x: hidden;
@@ -24,13 +26,10 @@
   /* background-color: beige; */
 }
 
-
-#grid2
-{
-  
-  /* background-color: purple; */
+*{
+  -webkit-padding-start: 0px;
 }
-
+body { -webkit-text-size-adjust: none; }
 /* width */
 ::-webkit-scrollbar {
   width: 8px;
@@ -481,11 +480,6 @@ color: #FFFFFF;
   grid-area: Tool-Div;
 }
 
-.Downloads { grid-area: Downloads; }
-
-.Tabs { grid-area: Tabs; margin-top: 10px; position:;}
-
-.Socials { grid-area: Socials; }
 
 /* Linkedin */
 #LinkedIn
@@ -497,7 +491,6 @@ margin-right: 10px;
 width: calc(5px + 2vw);
 height: calc(10px + 1vh);
 left: 0px;
-
 color: #FFFFFF;
 }
 

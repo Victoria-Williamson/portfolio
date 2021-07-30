@@ -13,6 +13,19 @@ color: #FFFCFC;
 
 
 }
+#about-border
+{
+   
+    width: 100vw;
+    height: 700px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+    background-image: url('./Filler.png');
+    object-fit: cover;
+}
 #text-info
 {
     background-color: transparent;

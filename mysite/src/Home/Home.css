@@ -30,6 +30,57 @@ color: #FFFFFF;
   width: calc(1px + 1vw);
   height: calc(6px + 1vh);
 }
+
+#blob1-desktop
+{
+  position: relative;
+  width: calc(100px + 35vw);
+  height: 947px;
+  right:0px;
+  top: -121px;
+  
+}
+.centercontent{
+  position:absolute;
+  max-width: 100vw;
+  max-height: 100vh;
+  height: auto;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  border:2px solid tomato;
+  transform: translate(-50%, -50%);
+}
+#blob-1
+{
+  background: no-repeat 95% 95% url("blob_desktop/blob1-desktop.svg");
+}
+#blob2-desktop
+{
+  
+position: relative;
+width: calc(100px + 35vw);
+height: 548px;
+left: -400px;
+top: 0px;
+
+}
+
+#blob3-desktop
+{
+  position: relative;
+  width: calc(100px + 35vw);
+height: 487px;
+left: 0px;
+top: 551px;
+}
+svg {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
 #bigGridHome
 {
   position: relative;
