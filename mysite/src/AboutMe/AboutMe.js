@@ -94,92 +94,88 @@ function AboutMe()
 </div>
 </div>
 
-<section class="text-gray-400 body-font">
-  <div class="container  mx-auto">
-  <div class="h-auto  flex-wrap flex grid grid-rows-2 items-center justify-center sm:grid-flow-row grid-flow-col gap-2 text-center">
+<div class="h-auto  flex-wrap flex grid grid-rows-2 items-center justify-center sm:grid-flow-row grid-flow-col gap-2 text-center">
   <div class="text-gradient font-extrabold text-white text-3xl font-bold"> Coursework <div>
       </div> <div class="bg-gradient-to-r from-darkPink via-darkOrange to-darkGreen mt-1 h-3  w-72">  </div> </div>
 </div>
-    <div class="flex flex-wrap -m-4">
-      <div class="p-4 lg:w-1/3 sm:w-1/2 w-full text-white text-lg font-base">
-        <h2 class="font-medium title-font tracking-widest text-white mb-4 text-lg font-bold text-center sm:text-left">Statistics and Math Courses</h2>
-        <nav class="flex flex-col sm:items-start sm:text-left text-center items-center -mb-1 space-y-2">
-          <a>
+<div class="flex flex-wrap flex-row gap-2 justify-center">
+<div class="mx-8">
+<h2 class="font-medium title-font tracking-widest text-white mb-4 text-lg font-bold text-center sm:text-left">Statistics and Math Courses</h2>
+<li class="text-white list-none text-lg">
+<ul>
             <span class=" text-2xl w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
             <svg class="fill-current text-darkPink" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
              
             </span> Statistics 1 and 2
-          </a>
-          <a>
+    </ul>
+          <ul>
           <span class=" text-2xl w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
             <svg class="fill-current text-darkPink" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
              
             </span>Calculus 1,2, and 3
-          </a>
-          <a>
+          </ul>
+          <ul>
           <span class=" text-2xl w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
             <svg class="fill-current text-darkPink" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
              
             </span> Matrix and Linear Algebra
-          </a>
-        </nav>
-      </div>
-      <div class="p-4 lg:w-1/3 sm:w-1/2 w-full text-white text-lg font-base">
-        <h2 class="font-medium title-font tracking-widest text-white text-lg  font-bold mb-4 text-sm text-center sm:text-left">General Computer Science</h2>
-        <nav class="flex flex-col sm:items-start sm:text-left text-center items-center -mb-1 space-y-2">
-          <a>
-          <span class=" text-2xl w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+          </ul>
+</li>
+</div>
+<div class="mx-8">
+<h2 class="font-medium title-font tracking-widest text-white mb-4 text-lg font-bold text-center sm:text-left">General Computer Science</h2>
+<li class="text-white list-none text-lg">
+<ul>
+            <span class=" text-2xl w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
             <svg class="fill-current text-darkOrange" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
              
-            </span> C Programming 
-          </a>
-          <a>
-          <span class=" text-2xl w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+            </span> C Programming
+    </ul>
+    <ul>
+            <span class=" text-2xl w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
             <svg class="fill-current text-darkOrange" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
              
-            </span>Object Oriented Programming
-          </a>
-          <a>
-          <span class=" text-2xl w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+            </span> Object Oriented Programming
+    </ul>
+    <ul>
+            <span class=" text-2xl w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
             <svg class="fill-current text-darkOrange" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
              
-            </span>Data Structures
-          </a>
-          <a>
-          <span class=" text-2xl w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+            </span> Data Structures
+    </ul>
+    <ul>
+            <span class=" text-2xl w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
             <svg class="fill-current text-darkOrange" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
              
-            </span>Algorithm Analysis
-          </a>
-        </nav>
-      </div>
-      <div class="p-4 lg:w-1/3 sm:w-1/2 w-full text-white  text-lg">
-        <h2 class="font-medium title-font tracking-widest text-white mb-4 text-lg font-bold text-sm text-center sm:text-left">Electives</h2>
-        <nav class="flex flex-col sm:items-start sm:text-left text-left items-center -mb-1 space-y-2">
-          <a>
-          <span class=" text-2xl w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+            </span> Algorithm Analysis
+    </ul>
+         
+</li>
+</div>
+<div class="mx-8">
+<h2 class="font-medium title-font tracking-widest text-white mb-4 text-lg font-bold text-center sm:text-left">Electives</h2>
+<li class="text-white list-none text-lg">
+<ul>
+            <span class=" text-2xl w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
             <svg class="fill-current text-darkGreen" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
              
-            </span>Artificial Intelligence
-          </a>
-          <a>
-          <span class=" text-2xl w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+            </span> Artificial Intelligence
+    </ul>
+    <ul>
+            <span class=" text-2xl w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
             <svg class="fill-current text-darkGreen" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
              
-            </span>Robot Vision
-          </a>
-          <a>
-          <span class=" text-2xl w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+            </span> Robot Vision
+    </ul>
+    <ul>
+            <span class=" text-2xl w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
             <svg class="fill-current text-darkGreen" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
              
-            </span>Algorithms For Machine Learning
-          </a>
-        </nav>
-      </div>
-     
-    </div>
-  </div>
-</section>
+            </span> Algorithms For Machine Learning
+    </ul>
+</li>
+</div>
+</div>
 
       </div>
     
