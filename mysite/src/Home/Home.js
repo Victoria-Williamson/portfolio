@@ -16,7 +16,8 @@ import GetAppIcon from '@material-ui/icons/GetApp';
 function Home()
 {
     return <div class="">
-      <div class="flex h-screen justify-center items-center">
+      
+      <div class="flex h-screen text-center xl:justify-center">
     <div class="z-10 absolute text-center top-1/2 transform -translate-y-1/2  lg:mx-32"> 
     <div class="z-10 text-white  font-black text-4xl lg:text-7xl text-center"> Victoria Williamson </div>
       <div class="text-white font-extrabold text-xl lg:text-3xl text-center mt-2"> B.S Computer Science 23' and B.S Statistics 23' </div>

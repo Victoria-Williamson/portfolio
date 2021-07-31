@@ -99,8 +99,8 @@ function AboutMe()
       </div> <div class="bg-gradient-to-r from-darkPink via-darkOrange to-darkGreen mt-1 h-3  w-72">  </div> </div>
 </div>
 <div class="flex flex-wrap flex-row gap-2 justify-center">
-<div class="mx-8">
-<h2 class="font-medium title-font tracking-widest text-white mb-4 text-lg font-bold text-center sm:text-left">Statistics and Math Courses</h2>
+<div class="mx-8 my-4">
+<h2 class="font-medium title-font tracking-widest text-lightPink mb-4 text-lg font-bold text-center sm:text-left mt-3">Statistics and Math Courses</h2>
 <li class="text-white list-none text-lg">
 <ul>
             <span class=" text-2xl w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
@@ -122,8 +122,8 @@ function AboutMe()
           </ul>
 </li>
 </div>
-<div class="mx-8">
-<h2 class="font-medium title-font tracking-widest text-white mb-4 text-lg font-bold text-center sm:text-left">General Computer Science</h2>
+<div class="mx-8 my-4">
+<h2 class="font-medium title-font tracking-widest text-lightOrange mb-4 text-lg font-bold text-center sm:text-left text-darkPink mt-3">General Computer Science</h2>
 <li class="text-white list-none text-lg">
 <ul>
             <span class=" text-2xl w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
@@ -132,7 +132,7 @@ function AboutMe()
             </span> C Programming
     </ul>
     <ul>
-            <span class=" text-2xl w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+            <span class=" text-2xl  h-4 mr-2 rounded-full inline-flex items-center justify-center">
             <svg class="fill-current text-darkOrange" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
              
             </span> Object Oriented Programming
@@ -152,9 +152,9 @@ function AboutMe()
          
 </li>
 </div>
-<div class="mx-8">
-<h2 class="font-medium title-font tracking-widest text-white mb-4 text-lg font-bold text-center sm:text-left">Electives</h2>
-<li class="text-white list-none text-lg">
+<div class="mx-8 my-4">
+<h2 class="font-medium title-font tracking-widest  mb-4 text-lg font-bold text-center sm:text-left text-darkGreen mt-3">Electives</h2>
+<li class="text-white list-none text-lg ">
 <ul>
             <span class=" text-2xl w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
             <svg class="fill-current text-darkGreen" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
