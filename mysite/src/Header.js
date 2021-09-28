@@ -105,7 +105,7 @@ function Nav(props) {
           </div>
 
           <Disclosure.Panel className="sm:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1">
+            <div className="px-2 pt-2 pb-3 space-y-1 justify-center flex flex-col items-center">
               {navigation.map((item) => (
                 <button
                   key={item.name}
