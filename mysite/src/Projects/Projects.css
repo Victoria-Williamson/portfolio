@@ -47,15 +47,6 @@
 {
   width: calc(100vw - 10px);
 }
-.highlight {
-/*     box-shadow: 0 0 0 2px #FF4081; */
--webkit-animation: highlightBg 3s linear;
--o-animation: highlightBg 3s linear;
-animation: highlightBg 3s linear;
--webkit-animation-iteration-count: 2;
--o-animation-iteration-count: 2;
-animation-iteration-count: 2;
-}
 #card-img
 {
   height: 200px;

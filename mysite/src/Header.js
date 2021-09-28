@@ -13,6 +13,12 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 function Nav(props) {
+  function goToElement(name)
+  {
+    var element = document.querySelector(name);
+    element.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
+    element.classList.add('highlight');
+  }
   const [isOpen, setIsOpen] = useState(false);
   var navigation = [];
   if(props.current === "Home")
@@ -76,9 +82,9 @@ function Nav(props) {
                  
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
-                      <a
+                      <button
                         key={item.name}
-                        href={item.href}
+                        onClick={() => goToElement(item.href)}
                         className={classNames(
                           item.current ? ' text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-red-600 hover:no-underline font-black hover:text-lightPink' : 'text-white hover:no-underline hover:bg-lightPink hover:text-white',
                           'px-3 py-2 rounded-md text-lg md:flex-start justify-start uppercase font-black'
@@ -86,7 +92,7 @@ function Nav(props) {
                         aria-current={item.current ? 'page' : undefined}
                       >
                         {item.name}
-                      </a>
+                      </button>
                     ))}
                   </div>
                 </div>

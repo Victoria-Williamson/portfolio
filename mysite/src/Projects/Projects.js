@@ -109,7 +109,7 @@ function Projects()
       element.classList.add('highlight');
   
 
-      setTimeout(() => element.classList.remove('highlight'), 3000)
+      
     
     }
 
@@ -466,7 +466,7 @@ function Projects()
       </div> <div class="bg-gradient-to-r from-darkPink via-darkOrange to-darkGreen mt-2 h-3  w-96"> </div> </div>
       </div>
       <div class="h-auto  grid grid-rows-2 items-center justify-center grid-flow-col gap-4 text-center">
-  <div class="text-gradient font-extrabold text-white text-3xl font-bold"> Featured Projects <div>
+  <div class="text-gradient font-extrabold text-white text-3xl "> Featured Projects <div>
       </div> </div>
       </div>
       <Grid container
@@ -481,7 +481,7 @@ function Projects()
       </Grid>
   </Grid> 
   <div class="mt-8 bg-gradient-to-r from-darkPink via-darkOrange to-darkGreen">
-	<div class=" grid grid cols-3 gap-4">
+	<div class=" grid grid-cols-3 gap-4">
     
   </div>
   <Grid container

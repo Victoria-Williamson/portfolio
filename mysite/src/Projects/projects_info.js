@@ -11,41 +11,51 @@ export const projectInformation = [
     //     description: "Description",
     // },
     {
-        img: "https://images.unsplash.com/photo-1535982330050-f1c2fb79ff78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1934&q=80",
-        title: "AllKnightStudy",
-        languages: ["JavaScript", "CSS", "HTML", "React"],
+        img: "https://cdn.discordapp.com/attachments/887695713654419557/892551764778319972/unknown.png",
+        link: "https://stirup.co/",
+        github: "https://github.com/Victoria-Williamson/ContactManager",
+        title: "Contact Manager",
         type : "Web Development",
-        link: "https://github.com/Victoria-Williamson/ShellHacks2020-allKnightStudy",
-        github: "https://github.com/Victoria-Williamson/ShellHacks2020-allKnightStudy",
-        timeline: "September 2020",
-        description: "Worked on the frontend by importing and making fuctional design components and used firebase to create a database for the users",
-        ft: 0,
-        summary:" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dolor velit, mollis at purus non, pulvinar gravida nisl. Etiam diam enim, vestibulum eget rhoncus non, vehicula nec nisl. Mauris vel eleifend enim. Suspendisse potenti. Vestibulum ultrices orci id augue pellentesque, at sollicitudin lorem tempor. Ut malesuada elit vehicula, molestie nisl a, consectetur metus. Donec ultricies finibus magna sed venenatis. Sed cursus risus eget turpis tristique, ut tempus elit sagittis. Curabitur lacus tellus, maximus ut elit ut, rutrum porttitor leo. Donec consequat fermentum aliquam.",
+        year: "2021",
+        languages: ["JavaScript","CSS","HTML","PHP","Figma"],
+        tasks: ["Designed all UI using Figma", "Developed and Debugged API's in PHP for CRUD and Search Functionallity",],
+        purpose: "School",
+        timeline: "Fall 2021",
+        description: "Contact Manager is a basic CRUD + Search Application for Contacts!!",
+        summary:"Contact Manager is a basic CRUD + Search Application for Contacts!!",
+      
+    },
+    {
+        img: "https://cdn.discordapp.com/attachments/887695713654419557/892550221739995157/unknown.png",
+        github: "https://github.com/TBean18/Shellhacks-2021",
+        title: "Bulletin Buddy",
+        type : "Web Development",
+        link: "https://devpost.com/software/bulletin-buddy",
+        year: "2021",
+        languages: ["JavaScript","CSS","HTML","TailwindCSS","Figma"],
+        tasks: ["Designed all UI using Figma", "Worked on the front end to develop and connect components to APIs",],
+        purpose: "Hackathon",
+        timeline: "Fall 2021",
+        description: "Web Application for Organizing University Events",
+        summary: "Bulletin Buddy is the solution that students from all over have been waiting for to keep track of as well as organize their school events. Through the usage of Hubs, which are unique to each school, students may sign up, log in, and post events like Club meetings, study sessions, recreational activities, and other interest groups, all in one place for students to look at. Much like an actual bulletin board, students are able to post events and express interest in said events, all from the comfort of their web browser. By providing a platform designed for students with this in mind, we hope to solve the problem of expressing interest in a club or getting together to study due to simply not having the information required to attend events in one place. By making sure we get the notifications and having all of the scheduling information at our fingertips, Bulletin Buddy is our answer to the social downturn caused by the shift to online now that things are going back to in-person",
+        
+      
+    },
+    {
+        img: "https://cdn.discordapp.com/attachments/887695713654419557/892552829225562132/unknown.png",
+        title: "Portfolio Site",
+        languages: ["React", "Figma", "Material UI", "React Bootstrap", "Firebase", "Tailwind CSS"],
+        type : "Web Development",
+        year: "2021",
+        tasks: ["React", "Figma", "Material UI", "React Bootstrap", "Firebase"],
+        purpose: "Personal",
+        link: "https://victoria-williamson.github.io/portfolio/",
+        github: "https://github.com/Victoria-Williamson/portfolio",
+        timeline: "May 2021 - Current",
+        description: "The site you are looking at right now!",
+        summary:" The site you are looking at right now!",
         learned:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra ante in leo molestie sagittis. Cras a vestibulum nibh. Sed quis ante vitae metus vulputate fermentum. Praesent venenatis vel tortor vitae commodo. Aliquam varius, dui sit amet fringilla sollicitudin, erat ligula tempor diam, eu finibus erat diam dapibus nisi. Aliquam eu nunc sodales, interdum nibh sit amet, ornare nunc. Praesent lacus enim, vehicula bibendum accumsan eget, hendrerit at mauris. "
     },
-    {
-        img: "https://images.unsplash.com/photo-1473163928189-364b2c4e1135?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bWFwfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-        title: "GeoSkill",
-        languages: ["JavaScript", "CSS", "HTML", "React"],
-        type : "Web Development",
-        link: "https://www.youtube.com/watch?v=W5V7KygMbTk",
-        github: "https://github.com/Victoria-Williamson/geoSkill",
-        timeline: "October 2020",
-        description: "Created react components to handle API calls, designed the application, and created the front end",
-        ft:true,
-    },
-    {
-        img: "https://lh3.googleusercontent.com/pw/ACtC-3ej1Hq6IOxshfBV8Fr4Pk2ybc7vpgnjbWvLDFpLaVp_P-VDMBVwSxqKgqeFBvTXRVGxQbzkETRqaCwf5buWHEh87B-bOMpqMNrq_VYEJnq9jxi2MF9o9d0Rd0Z4n4A75GKkLErD33qAqm2x76j-NkAnvw=w1269-h912-no?authuser=0",
-        title: "Suggestify",
-        languages: ["JavaScript", "CSS", "HTML", "React"],
-        type : "Web Development",
-        link: "https://devpost.com/software/suggestify-j2cplv",
-        github: "https://github.com/Victoria-Williamson/Suggestify",
-        timeline: "November 2020",
-        description: "Created react components to handle API calls, designed the application, and created the front end",
-    },
-   
-
 ]
 
 export const allProjects =
@@ -188,7 +198,7 @@ export const allProjects =
         summary:"Convolutional Neural Network (CNN) model that determines whether or not someone has COVID-19, a virus, bacterial disease, or is not sick from an x-ray.",
     },
     {
-        img: "https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=649&q=80",
+        img: "https://cdn.discordapp.com/attachments/887695713654419557/892552829225562132/unknown.png",
         title: "Portfolio Site",
         languages: ["React", "Figma", "Material UI", "React Bootstrap", "Firebase", "Tailwind CSS"],
         type : "Web Development",
@@ -213,6 +223,21 @@ export const allProjects =
         timeline: "Summer 2021",
         description: "Coming Soon!",
         summary:"Coming Soon!",
+      
+    },
+    {
+        img: "https://user-images.githubusercontent.com/63255236/134984409-1896b6e1-69de-4c1e-a5f4-333d7ce4b209.png",
+        link: "https://stirup.co/",
+        github: "https://github.com/Victoria-Williamson/ContactManager",
+        title: "Contact Manager",
+        type : "Web Development",
+        year: "2021",
+        languages: ["JavaScript","CSS","HTML","PHP","Figma"],
+        tasks: ["Designed all UI using Figma", "Developed and Debugged API's in PHP for CRUD and Search Functionallity",],
+        purpose: "School",
+        timeline: "Fall 2021",
+        description: "Contact Manager is a basic CRUD + Search Application for Contacts!!",
+        summary:"Contact Manager is a basic CRUD + Search Application for Contacts!!",
       
     },
     {
@@ -251,5 +276,21 @@ export const allProjects =
         timeline: "Summer 2021",
         description: "Coming Soon!",
         summary:"Coming Soon!",
+    },
+    {
+        img: "https://cdn.discordapp.com/attachments/887695713654419557/892550221739995157/unknown.png",
+        github: "https://github.com/TBean18/Shellhacks-2021",
+        title: "Bulletin Buddy",
+        type : "Web Development",
+        link: "https://devpost.com/software/bulletin-buddy",
+        year: "2021",
+        languages: ["JavaScript","CSS","HTML","TailwindCSS","Figma"],
+        tasks: ["Designed all UI using Figma", "Worked on the front end to develop and connect components to APIs",],
+        purpose: "Hackathon",
+        timeline: "Fall 2021",
+        description: "Web Application for Organizing University Events",
+        summary: "Bulletin Buddy is the solution that students from all over have been waiting for to keep track of as well as organize their school events. Through the usage of Hubs, which are unique to each school, students may sign up, log in, and post events like Club meetings, study sessions, recreational activities, and other interest groups, all in one place for students to look at. Much like an actual bulletin board, students are able to post events and express interest in said events, all from the comfort of their web browser. By providing a platform designed for students with this in mind, we hope to solve the problem of expressing interest in a club or getting together to study due to simply not having the information required to attend events in one place. By making sure we get the notifications and having all of the scheduling information at our fingertips, Bulletin Buddy is our answer to the social downturn caused by the shift to online now that things are going back to in-person",
+        
+      
     },
 ]
