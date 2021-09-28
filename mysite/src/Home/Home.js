@@ -15,7 +15,6 @@ import Grid from '@material-ui/core/Grid';
 import GetAppIcon from '@material-ui/icons/GetApp';
 function Home() {
   return <div class="background">
-
     <div class="flex h-screen text-center flex-col items-center justify-center">
       <div class="flex h-screen flex-col w-screen gap-4 items-center justify-center lg:px-16">
         <img className="w-full object-contain lg:px-24 md:px-12 px-10" src={Title} />
@@ -40,21 +39,10 @@ function Home() {
             <a href="https://www.canva.com/design/DAEpp7QDs9s/YXxPaa7IRmjzm8URN-yTdg/view?utm_content=DAEpp7QDs9s&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton">
               <img className="transform hover:-translate-y-1 object-fit h-12 lg:h-20 w-full hover:scale-110 transition duration-500 ease-in-out" src={Resume} />
             </a>
-
           </div>
         </div>
       </div>
-
-
     </div>
-
-
-
-
-
-
-
-
   </div>
 }
 export default Home;
