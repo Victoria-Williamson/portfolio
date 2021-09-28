@@ -26,7 +26,7 @@ function AboutMe()
                          Hi ! I’m currently a rising junior majoring in Computer Science and Statistics at the University of Central Florida. I am originally from Kernersville, North Carolina but recently moved to Orlando, Florida to purse a degree. When I am not working or studying I spend a lot of my time exploring different resturants in Orlando and exploring the theme parks. 
                          </text>
                          <br/>
-                         <a href="https://victoria-williamson.github.io/resume/">
+                         <a href="https://www.canva.com/design/DAEpp7QDs9s/YXxPaa7IRmjzm8URN-yTdg/view?utm_content=DAEpp7QDs9s&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton">
                          <button class="mt-2 w-80 h-14 bg-darkOrange  text-white font-bold text-2xl hover:bg-lightOrange transform hover:-translate-y-1 hover:scale-110 transition duration-500 ease-in-out"> Resume </button>
                          </a>
                        

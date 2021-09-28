@@ -1,4 +1,5 @@
 *{
     -webkit-padding-start: 0px;
   }
-  body { -webkit-text-size-adjust: none; }
+  body { -webkit-text-size-adjust: none;
+    font-family: 'Encode Sans', sans-serif; }

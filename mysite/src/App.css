@@ -1,4 +1,9 @@
+body
+{
+  font-family: 'Encode Sans', sans-serif;
+}
 .App {
+  font-family: 'Encode Sans', sans-serif;
   text-align: center;
   background-color:#272727;
   height: 100vh;

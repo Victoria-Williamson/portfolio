@@ -247,3 +247,8 @@ left: 1006px;
 top: 652px;
 
   }
+  .background
+  {
+    background-image: url('./Background.svg');
+    background-size: cover;
+  }

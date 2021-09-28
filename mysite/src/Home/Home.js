@@ -1,145 +1,60 @@
 import React from 'react';
 import "./Home.css";
+import Title from "./title.svg";
 import Blob1 from "./blob_desktop/blob1-desktop.svg";
-import Resume from "./Resume";
 import { Fragment } from 'react'
 import { Menu, Transition } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/solid'
 import CV from "./CV";
-
-import GitHub from "./GitHub1.png";
+import Background from "./Background.svg";
+import GitHub from "./GitHub.svg";
 import LinkedIn from "./Linkedin_Logo.png";
-import Twitter from "./Twitter2.png";
-
+import Twitter from "./Twitter.svg";
+import Resume from "./Resume.svg";
 import Grid from '@material-ui/core/Grid';
 import GetAppIcon from '@material-ui/icons/GetApp';
-function Home()
-{
-    return <div class="">
-      
-      <div class="flex h-screen text-center xl:justify-center">
-    <div class="z-10 absolute text-center top-1/2 transform -translate-y-1/2  lg:mx-32"> 
-    <div class="z-10 text-white  font-black text-4xl lg:text-7xl text-center"> Victoria Williamson </div>
-      <div class="text-white font-extrabold text-xl lg:text-3xl text-center mt-2"> B.S Computer Science 23' and B.S Statistics 23' </div>
-      <div class="text-white px-8 font-bold text-lg lg:text-3xl text-center mt-2"> Interests in Front-End Engineering, UI/UX,Machine Learning and Data Science  </div>
-     
-      <br/>
-      <br/>
-      <div class="flex flex-row text-center lg:gap-4 gap-10 items-center justify-center">
-        
-  <div class="mx-2 "> 
-  <a href="https://github.com/Victoria-Williamson">
-  <svg class="transform hover:-translate-y-1 hover:scale-110 transition duration-500 ease-in-out" width="43" height="42" viewBox="0 0 43 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M14.3825 33.8183C14.3825 33.992 14.1831 34.131 13.9317 34.131C13.6456 34.157 13.4462 34.0181 13.4462 33.8183C13.4462 33.6446 13.6456 33.5057 13.897 33.5057C14.1571 33.4796 14.3825 33.6186 14.3825 33.8183ZM11.6863 33.4275C11.6256 33.6012 11.799 33.801 12.0591 33.8531C12.2845 33.9399 12.5446 33.8531 12.5966 33.6794C12.6486 33.5057 12.4839 33.3059 12.2238 33.2278C11.9984 33.167 11.747 33.2538 11.6863 33.4275ZM15.5181 33.2799C15.2667 33.3407 15.0933 33.5057 15.1194 33.7054C15.1454 33.8791 15.3708 33.992 15.6308 33.9312C15.8823 33.8704 16.0556 33.7054 16.0296 33.5317C16.0036 33.3667 15.7696 33.2538 15.5181 33.2799ZM21.2226 0C9.19819 0 0 9.14502 0 21.1907C0 30.8221 6.05121 39.0639 14.6946 41.9646C15.8042 42.1644 16.1944 41.4783 16.1944 40.9138C16.1944 40.3753 16.1683 37.4051 16.1683 35.5813C16.1683 35.5813 10.0998 36.884 8.8254 32.9933C8.8254 32.9933 7.8371 30.466 6.41532 29.8147C6.41532 29.8147 4.43004 28.4512 6.55403 28.4772C6.55403 28.4772 8.7127 28.6509 9.9004 30.7179C11.799 34.0702 14.9806 33.1062 16.2204 32.533C16.4198 31.1434 16.9833 30.1794 17.6075 29.6062C12.7613 29.0678 7.87177 28.3643 7.87177 20.0096C7.87177 17.6213 8.53065 16.4228 9.91774 14.8943C9.69234 14.3298 8.95544 12.0023 10.1431 8.99738C11.955 8.43287 16.125 11.3423 16.125 11.3423C17.8589 10.8559 19.7228 10.6041 21.5694 10.6041C23.4159 10.6041 25.2798 10.8559 27.0137 11.3423C27.0137 11.3423 31.1837 8.42419 32.9956 8.99738C34.1833 12.011 33.4464 14.3298 33.221 14.8943C34.6081 16.4315 35.4577 17.63 35.4577 20.0096C35.4577 28.3904 30.3514 29.0591 25.5052 29.6062C26.3028 30.2923 26.979 31.595 26.979 33.636C26.979 36.5627 26.953 40.1842 26.953 40.8964C26.953 41.4609 27.3518 42.147 28.4528 41.9472C37.1222 39.0639 43 30.8221 43 21.1907C43 9.14502 33.247 0 21.2226 0ZM8.42661 29.9536C8.31391 30.0405 8.33992 30.2402 8.4873 30.4052C8.62601 30.5442 8.8254 30.605 8.9381 30.4921C9.05081 30.4052 9.0248 30.2055 8.87742 30.0405C8.73871 29.9015 8.53931 29.8407 8.42661 29.9536ZM7.49032 29.2502C7.42964 29.3631 7.51633 29.502 7.68972 29.5889C7.82843 29.6757 8.00181 29.6497 8.0625 29.5281C8.12319 29.4152 8.03649 29.2762 7.8631 29.1894C7.68972 29.1373 7.55101 29.1633 7.49032 29.2502ZM10.2992 32.3419C10.1605 32.4548 10.2125 32.7154 10.4119 32.8804C10.6113 33.0801 10.8627 33.1062 10.9754 32.9672C11.0881 32.8543 11.0361 32.5938 10.8627 32.4288C10.672 32.229 10.4119 32.203 10.2992 32.3419ZM9.31089 31.0653C9.17218 31.1521 9.17218 31.3779 9.31089 31.5777C9.4496 31.7774 9.68367 31.8643 9.79637 31.7774C9.93508 31.6645 9.93508 31.4387 9.79637 31.239C9.675 31.0392 9.4496 30.9524 9.31089 31.0653Z" fill="white"/>
-</svg>
-  </a>
-  
-</div>
+function Home() {
+  return <div class="background">
 
-  <div class="mx-2">
-  <a href="https://twitter.com/ViWilliamson/" class="">
-    <svg class="transform hover:-translate-y-1 hover:scale-110 transition duration-500 ease-in-out" width="51" height="39" viewBox="0 0 51 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <div class="flex h-screen text-center flex-col items-center justify-center">
+      <div class="flex h-screen flex-col w-screen gap-4 items-center justify-center lg:px-16">
+        <img className="w-full object-contain lg:px-24 md:px-12 px-10" src={Title} />
+        <div class="flex flex-row  w-full text-center gap-5 items-center justify-center">
+          <div class="mx-2 ">
+            <a href="https://github.com/Victoria-Williamson">
+              <img className="transform hover:-translate-y-1 object-fit h-12 lg:h-20 w-full hover:scale-110 transition duration-500 ease-in-out" src={GitHub} />
+            </a>
+          </div>
+          <div class="mx-2">
+            <a href="https://twitter.com/ViWilliamson/" class="">
+              <img className="transform hover:-translate-y-1 object-fit h-12 lg:h-20 w-full hover:scale-110 transition duration-500 ease-in-out" src={Twitter} />
+            </a>
+          </div>
+          <div class="mx-2 ">
+            <a href="https://www.linkedin.com/in/victoria-williamson-8394331a1/">
+              <img className="transform hover:-translate-y-1 object-fit h-16 lg:h-28 w-full hover:scale-110 transition duration-500 ease-in-out" src={LinkedIn} />
+            </a>
+          </div>
 
-<path d="M45.3973 9.7195C45.4294 10.146 45.4294 10.5727 45.4294 10.9992C45.4294 24.0093 34.9999 39 15.9377 39C10.0651 39 4.60963 37.3851 0.0205994 34.5821C0.854996 34.6734 1.65719 34.7039 2.52369 34.7039C7.36935 34.7039 11.8301 33.1501 15.3922 30.4993C10.8353 30.4078 7.01641 27.5742 5.70066 23.6742C6.34253 23.7656 6.98431 23.8265 7.65829 23.8265C8.58889 23.8265 9.5196 23.7046 10.386 23.4914C5.63655 22.5773 2.07434 18.6164 2.07434 13.8328V13.711C3.4542 14.4422 5.05889 14.8992 6.75958 14.9601C3.96766 13.1929 2.13855 10.1765 2.13855 6.76399C2.13855 4.9359 2.65191 3.26012 3.55051 1.79761C8.653 7.76948 16.3228 11.6694 24.9231 12.0961C24.7627 11.3648 24.6664 10.6032 24.6664 9.84142C24.6664 4.41792 29.2875 0 35.0318 0C38.0162 0 40.7118 1.18828 42.6053 3.10781C44.9478 2.68127 47.1942 1.85857 49.1839 0.731255C48.4136 3.01646 46.777 4.936 44.627 6.15466C46.7129 5.94148 48.7347 5.39293 50.5959 4.63128C49.1841 6.5812 47.419 8.31785 45.3973 9.7195Z" fill="white"/>
-</svg>
-</a>
-</div>
-  <div class="mx-2 ">
-    <a href="https://www.linkedin.com/in/victoria-williamson-8394331a1/">
-    <svg class="transform hover:-translate-y-1 hover:scale-110 transition duration-500 ease-in-out" width="39" height="38" viewBox="0 0 39 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M8.77739 38H0.746063V12.6293H8.77739V38ZM4.7574 9.16855C2.18925 9.16855 0.106186 7.0819 0.106186 4.56265C0.106186 3.35256 0.596223 2.19203 1.4685 1.33637C2.34077 0.480706 3.52382 0 4.7574 0C5.99098 0 7.17404 0.480706 8.04631 1.33637C8.91858 2.19203 9.40862 3.35256 9.40862 4.56265C9.40862 7.0819 7.32469 9.16855 4.7574 9.16855ZM38.836 38H30.822V25.6497C30.822 22.7064 30.7615 18.9317 26.6464 18.9317C22.4708 18.9317 21.8309 22.1296 21.8309 25.4377V38H13.8082V12.6293H21.5109V16.0901H21.6234C22.6956 14.0968 25.3148 11.9932 29.2223 11.9932C37.3505 11.9932 38.8447 17.2437 38.8447 24.0635V38H38.836Z" fill="white"/>
-</svg>
-    </a>
-   
-</div>
-<div class="mx-2">
-  <a href="https://www.canva.com/design/DAEpp7QDs9s/YXxPaa7IRmjzm8URN-yTdg/view?utm_content=DAEpp7QDs9s&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton">
-  <svg class="transform hover:-translate-y-1 hover:scale-110 transition duration-500 ease-in-out" width="40" height="39" viewBox="0 0 40 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M18.7053 19.5076C18.2009 18.2889 18.211 15.9352 18.5036 15.9352C19.351 15.9352 19.2703 18.7459 18.7053 19.5076ZM18.5338 23.1029C17.7571 24.6416 16.7886 26.4012 15.6688 27.8789C17.5149 27.3457 19.6032 26.5688 22.0143 26.2107C20.7331 25.4795 19.5023 24.4283 18.5338 23.1029ZM9.0409 32.6092C9.0409 32.6701 10.3725 32.1978 12.5617 29.5471C11.8858 30.027 9.62601 31.4133 9.0409 32.6092ZM25.3736 12.1875H39.0935V37.1719C39.0935 38.185 38.0141 39 36.6723 39H2.77615C1.43443 39 0.354996 38.185 0.354996 37.1719V1.82812C0.354996 0.815039 1.43443 0 2.77615 0H22.9525V10.3594C22.9525 11.3648 24.042 12.1875 25.3736 12.1875ZM24.5666 25.2738C22.5489 24.3445 21.2072 23.0648 20.2589 21.1758C20.7129 19.7666 21.4291 17.6262 20.8844 16.2855C20.4102 14.0461 16.607 14.267 16.0623 15.7676C15.5578 17.1615 16.0219 19.1268 16.8794 21.6328C15.7092 23.7352 13.9841 26.5535 12.7634 28.1684C12.7533 28.1684 12.7533 28.176 12.7432 28.176C10.0094 29.2348 5.31837 31.5656 7.24521 33.3557C7.81014 33.8812 8.85931 34.1174 9.41416 34.1174C11.2199 34.1174 13.0156 32.7463 15.578 29.41C18.1808 28.7625 21.0357 27.9551 23.5477 27.6428C25.7368 28.5416 28.2992 29.1281 30.0041 29.1281C32.9498 29.1281 33.1516 26.6906 31.9914 25.8223C30.5892 24.7863 26.5136 25.0834 24.5666 25.2738ZM38.3873 7.99805L28.5009 0.533203C28.047 0.19043 27.4316 0 26.786 0H26.1807V9.75H39.0935V9.28535C39.0935 8.80547 38.8413 8.34082 38.3873 7.99805ZM30.912 27.4447C31.3256 27.2391 30.6598 26.5383 26.5943 26.7592C30.337 27.9627 30.912 27.4447 30.912 27.4447Z" fill="white"/>
-</svg>
+          <div class="mx-2">
+            <a href="https://www.canva.com/design/DAEpp7QDs9s/YXxPaa7IRmjzm8URN-yTdg/view?utm_content=DAEpp7QDs9s&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton">
+              <img className="transform hover:-translate-y-1 object-fit h-12 lg:h-20 w-full hover:scale-110 transition duration-500 ease-in-out" src={Resume} />
+            </a>
 
-  </a>
+          </div>
+        </div>
+      </div>
 
-</div>
-</div>
+
     </div>
-    <div class="h-screen w-screen grid grid-flow-col grid-cols-3 grid-rows-3 absolute z-0 gap-4">
-  <div class="lg:m-0 lg: relative absolute top-0 mr-20 row-start-1 col-start-1 col-span-1"><svg class="object-scale-down" width="1000" height="300">
-    <defs>  
-        <linearGradient id="logo-gradient2" x1="50%" y1="0%" x2="50%" y2="100%" > 
-            
-            <stop offset="0%" stop-color="#A9B947">
-                <animate attributeName="stop-color" values="#A9B947;#DF921B; #A9B947" dur="4s" repeatCount="indefinite"></animate>
-            </stop>
 
-            <stop offset="100%" stop-color="#DF921B">
-                <animate attributeName="stop-color" values="#DF921B;#A9B947; #DF921B" dur="4s" repeatCount="indefinite"></animate>
-            </stop>
 
-        </linearGradient> 
 
-    </defs>
-  
-    <g>
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M453.943 -300.017C538.97 -279.873 471.988 -182.399 553.846 -158.571C628.208 -136.925 745.687 -241.414 790.445 -202.066C839.675 -158.787 636.658 -120.616 654.14 -70.4008C668.771 -28.3714 859.591 -53.7441 856.973 -10.9664C854.462 30.0703 698.502 -2.52008 648.141 27.6355C612.514 48.9685 659.808 85.4512 648.568 113.825C630.228 160.122 647.253 247.544 561.646 245.979C461.965 244.157 458.756 153.345 398.757 109.259C376.695 93.0477 348.483 80.4256 319.457 68.0215C291.331 56.0026 261.61 46.1175 229.993 37.1404C168.241 19.6068 89.1715 18.1292 42.9077 -10.5009C-4.24273 -39.6796 -42.1149 -82.5255 -24.675 -120.46C-7.57162 -157.662 67.0675 -178.698 128.455 -196.578C182.828 -212.415 253.697 -200.126 306.98 -217.059C368.334 -236.557 388.901 -315.427 453.943 -300.017Z"fill="url(#logo-gradient2)"/>
-    </g>
-</svg></div>
-  <div></div>
-  <div><svg class="object-scale-down" width="800" height="800" viewBox="0 0 1110 947" viewBox="0 0 832 817">
-    <defs>  
-        <linearGradient id="logo-gradient3" x1="50%" y1="0%" x2="50%" y2="100%" > 
-            
-            <stop offset="0%" stop-color="#FF7A00">
-                <animate attributeName="stop-color" values="#FF7A00; #E3670C; #FF7A00" dur="4s" repeatCount="indefinite"></animate>
-            </stop>
 
-            <stop offset="100%" stop-color="#B4207A">
-                <animate attributeName="stop-color" values="#B4207A; #FF7A00; #B4207A" dur="4s" repeatCount="indefinite"></animate>
-            </stop>
 
-        </linearGradient> 
 
-    </defs>
-  
-    <g>
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M98.6157 128.818C163.875 113.086 175.534 -15.2409 240.483 1.50323C299.428 16.6997 214.307 115.249 240.289 165.342C258.036 199.561 322.86 187.53 351.336 215.23C383.992 246.997 442.104 298.444 411.246 331.642C369.604 376.441 284.751 344.505 221.073 355.369C198.361 359.244 171.065 359.18 156.205 375.153C126.54 407.041 144.761 487.094 98.6157 487C52.4084 486.906 70.585 407.053 41.1514 374.918C26.5883 359.018 -2.67217 364.493 -22.7019 354.549C-49.1889 341.399 -80.4194 330.95 -95.2663 307.19C-110.296 283.138 -108.408 252.92 -103.211 225.71C-97.898 197.888 -79.3377 174.614 -65.1421 149.454C-48.1477 119.334 -48.0051 66.7799 -10.902 62.1044C33.2771 56.5373 55.5197 139.207 98.6157 128.818Z" fill="url(#logo-gradient3)"/>
-    </g>
-</svg></div>
-  <div></div>
-  <div class="centerContent">
- 
- 
-  </div>
-  <div></div>
-  <div class="row-start-1 col-start-3 row-span-1"> 
-  <svg class="object-scale-down" width="800" height="800" >
-    <defs>  
-        <linearGradient id="logo-gradient" x1="50%" y1="0%" x2="50%" y2="100%" > 
-            
-            <stop offset="0%" stop-color="#A9B947">
-                <animate attributeName="stop-color" values="#A9B947; #E3670C; #B4207A; #A9B947" dur="4s" repeatCount="indefinite"></animate>
-            </stop>
 
-            <stop offset="100%" stop-color="#B4207A">
-                <animate attributeName="stop-color" values="#B4207A; #E3670C; #B4207A" dur="4s" repeatCount="indefinite"></animate>
-            </stop>
 
-        </linearGradient> 
-
-    </defs>
-  
-    <g>
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M566.963 136.69C674.589 106.608 761.361 -29.6942 867.035 5.87607C964.239 38.5955 954.106 177.626 970.564 272.545C983.19 345.36 931.536 417.734 950.852 489.268C979.691 596.07 1131.37 671.65 1107.45 779.497C1086.01 876.201 954.458 928.318 849.802 944.9C750.998 960.553 665.07 884.196 566.963 865.13C493.001 850.756 416.039 870.794 345.02 846.801C265.825 820.046 193.465 778.405 137.314 719.979C73.3913 653.467 -12.0077 577.601 1.40579 489.268C15.2035 398.405 133.487 359.29 202.099 293.346C253.611 243.836 288.368 177.696 355.624 148.819C420.816 120.828 498.197 155.911 566.963 136.69Z" fill="url(#logo-gradient)"/>
-    </g>
-</svg></div>
-  <div class="row-start-1 col-start-3 row-span-2"></div>
-</div>
-  </div>
-      
-    
-      
-     
-      
   </div>
 }
 export default Home;
