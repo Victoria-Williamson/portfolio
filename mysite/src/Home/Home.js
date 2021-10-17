@@ -8,7 +8,7 @@ import { ChevronDownIcon } from '@heroicons/react/solid'
 import CV from "./CV";
 import Background from "./Background.svg";
 import GitHub from "./GitHub.svg";
-import LinkedIn from "./Linkedin_Logo.png";
+import LinkedIn from "./LinkedIn.svg";
 import Twitter from "./Twitter.svg";
 import Resume from "./Resume.svg";
 import Grid from '@material-ui/core/Grid';
@@ -31,7 +31,7 @@ function Home() {
           </div>
           <div class="mx-2 ">
             <a href="https://www.linkedin.com/in/victoria-williamson-8394331a1/">
-              <img className="transform hover:-translate-y-1 object-fit h-16 lg:h-28 w-full hover:scale-110 transition duration-500 ease-in-out" src={LinkedIn} />
+              <img className="transform hover:-translate-y-1 object-fit h-12 lg:h-28 w-auto hover:scale-110 transition duration-500 ease-in-out" src={LinkedIn} />
             </a>
           </div>
 
