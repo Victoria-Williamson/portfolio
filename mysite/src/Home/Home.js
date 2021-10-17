@@ -1,11 +1,6 @@
 import React from 'react';
 import "./Home.css";
 import Title from "./title.svg";
-import Blob1 from "./blob_desktop/blob1-desktop.svg";
-import { Fragment } from 'react'
-import { Menu, Transition } from '@headlessui/react'
-import { ChevronDownIcon } from '@heroicons/react/solid'
-import CV from "./CV";
 import Background from "./Background.svg";
 import GitHub from "./GitHub.svg";
 import LinkedIn from "./LinkedIn.svg";
@@ -31,7 +26,7 @@ function Home() {
           </div>
           <div class="mx-2 ">
             <a href="https://www.linkedin.com/in/victoria-williamson-8394331a1/">
-              <img className="transform hover:-translate-y-1 object-fit h-12 lg:h-28 w-auto hover:scale-110 transition duration-500 ease-in-out" src={LinkedIn} />
+              <img className="transform hover:-translate-y-1 object-fit h-12 lg:h-28 w- hover:scale-110 transition duration-500 ease-in-out" src={LinkedIn} />
             </a>
           </div>
 

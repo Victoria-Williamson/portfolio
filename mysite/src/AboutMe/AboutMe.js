@@ -132,10 +132,10 @@ function AboutMe()
             </span> C Programming
     </ul>
     <ul>
-            <span class=" text-2xl  h-4 mr-2 rounded-full inline-flex items-center text-center justify-center">
+            <span class=" text-2xl w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
             <svg class="fill-current text-darkOrange" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
              
-            </span> Object Oriented Programming
+            </span> Java
     </ul>
     <ul>
             <span class=" text-2xl w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">

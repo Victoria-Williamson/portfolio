@@ -1,24 +1,10 @@
 import "./Projects.css"
 import React, {useState} from 'react';
-import GitHubIcon from '@material-ui/icons/GitHub';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
-import GridList from '@material-ui/core/GridList';
-import GridListTile from '@material-ui/core/GridListTile';
-import GridListTileBar from '@material-ui/core/GridListTileBar';
-import IconButton from '@material-ui/core/IconButton';
-import StarBorderIcon from '@material-ui/icons/StarBorder';
-import Container from '@material-ui/core/Container';
-import Card from 'react-bootstrap/Card';
-import Accordion from 'react-bootstrap/Accordion';
-import Button from '@material-ui/core/Button';
-import Chip from '@material-ui/core/Chip';
-import WebIcon from '@material-ui/icons/Web';
 import { Fragment} from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import { XIcon } from '@heroicons/react/outline'
-import Paper from '@material-ui/core/Paper';
-import Typography from '@material-ui/core/Typography';
 import { projectInformation, allProjects}  from "./projects_info";
 
 const useStyles = makeStyles((theme) => ({
