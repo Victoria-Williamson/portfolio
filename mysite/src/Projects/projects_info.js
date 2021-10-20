@@ -26,7 +26,7 @@ export const projectInformation = [
       
     },
     {
-        img: "https://cdn.discordapp.com/attachments/887695713654419557/892550221739995157/unknown.png",
+        img: "https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/671/041/datas/gallery.jpg",
         github: "https://github.com/TBean18/Shellhacks-2021",
         title: "Bulletin Buddy",
         type : "Web Development",

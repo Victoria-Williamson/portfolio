@@ -137,6 +137,13 @@ function Experiences()
         information: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec eros gravida, blandit lorem at, sollicitudin quam. Curabitur eleifend ante at metus rutrum, non faucibus felis pretium. Cras malesuada lacus vel orci aliquam, quis ultricies nisl sagittis. Morbi magna nunc, egestas at placerat a, tempor ac est. Pellentesque lacinia, nulla et rutrum semper, leo elit sodales nisi, non accumsan ex dolor ut ante. Proin a tellus dui.",
         link: "https://1000logos.net/wp-content/uploads/2021/04/UPS-logo.png"
     },
+    {
+      id:"UPS Hackathon",
+      title: "TA",
+      date: "August 2021",
+      information: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec eros gravida, blandit lorem at, sollicitudin quam. Curabitur eleifend ante at metus rutrum, non faucibus felis pretium. Cras malesuada lacus vel orci aliquam, quis ultricies nisl sagittis. Morbi magna nunc, egestas at placerat a, tempor ac est. Pellentesque lacinia, nulla et rutrum semper, leo elit sodales nisi, non accumsan ex dolor ut ante. Proin a tellus dui.",
+      link: "https://1000logos.net/wp-content/uploads/2021/04/UPS-logo.png"
+  },
  
     ]
     function GoTo(id)
@@ -177,6 +184,30 @@ function Experiences()
 
 
 <VerticalTimeline>
+<VerticalTimelineElement
+    className="vertical-timeline-element--work "
+    iconStyle={{ background: 'rgb(178, 179, 64)', color: '#fff' }}
+    date="August 2021 - Current"
+  >
+     <Toolbar id={"UCF-TA"}/>
+     <div className="h-auto w-auto">
+     <img src={experienceData[0].link} class="object-contain h-48 w-full "/>
+     </div>
+     <div class="mt-2">
+
+         <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"> Python </span>
+         <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"> Scikit-Learn </span>
+         <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"> TensorFlow </span>
+     </div>
+        
+    <h3 className="vertical-timeline-element-title font-bold"> Algorithms for Machine Learning</h3>
+    <h4 className="vertical-timeline-element-subtitle font-bold"> TA </h4>
+    <p>
+    <ul class="list-disc text-left ml-3">
+      <li> Held weekly office hours to assist students with understanding supervised learning and unsupervised learning machine learning models and tactics. </li>
+      </ul>
+    </p>
+  </VerticalTimelineElement>
             <VerticalTimelineElement
     className="vertical-timeline-element--work "
     iconStyle={{ background: 'rgb(178, 179, 64)', color: '#fff' }}
