@@ -173,7 +173,7 @@ function Experiences()
           <div  onClick={() => GoTo("ACM-W")} class="text-lginline-block text-gray-50 font-bold no-underline hover:text-pink-500 hover:text-underline text-center h-10 p-0 md:h-auto md:p-4 transform hover:scale-125 m-2  duration-300 ease-in-out"> ACM-W </div>
         <div  class="text-lg inline-block text-gray-50 font-bold no-underline hover:text-pink-500 hover:text-underline text-center h-10 p-0 md:h-auto md:p-4 m-2 transform hover:scale-125 duration-300 ease-in-out" > UCF </div>
 </div> */}
-<div id="timeline">
+<div id="timeline" className="px-8 lg:p-36">
 
 
 <VerticalTimeline>

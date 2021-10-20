@@ -18,7 +18,7 @@ function Home() {
     <div class="flex h-screen  w-screen text-center flex-col items-center justify-center">
       <div class="flex h-screen flex-col w-screen gap-4 items-center justify-center lg:px-16">
         <img className="w-full object-contain lg:px-24 md:px-12 px-10" src={Title} />
-        <div class="flex flex-row  w-screen px-2 text-center gap-5 items-center justify-center">
+        <div class="flex flex-row  w-screen text-center gap-5 items-center justify-center">
           <div class="mx-2 ">
             <a href="https://github.com/Victoria-Williamson">
               <img className="transform hover:-translate-y-1 object-fit h-12 lg:h-20 w-full hover:scale-110 transition duration-500 ease-in-out" src={GitHub} />
@@ -31,7 +31,7 @@ function Home() {
           </div>
           <div class="mx-2 ">
             <a href="https://www.linkedin.com/in/victoria-williamson-8394331a1/">
-              <img className="transform hover:-translate-y-1 object-fit h-16 lg:h-28 w-full hover:scale-110 transition duration-500 ease-in-out" src={LinkedIn} />
+              <img className="transform hover:-translate-y-1 object-fit h-12 lg:h-20 w-full hover:scale-110 transition duration-500 ease-in-out" src={LinkedIn} />
             </a>
           </div>
 
