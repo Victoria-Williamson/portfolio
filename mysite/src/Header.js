@@ -1,10 +1,8 @@
 import React, { useState } from "react";
-import LinkedIn from "./LinkedIn.svg";
-import ResumeButton from "./ResumeButton.svg";
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
-import Blob from "./Group.png";
+import Blob from "./Images/Group.png";
 import "./Header.css";
 
 

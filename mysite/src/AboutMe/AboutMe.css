@@ -23,7 +23,7 @@ color: #FFFCFC;
     align-items: center;
     justify-content: center;
     justify-content: center;
-    background-image: url('./Filler.png');
+    background-image: url('./images/Filler.png');
     object-fit: cover;
 }
 #text-info
@@ -64,7 +64,7 @@ border-radius: 200px;
 background: #FFFFFF;
 box-shadow: 0 0 40px #A749BC;
 
-background-image: url("./me.jpg");
+background-image: url("./images/me.jpg");
 background-size:     cover;                      /* <------ */
 background-repeat:   no-repeat;
 background-position: center center;              /* optional, center the image */

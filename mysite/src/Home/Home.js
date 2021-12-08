@@ -1,11 +1,10 @@
 import React from 'react';
 import "./Home.css";
-import Title from "./title.svg";
-import Background from "./Background.svg";
-import GitHub from "./GitHub.svg";
-import LinkedIn from "./LinkedIn.svg";
-import Twitter from "./Twitter.svg";
-import Resume from "./Resume.svg";
+import Title from "./images/title.svg";
+import GitHub from "./images/GitHub.svg";
+import LinkedIn from "./images/LinkedIn.svg"
+import Twitter from "./images/Twitter.svg";
+import Resume from "./images/Resume.svg";
 import Grid from '@material-ui/core/Grid';
 import GetAppIcon from '@material-ui/icons/GetApp';
 function Home() {

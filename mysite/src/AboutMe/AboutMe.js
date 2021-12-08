@@ -1,9 +1,6 @@
 import React from 'react';
 import "./AboutMe.css";
-import filler from "./Filler.png";
-import fullPic from "./fullPic.jpg";
-import Me from "./me.jpg";
-import Self from "./LinkedIn-Self.png"
+import Self from "./images/LinkedIn-Self.png"
 import Grid from '@material-ui/core/Grid';
 function AboutMe()
 {
