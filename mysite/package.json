@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://Victoria-Williamson.github.io/portfolio",
+  "homepage": "https://VictoriaWilliamson.com",
   "private": true,
   "dependencies": {
     "@carbon/grid": "^10.27.0",
