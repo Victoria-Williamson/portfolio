@@ -18,7 +18,7 @@ function AboutMe()
                         <div class="w-screen h-60 dark:bg-gray-800 flex flex-col items-center">
                         <img class="object-fit h-60 p-4" src={Self}>
                           </img></div>
-                        <div class="w-full h-72 mx-5 bg-gray-100 text-center font-medium p-3">
+                        <div class="w-full h-full mx-5 bg-gray-100 text-center font-medium p-3">
                          <text>
                          Hi ! I’m currently a rising junior majoring in Computer Science and Statistics at the University of Central Florida. I am originally from Kernersville, North Carolina but recently moved to Orlando, Florida to purse a degree. When I am not working or studying I spend a lot of my time exploring different resturants in Orlando and exploring the theme parks. 
                          </text>
