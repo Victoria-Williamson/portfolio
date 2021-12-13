@@ -5,10 +5,7 @@ import GitHub from "./images/GitHub.svg";
 import LinkedIn from "./images/LinkedIn.svg"
 import Twitter from "./images/Twitter.svg";
 import Resume from "./images/Resume.svg";
-import Grid from '@material-ui/core/Grid';
-import GetAppIcon from '@material-ui/icons/GetApp';
 function Home() {
-  // fixing background
   return <div class="background">
     <div class="flex h-screen  w-screen text-center flex-col items-center justify-center">
       <div class="flex h-screen flex-col w-screen gap-4 items-center justify-center lg:px-16">
