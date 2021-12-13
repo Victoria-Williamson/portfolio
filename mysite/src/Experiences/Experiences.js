@@ -167,7 +167,7 @@ function Experiences()
     }
     const classes = useStyles();
     return(
-        <div class="mt-4">
+        <div class="mt-5">
               <div class="h-auto  grid grid-rows-2 items-center justify-center grid-flow-col gap-4 text-center">
   <div class="text-gradient font-extrabold text-white text-4xl font-bold"> Timeline <div>
       </div> <div class="bg-gradient-to-r from-darkPink via-darkOrange to-darkGreen mt-2 h-3  w-96">  </div> </div>

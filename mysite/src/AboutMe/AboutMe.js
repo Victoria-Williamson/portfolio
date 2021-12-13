@@ -5,7 +5,7 @@ import Grid from '@material-ui/core/Grid';
 function AboutMe()
 {
     return (
-        <div class="relative h-full w-screen">
+        <div class="relative h-full w-screen mt-5">
             
             <div class="h-auto  grid grid-rows-2 items-center justify-center grid-flow-col gap-4 text-center">
   <div class="text-gradient font-extrabold text-white text-4xl font-bold"> About Me <div>
@@ -36,7 +36,7 @@ function AboutMe()
       </div> <div class="bg-gradient-to-r from-darkPink via-darkOrange to-darkGreen  mt-1 h-3  w-72">  </div> </div>
 </div>
 <div class="h-auto ">
-<div class="flex flex-wrap text-center justify-center px-10">
+<div class="flex flex-wrap text-center justify-center px-10 lg:px-64">
 <div class="lg:w-32 lg:h-32 h-20 w-20 m-2 inline-flex items-center justify-center rounded-full bg-white mb-5 flex-shrink-0">
          <img  class="w-5/6 h-5/6" src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"/>
   </div>
@@ -57,7 +57,7 @@ function AboutMe()
   </div>
 </div>
 </div>
-<div class="h-auto mt-5  flex-wrap flex grid grid-rows-2 items-center justify-center sm:grid-flow-row grid-flow-col gap-2 text-center">
+<div class="h-auto mt-5  lg:px-64 flex-wrap flex grid grid-rows-2 items-center justify-center sm:grid-flow-row grid-flow-col gap-2 text-center">
   <div class="text-gradient font-extrabold text-white text-3xl font-bold"> Frameworks <div>
       </div> <div class="bg-gradient-to-r from-darkPink via-darkOrange to-darkGreen  mt-1 h-3  w-72">  </div> </div>
       

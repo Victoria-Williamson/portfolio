@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
-import Blob from "./Images/Group.png";
 import "./Header.css";
 
 
