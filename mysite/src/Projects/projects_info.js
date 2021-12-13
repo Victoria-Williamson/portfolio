@@ -213,19 +213,6 @@ export const allProjects =
         learned:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra ante in leo molestie sagittis. Cras a vestibulum nibh. Sed quis ante vitae metus vulputate fermentum. Praesent venenatis vel tortor vitae commodo. Aliquam varius, dui sit amet fringilla sollicitudin, erat ligula tempor diam, eu finibus erat diam dapibus nisi. Aliquam eu nunc sodales, interdum nibh sit amet, ornare nunc. Praesent lacus enim, vehicula bibendum accumsan eget, hendrerit at mauris. "
     },
     {
-        img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3RhdGlzdGljc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-        title: "Classification ML Project",
-        type : "Machine Learning",
-        year: "2021",
-        languages: ["Coming Soon"],
-        tasks: ["Coming Soon"],
-        purpose: "Personal",
-        timeline: "Summer 2021",
-        description: "Coming Soon!",
-        summary:"Coming Soon!",
-      
-    },
-    {
         img: "https://user-images.githubusercontent.com/63255236/134984409-1896b6e1-69de-4c1e-a5f4-333d7ce4b209.png",
         link: "https://stirup.co/",
         github: "https://github.com/Victoria-Williamson/ContactManager",
@@ -239,43 +226,6 @@ export const allProjects =
         description: "Contact Manager is a basic CRUD + Search Application for Contacts!!",
         summary:"Contact Manager is a basic CRUD + Search Application for Contacts!!",
       
-    },
-    {
-        img: "https://images.unsplash.com/photo-1617266195275-9a77970de375?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
-        title: "Regression ML Project",
-        year: "2021",
-        type : "Machine Learning",
-        languages: ["Coming Soon"],
-        tasks: ["Coming Soon"],
-        purpose: "Personal",
-        timeline: "Summer 2021",
-        description: "Coming Soon!",
-        summary:"Coming Soon!",
-    },
-    {
-        img: "https://images.unsplash.com/photo-1615951242364-00662a4feb14?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80s",
-        title: "CV ML Project",
-        year: "2021",
-        type : "Machine Learning",
-        languages: ["Coming Soon"],
-        tasks: ["Coming Soon"],
-        purpose: "Personal",
-        timeline: "Summer 2021",
-        description: "Coming Soon!",
-        summary:"Coming Soon!",
-    },
-    {
-        img: "https://images.unsplash.com/photo-1601814268052-1027b7330ea4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
-        title: "NN ML Project",
-       
-        type : "Machine Learning",
-        year: "2021",
-        languages: ["Coming Soon"],
-        tasks: ["Coming Soon"],
-        purpose: "Personal",
-        timeline: "Summer 2021",
-        description: "Coming Soon!",
-        summary:"Coming Soon!",
     },
     {
         img: "https://cdn.discordapp.com/attachments/887695713654419557/892550221739995157/unknown.png",

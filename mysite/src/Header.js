@@ -1,10 +1,7 @@
 import React, { useState } from "react";
-import LinkedIn from "./LinkedIn.svg";
-import ResumeButton from "./ResumeButton.svg";
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
-import Blob from "./Group.png";
 import "./Header.css";
 
 
@@ -86,8 +83,8 @@ function Nav(props) {
                         key={item.name}
                         onClick={() => goToElement(item.href)}
                         className={classNames(
-                          item.current ? ' text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-red-600 hover:no-underline font-black hover:text-lightPink' : 'text-white hover:no-underline hover:bg-lightPink hover:text-white',
-                          'px-3 py-2 rounded-md text-lg md:flex-start justify-start uppercase font-black'
+                          item.current ? ' text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-red-600 hover:no-underline font-black hover:text-lightPink' : 'text-white hover:no-underline hover:bg-lightPink hover:text-white font-bold',
+                          'px-3 py-2 rounded-md text-sm md:flex-start justify-start uppercase'
                         )}
                         aria-current={item.current ? 'page' : undefined}
                       >

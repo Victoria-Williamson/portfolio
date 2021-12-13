@@ -1,14 +1,11 @@
 import React from 'react';
 import "./AboutMe.css";
-import filler from "./Filler.png";
-import fullPic from "./fullPic.jpg";
-import Me from "./me.jpg";
-import Self from "./LinkedIn-Self.png"
+import Self from "./images/LinkedIn-Self.png"
 import Grid from '@material-ui/core/Grid';
 function AboutMe()
 {
     return (
-        <div class="relative h-full w-screen">
+        <div class="relative h-full w-screen mt-5">
             
             <div class="h-auto  grid grid-rows-2 items-center justify-center grid-flow-col gap-4 text-center">
   <div class="text-gradient font-extrabold text-white text-4xl font-bold"> About Me <div>
@@ -21,7 +18,7 @@ function AboutMe()
                         <div class="w-screen h-60 dark:bg-gray-800 flex flex-col items-center">
                         <img class="object-fit h-60 p-4" src={Self}>
                           </img></div>
-                        <div class="w-full h-72 mx-5 bg-gray-100 text-center font-medium p-3">
+                        <div class="w-full h-full mx-5 bg-gray-100 text-center font-medium p-3">
                          <text>
                          Hi ! I’m currently a rising junior majoring in Computer Science and Statistics at the University of Central Florida. I am originally from Kernersville, North Carolina but recently moved to Orlando, Florida to purse a degree. When I am not working or studying I spend a lot of my time exploring different resturants in Orlando and exploring the theme parks. 
                          </text>
@@ -39,7 +36,7 @@ function AboutMe()
       </div> <div class="bg-gradient-to-r from-darkPink via-darkOrange to-darkGreen  mt-1 h-3  w-72">  </div> </div>
 </div>
 <div class="h-auto ">
-<div class="flex flex-wrap text-center justify-center px-10">
+<div class="flex flex-wrap text-center justify-center px-10 lg:px-64">
 <div class="lg:w-32 lg:h-32 h-20 w-20 m-2 inline-flex items-center justify-center rounded-full bg-white mb-5 flex-shrink-0">
          <img  class="w-5/6 h-5/6" src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"/>
   </div>
@@ -60,7 +57,7 @@ function AboutMe()
   </div>
 </div>
 </div>
-<div class="h-auto mt-5  flex-wrap flex grid grid-rows-2 items-center justify-center sm:grid-flow-row grid-flow-col gap-2 text-center">
+<div class="h-auto mt-5  lg:px-64 flex-wrap flex grid grid-rows-2 items-center justify-center sm:grid-flow-row grid-flow-col gap-2 text-center">
   <div class="text-gradient font-extrabold text-white text-3xl font-bold"> Frameworks <div>
       </div> <div class="bg-gradient-to-r from-darkPink via-darkOrange to-darkGreen  mt-1 h-3  w-72">  </div> </div>
       
@@ -152,7 +149,7 @@ function AboutMe()
          
 </li>
 </div>
-<div class="mx-8 my-4">
+<div class="mx-8 mt-4">
 <h2 class="font-medium title-font tracking-widest  mb-4 text-lg font-bold text-center sm:text-left text-darkGreen mt-3">Electives</h2>
 <li class="text-white list-none text-lg ">
 <ul>

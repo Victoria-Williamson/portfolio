@@ -19,7 +19,7 @@ module.exports = {
 
       },
       backgroundImage: theme => ({
-        'heropattern': "url('./AboutMe/Filler.png')",
+        'heropattern': "url('./AboutMe/images/Filler.png')",
       })
       
     },
