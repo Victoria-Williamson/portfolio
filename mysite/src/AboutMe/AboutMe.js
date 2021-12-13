@@ -149,7 +149,7 @@ function AboutMe()
          
 </li>
 </div>
-<div class="mx-8 my-4">
+<div class="mx-8 mt-4">
 <h2 class="font-medium title-font tracking-widest  mb-4 text-lg font-bold text-center sm:text-left text-darkGreen mt-3">Electives</h2>
 <li class="text-white list-none text-lg ">
 <ul>
