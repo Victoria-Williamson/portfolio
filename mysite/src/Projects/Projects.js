@@ -507,7 +507,7 @@ function Projects()
       
   <div class="mt-8"/>
   <div class="h-auto  grid grid-rows-2 items-center justify-center grid-flow-col gap-10 text-center">
-  <div class="text-gradient font-extrabold text-white text-3xl font-bold"> All Projects <div>
+  <div class="mt-8 -mb-8 text-gradient font-extrabold text-white text-3xl font-bold"> All Projects <div>
       </div> </div>
       </div>
   <div class="flex flex-wrap flex-row gap-3 items-center justify-center">
