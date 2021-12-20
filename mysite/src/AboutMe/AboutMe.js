@@ -19,17 +19,17 @@ function AboutMe()
                         <div class="w-screen h-72 dark:bg-gray-800 flex flex-col items-center">
                         <img class="object-fit h-72 p-4" src={Self}>
                           </img></div>
-                        <div class="w-full h-full mx-5 bg-white text-center font-medium p-3 shadow mb-4 rounded-xl">
+                        <div class="w-full h-full mx-5 bg-white text-center font-medium p-3 shadow mb-4 rounded-lg">
                          <text>
                          Hi! I’m currently a rising junior majoring in Computer Science and Statistics at the University of Central Florida. I am originally from Kernersville, North Carolina but recently moved to Orlando, Florida to purse a degree. When I am not working or studying I spend a lot of my time exploring different resturants in Orlando and exploring the theme parks. 
                          </text>
                          <br/>
                          
-                       
-                        </div>
-                        <a href="https://www.canva.com/design/DAEpp7QDs9s/YXxPaa7IRmjzm8URN-yTdg/view?utm_content=DAEpp7QDs9s&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton">
-                         <button class="mt-2 w-80 h-14 bg-darkOrange rounded-xl text-white font-bold text-2xl hover:bg-lightOrange transform hover:-translate-y-1 hover:scale-110 transition duration-500 ease-in-out shadow"> Resume </button>
+                         <a href="https://www.canva.com/design/DAEpp7QDs9s/YXxPaa7IRmjzm8URN-yTdg/view?utm_content=DAEpp7QDs9s&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton">
+                         <button class="mt-2 w-80 h-14 bg-darkOrange rounded-xl text-white font-bold text-2xl hover:bg-lightOrange transform hover:-translate-y-1 hover:scale-110 transition duration-500 ease-in-out"> Resume </button>
                          </a>
+                        </div>
+                       
                     </div>
                 </div>
 </div>
