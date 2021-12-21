@@ -59,7 +59,7 @@ function App(props) {
         <Nav current="Home"/>  
       </AppBar>
       <Toolbar id="home" />
-      <div class="grid grid-flow-row auto-rows-auto margin-auto">
+      <div class="flex flex-col">
       
       <Home />
      

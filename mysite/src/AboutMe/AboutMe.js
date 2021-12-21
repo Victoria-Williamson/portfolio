@@ -6,10 +6,9 @@ import { data } from "./AboutMe_Info";
 function AboutMe()
 {
     return (
-        <div class="relative h-full w-screen mt-5">
-            
+        <div class="mt-5">
             <div class="h-auto  grid grid-rows-2 items-center justify-center grid-flow-col gap-4 text-center">
-  <div class="text-gradient font-extrabold text-white text-4xl font-bold"> About Me <div>
+  <div class="text-gradient font-extrabold text-white text-4xl"> About Me <div>
       </div> <div class="bg-gradient-to-r from-darkPink via-darkOrange to-darkGreen mt-1 h-3  w-96">  </div> </div>
 </div>
 
@@ -17,12 +16,12 @@ function AboutMe()
 <div class="flex items-center w-screen justify-center absolute z-10 ">
                     <div class="flex flex-col items-center justify-center w-96 lg:items-center rounded bg
                      ">
-                        <div class="w-screen h-72 dark:bg-gray-800 flex flex-col items-center">
+                        <div class="w-screen h-72 flex flex-col items-center">
                         <img class="object-fit h-72 p-4" src={Self}>
                           </img></div>
                         <div class="w-full h-full mx-5 bg-white text-center font-medium p-3 shadow mb-4 rounded-lg">
                          <text>
-                         Hi! I’m currently a rising junior majoring in Computer Science and Statistics at the University of Central Florida. I am originally from Kernersville, North Carolina but recently moved to Orlando, Florida to purse a degree. When I am not working or studying I spend a lot of my time exploring different resturants in Orlando and exploring the theme parks. 
+                         Hi! I’m currently a junior majoring in Computer Science and Statistics at the University of Central Florida. I am originally from Kernersville, North Carolina but recently moved to Orlando, Florida to purse a degree. When I am not working or studying I spend a lot of my time exploring different resturants in Orlando and exploring the theme parks. 
                          </text>
                          <br/>
                          
@@ -34,11 +33,10 @@ function AboutMe()
                     </div>
                 </div>
 </div>
-  <div class="h-auto grid mt-5 grid-rows-2 items-center justify-center sm:grid-flow-row grid-flow-col gap-2 text-center">
+  <div class="grid mt-5 grid-rows-2 items-center justify-center sm:grid-flow-row grid-flow-col gap-2 text-center">
   <div class="text-gradient font-bold text-white text-3xl"> Languages <div>
       </div> <div class="bg-gradient-to-r from-darkPink via-darkOrange to-darkGreen  mt-1 h-3  w-72">  </div> </div>
 </div>
-<div class="h-auto ">
 <div class="flex flex-wrap text-center justify-center px-10 lg:px-64">
 {data.languages.map((lang) =>
 {
@@ -50,7 +48,7 @@ function AboutMe()
        )
 })} 
 </div>
-</div>
+
 <div class="h-auto mt-5  lg:px-64 flex-wrap flex grid grid-rows-2 items-center justify-center sm:grid-flow-row grid-flow-col gap-2 text-center">
   <div class="text-gradient font-extrabold text-white text-3xl font-bold"> Frameworks <div>
       </div> <div class="bg-gradient-to-r from-darkPink via-darkOrange to-darkGreen  mt-1 h-3  w-72">  </div> </div>
@@ -69,13 +67,13 @@ function AboutMe()
 </div>
 </div>
 
-<div class="h-auto  flex-wrap flex  items-center justify-center gap-2 text-center">
-  <div class="text-gradient font-extrabold text-white text-3xl font-bold"> Coursework <div>
+<div class="flex-wrap flex  items-center justify-center gap-2 text-center">
+  <div class="text-gradient font-extrabold text-white text-3xl"> Coursework <div>
       </div> <div class="bg-gradient-to-r from-darkPink via-darkOrange to-darkGreen mt-1 h-3  w-72">  </div> </div>
 </div>
-<div class="flex flex-wrap flex-row gap-2 justify-center">
-<div class="mx-8 my-4">
-<h2 class="font-medium title-font tracking-widest text-lightPink mb-4 text-lg font-bold text-center sm:text-left mt-3">Statistics and Math Courses</h2>
+<div class="flex flex-col lg:grid lg:grid-cols-3 gap-2 justify-center mt-4">
+<div class="mx-8">
+<h2 class="title-font tracking-widest text-lightPink text-lg font-bold text-center sm:text-left mt-3">Statistics and Math Courses</h2>
 <li class="text-white list-none text-lg">
 {data.math.map((course) =>
 {
@@ -91,7 +89,7 @@ function AboutMe()
 </li>
 </div>
 <div class="mx-8">
-<h2 class="font-medium title-font tracking-widest text-lightOrange mb-4 text-lg font-bold text-center sm:text-left text-darkPink mt-3">General Computer Science</h2>
+<h2 class="title-font tracking-widest text-lightOrange text-lg font-bold text-center sm:text-left mt-3">General Computer Science</h2>
 <li class="text-white list-none text-center text-lg">
 {data.compSci.map((course) =>
 {
@@ -107,7 +105,7 @@ function AboutMe()
 </li>
 </div>
 <div class="mx-8">
-<h2 class="font-medium title-font tracking-widest  mb-4 text-lg font-bold text-center sm:text-left text-darkGreen mt-3">Electives</h2>
+<h2 class="title-font tracking-widest  mb-4 text-lg font-bold text-center sm:text-left text-darkGreen">Electives</h2>
 <li class="text-white list-none text-lg ">
 {data.electives.map((course) =>
 {
