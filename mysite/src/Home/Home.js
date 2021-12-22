@@ -10,7 +10,7 @@ import Grid from '@material-ui/core/Grid';
 import GetAppIcon from '@material-ui/icons/GetApp';
 function Home() {
   // fixing background
-  return <div class="background">
+  return <div class="background m-0 p-0 h-screen">
     <div class="flex h-screen  w-screen text-center flex-col items-center justify-center">
       <div class="flex h-screen flex-col w-screen gap-4 items-center justify-center lg:px-16">
         <img className="w-full xl:w-5/6 xl:max-w-6xl object-contain lg:px-32 md:px-12 px-10 mb-4" src={Title} />

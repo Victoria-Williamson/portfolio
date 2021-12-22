@@ -48,6 +48,8 @@ function scrollFunction() {
 
   
 
+  if (!navigation[0].current)
+  {
   return (
     <div >
           <Disclosure as="nav" className="bg-transparent">
@@ -66,17 +68,21 @@ function scrollFunction() {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="flex-1 flex items-center justify-center">
+              <div className="flex-1 flex">
               
-                <div className="hidden sm:block sm:ml-6">
-                 
-                  <div className="flex space-x-4">
+                <div className="hidden sm:block sm:ml-6 w-full">
+               
+                  <div className="flex space-x-4 items-center w-full">
+                  <text className="w-full text-xl font-bold flex justify-start">
+                      Victoria Williamson
+                      </text>
+                      <div className="flex justify-end  w-full">
                     {navigation.map((item) => (
                       <button
                         key={item.name}
                         onClick={() => goToElement(item.href)}
                         className={classNames(
-                          item.current ? ' text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-red-600 hover:no-underline font-black hover:text-lightPink' : 'text-white hover:no-underline hover:bg-lightPink hover:text-white font-bold',
+                          item.current ? ' text-lightPink hover:no-underline font-semibold  hover:bg-gray-700 ' : 'text-white hover:no-underline  hover:bg-gray-700    font-normal',
                           'px-3 py-2 rounded-md text-sm md:flex-start justify-start uppercase'
                         )}
                         aria-current={item.current ? 'page' : undefined}
@@ -84,6 +90,7 @@ function scrollFunction() {
                         {item.name}
                       </button>
                     ))}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -118,6 +125,14 @@ function scrollFunction() {
     </Disclosure>
     </div>
   );
+                  }
+                  else
+                  {
+                    return(
+                      <>
+                      </>
+                    )
+                  }
 }
 
 export default Nav;

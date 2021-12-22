@@ -1,6 +1,7 @@
 import './App.css';
 import React, { useEffect, useState } from 'react';
 import Home from "./Home/Home";
+import Skills from "./AboutMe/Skills";
 import Activities from "./Activities/Activities";
 import Experiences from "./Experiences/Experiences";
 import AboutMe from "./AboutMe/AboutMe";
@@ -19,18 +20,21 @@ function App(props) {
   const [thumbnails, setThumbnails] = useState([
     { name: 'Home', href: '#home', current: true },
       { name: 'About', href: '#about', current: false },
+      { name: 'Skills', href: '#skills', current: false },
       { name: 'Timeline', href: '#experiences', current: false },
-      { name: 'Projects', href: '#projects', current: false },
+      { name: 'Projects', href: '#projects', current: false }
+      
   ])
 
   function determineWithinView()
   {
+    console.log('home2',document.getElementById("home2"));
     var old = thumbnails;
     var updatedThumbnails = []
     var prevTrue = -1;
     var foundTrue = false;
     var count = 0;
-    console.log(document.getElementById("aboutThing"));
+  
     thumbnails.forEach((thumb) =>
     {
       if (thumb.current)
@@ -106,14 +110,15 @@ function App(props) {
       <AppBar color="primary">
         <Nav thumbnails={thumbnails}/>  
       </AppBar>
-      <Toolbar id="home" />
+      <div id="home"/>
       <div class="flex flex-col">
       
       <Home />
      
       <Toolbar id="about"/>
       <AboutMe id="aboutThing" />
-      
+      <Toolbar id="skills"/>
+      <Skills/>
       <Toolbar id="activities"/>
       <Activities/>
       <Toolbar id="experiences" />
