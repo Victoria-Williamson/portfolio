@@ -481,7 +481,7 @@ function Projects()
         <div class="p-10">  
  
     <div class="max-w-sm  w-72 rounded overflow-hidden shadow-lg">
-      <img class="w-full" class="lazy" src={data.img} alt="Mountain"/>
+      <img class="w-auto bg-darkBlack h-60 object-contain" class="lazy" src={data.img} alt="Project Image"/>
       <div class="px-6 py-4 bg-white ">
         <div class="font-bold text-xl mb-2"> {data.title} </div>
         <p class="text-gray-700 text-base">
@@ -507,7 +507,7 @@ function Projects()
       
   <div class="mt-8"/>
   <div class="h-auto  grid grid-rows-2 items-center justify-center grid-flow-col gap-10 text-center">
-  <div class="text-gradient font-extrabold text-white text-3xl font-bold"> All Projects <div>
+  <div class="mt-8 -mb-8 text-gradient font-extrabold text-white text-3xl font-bold"> All Projects <div>
       </div> </div>
       </div>
   <div class="flex flex-wrap flex-row gap-3 items-center justify-center">

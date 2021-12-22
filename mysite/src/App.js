@@ -1,5 +1,7 @@
 import './App.css';
+import React, { useEffect, useState } from 'react';
 import Home from "./Home/Home";
+import Skills from "./AboutMe/Skills";
 import Activities from "./Activities/Activities";
 import Experiences from "./Experiences/Experiences";
 import AboutMe from "./AboutMe/AboutMe";
@@ -15,6 +17,56 @@ import ReactNotification from 'react-notifications-component';
 
 function App(props) {
 
+  const [thumbnails, setThumbnails] = useState([
+    { name: 'Home', href: '#home', current: true },
+      { name: 'About', href: '#about', current: false },
+      { name: 'Skills', href: '#skills', current: false },
+      { name: 'Timeline', href: '#experiences', current: false },
+      { name: 'Projects', href: '#projects', current: false }
+      
+  ])
+
+  function determineWithinView()
+  {
+    console.log('home2',document.getElementById("home2"));
+    var old = thumbnails;
+    var updatedThumbnails = []
+    var prevTrue = -1;
+    var foundTrue = false;
+    var count = 0;
+  
+    thumbnails.forEach((thumb) =>
+    {
+      if (thumb.current)
+      {
+        prevTrue = count;
+      }
+      var bounding = document.querySelector(thumb.href).getBoundingClientRect();
+  
+      var value = ((
+        bounding.top >= 0 &&
+        bounding.left >= 0 &&
+        bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+      ))
+      if (value)
+      {
+        foundTrue = true;
+      }
+
+      thumb.current = value;
+      updatedThumbnails.push(thumb);
+      count++;
+    })
+
+    
+    if (foundTrue)
+    {
+      setThumbnails(updatedThumbnails);
+    }
+   
+    
+  }
+  
   const useStyles = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
@@ -53,18 +105,20 @@ function App(props) {
     }
   
   return (
-    <div className="App">
+    <div className="App" onScroll={() => (determineWithinView())}>
            <ReactNotification/>
       <AppBar color="primary">
-        <Nav current="Home"/>  
+        <Nav thumbnails={thumbnails}/>  
       </AppBar>
-      <Toolbar id="home" />
-      <div class="grid grid-flow-row auto-rows-auto margin-auto">
+      <div id="home"/>
+      <div class="flex flex-col">
       
       <Home />
      
       <Toolbar id="about"/>
-      <AboutMe  />
+      <AboutMe id="aboutThing" />
+      <Toolbar id="skills"/>
+      <Skills/>
       <Toolbar id="activities"/>
       <Activities/>
       <Toolbar id="experiences" />

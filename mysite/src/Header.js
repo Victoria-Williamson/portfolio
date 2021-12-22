@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
+import Resume from "./Home/images/Resume.svg";
 import "./Header.css";
 
 
@@ -10,53 +11,48 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 function Nav(props) {
+  console.log('props',props);
+  const [scroll, setScroll] = useState(0)
+
+  useEffect(() => {
+    document.addEventListener("scroll", () => {
+      console.log(window.scrollY);
+      const scrollCheck = window.scrollY < 100
+      if (scrollCheck !== scroll) {
+        setScroll(scrollCheck)
+      }
+    })
+  })
   function goToElement(name)
   {
     var element = document.querySelector(name);
     element.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
     element.classList.add('highlight');
   }
-  const [isOpen, setIsOpen] = useState(false);
-  var navigation = [];
-  if(props.current === "Home")
-  {
-    navigation =  [
-      { name: 'Home', href: '#home', current: false },
-      { name: 'About', href: '#about', current: false },
-      { name: 'Timeline', href: '#experiences', current: false },
-      { name: 'Projects', href: '#projects', current: false },
-    ]
-  }
-  if(props.current === "About")
-  {
-    navigation =  [
-      { name: 'Home', href: '#home', current: false},
-      { name: 'About', href: '#about', current: true },
-      { name: 'Timeline', href: '#experiences', current: false },
-      { name: 'Projects', href: '#projects', current: false },
-    ]
-  }
-  if(props.current === "Timeline")
-  {
-    navigation =  [
-      { name: 'Home', href: '#home', current: false },
-      { name: 'About', href: '#about', current: false },
-      { name: 'Timeline', href: '#experiences', current: true},
-      { name: 'Projects', href: '#projects', current: false },
-    ]
-  }
-  if(props.current === "Projects")
-  {
-    navigation =  [
-      { name: 'Home', href: '#home', current: false },
-      { name: 'About', href: '#about', current: false },
-      { name: 'Timeline', href: '#experiences', current: false },
-      { name: 'Projects', href: '#projects', current: true },
-    ]
-  }
 
+  // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  console.log("here", window.scrollY);
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("navbar").style.padding = "30px 10px";
+    console.log("option 1");
+  } else {
+    document.getElementById("navbar").style.padding = "80px 10px";
+    console.log("option 2");
+}
+}
+  const [isOpen, setIsOpen] = useState(false);
+  var navigation = props.thumbnails;
+
+
+  
+
+  if (!navigation[0].current)
+  {
   return (
-    <div>
+    <div >
           <Disclosure as="nav" className="bg-transparent">
       {({ open }) => (
         <>
@@ -73,17 +69,21 @@ function Nav(props) {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="flex-1 flex items-center justify-center">
+              <div className="flex-1 flex">
               
-                <div className="hidden sm:block sm:ml-6">
-                 
-                  <div className="flex space-x-4">
+                <div className="hidden sm:block sm:ml-6 w-full">
+               
+                  <div className="flex space-x-4 items-center w-full">
+                  <text className="w-full text-xl font-bold flex justify-start">
+                      Victoria Williamson
+                      </text>
+                      <div className="flex justify-end  w-full">
                     {navigation.map((item) => (
                       <button
                         key={item.name}
                         onClick={() => goToElement(item.href)}
                         className={classNames(
-                          item.current ? ' text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-red-600 hover:no-underline font-black hover:text-lightPink' : 'text-white hover:no-underline hover:bg-lightPink hover:text-white font-bold',
+                          item.current ? ' text-lightPink hover:no-underline font-semibold  hover:bg-gray-700 ' : 'text-white hover:no-underline  hover:bg-gray-700    font-normal',
                           'px-3 py-2 rounded-md text-sm md:flex-start justify-start uppercase'
                         )}
                         aria-current={item.current ? 'page' : undefined}
@@ -91,6 +91,16 @@ function Nav(props) {
                         {item.name}
                       </button>
                     ))}
+                     <div class="text-white hover:no-underline  hover:bg-gray-700    font-normal',
+                          'px-3 py-2 rounded-md text-sm md:flex-start justify-start uppercase">
+            <a href="https://www.canva.com/design/DAEpp7QDs9s/YXxPaa7IRmjzm8URN-yTdg/view?utm_content=DAEpp7QDs9s&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton" class='text-white hover:no-underline  hover:bg-gray-700    font-normal
+                          px-3 py-2 rounded-md text-sm md:flex-start justify-start uppercase'>
+             
+                Resume
+              
+            </a>
+          </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -101,7 +111,8 @@ function Nav(props) {
             </div>
           </div>
 
-          <Disclosure.Panel className="sm:hidden">
+          <div className="sm:hidden ">
+          <Disclosure.Panel >
             <div className="px-2 pt-2 pb-3 space-y-1 justify-center flex flex-col items-center">
               {navigation.map((item) => (
                 <button
@@ -118,11 +129,20 @@ function Nav(props) {
               ))}
             </div>
           </Disclosure.Panel>
+          </div>
         </>
       )}
     </Disclosure>
     </div>
   );
+                  }
+                  else
+                  {
+                    return(
+                      <>
+                      </>
+                    )
+                  }
 }
 
 export default Nav;

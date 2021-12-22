@@ -1,5 +1,16 @@
 export const experienceData = [
 	{
+		id: "Google",
+		where: "Google",
+		title: "Software Engineering Intern",
+		date: "May 2022 - August 2022",
+		information: [
+			"Upcoming experience, more details will be added later.",
+		],
+		link: "https://blog.hubspot.com/hubfs/image8-2.jpg",
+		skills: [],
+	},
+	{
 		id: "UR",
 		where: "VarLab",
 		title: "Undergraduate Research Assistant",
