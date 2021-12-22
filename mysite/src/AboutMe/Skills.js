@@ -49,8 +49,8 @@ function Skills()
   <div class="text-gradient font-extrabold text-white text-3xl"> Coursework <div>
       </div> </div>
 </div>
-<div class="flex flex-col lg:grid lg:grid-cols-3 gap-2 justify-center mt-4">
-<div class="mx-8">
+<div class="flex flex-col lg:grid lg:grid-cols-3 gap-2 justify-center mt-4 lg:gap-0 lg:mx-20">
+<div class="mx-8 px-5">
 <h2 class="title-font tracking-widest text-lightPink text-lg font-bold text-center sm:text-left mt-3">Statistics and Math Courses</h2>
 <li class="text-white list-none text-lg">
 {data.math.map((course) =>
@@ -66,7 +66,7 @@ function Skills()
 })} 
 </li>
 </div>
-<div class="mx-8">
+<div class="mx-8 px-5">
 <h2 class="title-font tracking-widest text-lightOrange text-lg font-bold text-center sm:text-left mt-3">General Computer Science</h2>
 <li class="text-white list-none text-center text-lg">
 {data.compSci.map((course) =>
@@ -82,8 +82,8 @@ function Skills()
 })} 
 </li>
 </div>
-<div class="mx-8">
-<h2 class="title-font tracking-widest text-lg font-bold text-center sm:text-left text-darkGreen mt-3">Electives</h2>
+<div class="mx-8 px-5">
+<h2 class="title-font tracking-widest text-lg font-bold text-center sm:text-left text-darkGreen mt-3 ">Electives</h2>
 <li class="text-white list-none text-lg ">
 {data.electives.map((course) =>
 {
