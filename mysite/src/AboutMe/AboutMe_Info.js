@@ -44,7 +44,7 @@ export const data =
         },
         {
             title: 'Numpy',
-            image:'ttps://user-images.githubusercontent.com/50221806/86498201-a8bd8680-bd39-11ea-9d08-66b610a8dc01.png',
+            image:'https://user-images.githubusercontent.com/50221806/86498201-a8bd8680-bd39-11ea-9d08-66b610a8dc01.png',
         },
         {
             title: 'React',

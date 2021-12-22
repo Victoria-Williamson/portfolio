@@ -17,7 +17,7 @@ function AboutMe()
                     <div class="flex flex-col items-center justify-center w-96 lg:items-center rounded bg
                      ">
                         <div class="w-screen h-72 flex flex-col items-center">
-                        <img class="object-fit h-72 p-4" src={Self}>
+                        <img class="object-fit h-72 p-10" src={Self}>
                           </img></div>
                         <div class="w-full h-full mx-5 bg-white text-center font-medium p-3 shadow mb-4 rounded-lg">
                          <text>
@@ -105,7 +105,7 @@ function AboutMe()
 </li>
 </div>
 <div class="mx-8">
-<h2 class="title-font tracking-widest  mb-4 text-lg font-bold text-center sm:text-left text-darkGreen">Electives</h2>
+<h2 class="title-font tracking-widest text-lg font-bold text-center sm:text-left text-darkGreen mt-3">Electives</h2>
 <li class="text-white list-none text-lg ">
 {data.electives.map((course) =>
 {
