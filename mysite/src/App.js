@@ -1,4 +1,5 @@
 import './App.css';
+import React, { useEffect, useState } from 'react';
 import Home from "./Home/Home";
 import Activities from "./Activities/Activities";
 import Experiences from "./Experiences/Experiences";
@@ -15,6 +16,53 @@ import ReactNotification from 'react-notifications-component';
 
 function App(props) {
 
+  const [thumbnails, setThumbnails] = useState([
+    { name: 'Home', href: '#home', current: true },
+      { name: 'About', href: '#about', current: false },
+      { name: 'Timeline', href: '#experiences', current: false },
+      { name: 'Projects', href: '#projects', current: false },
+  ])
+
+  function determineWithinView()
+  {
+    var old = thumbnails;
+    var updatedThumbnails = []
+    var prevTrue = -1;
+    var foundTrue = false;
+    var count = 0;
+    console.log(document.getElementById("aboutThing"));
+    thumbnails.forEach((thumb) =>
+    {
+      if (thumb.current)
+      {
+        prevTrue = count;
+      }
+      var bounding = document.querySelector(thumb.href).getBoundingClientRect();
+  
+      var value = ((
+        bounding.top >= 0 &&
+        bounding.left >= 0 &&
+        bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+      ))
+      if (value)
+      {
+        foundTrue = true;
+      }
+
+      thumb.current = value;
+      updatedThumbnails.push(thumb);
+      count++;
+    })
+
+    
+    if (foundTrue)
+    {
+      setThumbnails(updatedThumbnails);
+    }
+   
+    
+  }
+  
   const useStyles = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
@@ -53,10 +101,10 @@ function App(props) {
     }
   
   return (
-    <div className="App">
+    <div className="App" onScroll={() => (determineWithinView())}>
            <ReactNotification/>
       <AppBar color="primary">
-        <Nav current="Home"/>  
+        <Nav thumbnails={thumbnails}/>  
       </AppBar>
       <Toolbar id="home" />
       <div class="flex flex-col">
@@ -64,7 +112,8 @@ function App(props) {
       <Home />
      
       <Toolbar id="about"/>
-      <AboutMe  />
+      <AboutMe id="aboutThing" />
+      
       <Toolbar id="activities"/>
       <Activities/>
       <Toolbar id="experiences" />
