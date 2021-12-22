@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
+import Resume from "./Home/images/Resume.svg";
 import "./Header.css";
 
 
@@ -90,6 +91,15 @@ function scrollFunction() {
                         {item.name}
                       </button>
                     ))}
+                     <div class="text-white hover:no-underline  hover:bg-gray-700    font-normal',
+                          'px-3 py-2 rounded-md text-sm md:flex-start justify-start uppercase">
+            <a href="https://www.canva.com/design/DAEpp7QDs9s/YXxPaa7IRmjzm8URN-yTdg/view?utm_content=DAEpp7QDs9s&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton" class='text-white hover:no-underline  hover:bg-gray-700    font-normal
+                          px-3 py-2 rounded-md text-sm md:flex-start justify-start uppercase'>
+             
+                Resume
+              
+            </a>
+          </div>
                     </div>
                   </div>
                 </div>
