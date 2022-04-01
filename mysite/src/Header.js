@@ -100,7 +100,7 @@ function Nav(props) {
                           'px-3 py-2 rounded-md text-sm md:flex-start justify-start uppercase"
                           >
                             <a
-                              href="https://www.canva.com/design/DAEpp7QDs9s/YXxPaa7IRmjzm8URN-yTdg/view?utm_content=DAEpp7QDs9s&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton"
+                              href="https://victoriawilliamson.com/resume"
                               class="text-white hover:no-underline  hover:opacity-100   font-bold opacity-50
                                 px-3 py-2 rounded-md text-sm md:flex-start  uppercase flex flex-row items-center justify-center gap-2"
                             >
