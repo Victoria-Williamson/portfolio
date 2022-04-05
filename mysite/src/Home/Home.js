@@ -45,7 +45,10 @@ function Home() {
             </div>
 
             <div class="mx-2">
-              <a href="https://victoriawilliamson.com/resume">
+              <a
+                target="_blank"
+                href="https://www.canva.com/design/DAE8k24XXrg/3IPBaBIrvTwaXzPeNV2Juw/edit"
+              >
                 <img
                   className="transform hover:-translate-y-1 object-fit h-16 lg:h-14 w-full hover:scale-110 transition duration-500 ease-in-out"
                   src={Resume}

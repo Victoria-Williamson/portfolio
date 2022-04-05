@@ -36,7 +36,12 @@ function AboutMe() {
               </text>
               <br />
 
-              <a href="https://victoriawilliamson.com/resume">
+              <a
+                target="_blank"
+                href="https://www.canva.com/design/DAE8k24XXrg/3IPBaBIrvTwaXzPeNV2Juw/edit"
+                class="text-white hover:no-underline  hover:opacity-100   font-bold opacity-50
+                                px-3 py-2 rounded-md text-sm md:flex-start  uppercase flex flex-row items-center justify-center gap-2"
+              >
                 <button class="mt-2 w-80 h-14 bg-darkOrange rounded-xl text-white font-bold text-2xl hover:bg-lightOrange transform hover:-translate-y-1 hover:scale-110 transition duration-500 ease-in-out">
                   {" "}
                   Resume{" "}
