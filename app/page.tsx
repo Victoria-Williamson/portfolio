@@ -1,17 +1,22 @@
 "use client";
-
-import About from "@/components/about/About";
-import NavBar from "@/components/global/NavBar";
-import Home from "@/components/home/Home";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import About from "@/components/About";
+import NavBar from "@/components/NavBar";
+import Home from "@/components/Home";
+import Skills from "@/components/Skills";
+import React from "react";
 
 export default function Page() {
+  React.useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
       <NavBar />
-      <div className="w-screen bg-red-300">
-        <Home />
-        <About />
-      </div>
+      <Home />
+      <About />
+      <Skills />
     </>
   );
 }
