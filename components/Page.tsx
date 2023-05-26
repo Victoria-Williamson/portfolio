@@ -14,7 +14,7 @@ export default function Page({
           ? {backgroundImage: backgroundImage, backgroundSize: "cover"}
           : {}
       }
-      className="w-screen min-h-screen h-full bg-[#1D061E] lg:px-[200px]"
+      className="w-screen min-h-screen h-full bg-[#1D061E] lg:px-[150px] py-4"
     >
       {children}
     </div>
