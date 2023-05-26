@@ -122,7 +122,7 @@ export default function Skills() {
                   {courseType.title}
                 </text>
                 <br />
-                <text className="text-xl ">
+                <text className="text-2xl ">
                   <ul>
                     {courseType.classes.map((course) => {
                       return (

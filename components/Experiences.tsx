@@ -68,8 +68,6 @@ const experiences: Array<{
     skills: ["Python", "Figma", "JavaScript"],
     image: require("../public/exp/ups.png"),
     information: [
-      "Participated in a project based assignment within the UPS Development and Support Center (DSC). The leearning experiences included assisting in the implementtation of Buildings and Systems Engineering methodolgies and Application Devbelopment - developing global applications and data analysis.",
-      "Worked with the Linux team on developing Buildings and Systems Engineering tools for managing Linux.Optimization of job setups, identifying and helping solve operation performance problems, and measuring and reporting processes and results.",
       "For the company hackathon I developed a UX Wireframe to present a prototype of the solution.",
       "Awarded Best Foot Forward for having the highest User Experience and Presentation Score",
       "Delivered presentations to the CEO, CIEO, and Vice Presidents of the company.",
@@ -91,7 +89,9 @@ const experiences: Array<{
 export default function Experiences() {
   return (
     <Page>
-      <div className="text-5xl font-bold mb-10 text-center">Experiences </div>
+      <div className="text-5xl font-bold mb-10 text-center mt-80">
+        Experiences{" "}
+      </div>
       <VerticalTimeline className=" max-h-screen overflow-y-auto">
         {experiences.map((experience) => {
           return (
