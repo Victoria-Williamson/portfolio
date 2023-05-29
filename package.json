@@ -1,8 +1,8 @@
 {
-  "name": "Victoria Williamson",
+  "name": "my-app",
   "version": "0.1.0",
   "private": true,
-    "engines": {
+      "engines": {
     "node": ">= 16"
   },
   "scripts": {

@@ -83,10 +83,16 @@ const courses = [
 export default function Skills() {
   return (
     <Page backgroundImage={`url(${blob.src})`}>
-      <div className="flex items-center justify-center flex-col h-full w-full">
-        <div className="flex items-center justify-center flex-col">
-          <text className="text-5xl font-bold mb-10"> Skills</text>
-          <text className="text-4xl font-bold my-10">
+      <div
+        id="skills"
+        className="flex items-center justify-center flex-col mx-10"
+      >
+        <div
+          className="flex items-center justify-center flex-col"
+          data-aos="zoom-in-up"
+        >
+          <text className="text-5xl font-bold mb-2"> Skills</text>
+          <text className="text-4xl font-bold my-10 text-center">
             {" "}
             Languages and Frameworks
           </text>
@@ -94,7 +100,7 @@ export default function Skills() {
             {languages.map((skill) => {
               return (
                 <div className="flex items-center justify-center gap-2 flex-col">
-                  <div className="bg-white h-32 w-32 lg:h-40 lg:w-40 rounded-full flex items-center justify-center p-6">
+                  <div className="bg-white h-24 w-24 lg:h-32 lg:w-32 rounded-full flex items-center justify-center p-6">
                     <div
                       style={{
                         backgroundImage: `url(${skill.image.default.src})`,
@@ -105,7 +111,7 @@ export default function Skills() {
                       className="h-full w-full"
                     ></div>
                   </div>
-                  <text className="text-xl font-bold text-white capitalize mt-2">
+                  <text className="text-x font-medium text-white capitalize mt-2">
                     {skill.title}
                   </text>
                 </div>
@@ -113,30 +119,22 @@ export default function Skills() {
             })}
           </div>
         </div>
-        <text className="text-4xl font-bold mt-10 mb-20"> Coursework </text>
-        <div className="grid items-center justify-center lg:grid-cols-2 gap-4">
-          {courses.map((courseType) => {
-            return (
-              <div className="flex items-center justify-center flex-col px-8 text-center">
-                <text className={`text-2xl font-bold text-center capitalize`}>
-                  {courseType.title}
-                </text>
-                <br />
-                <text className="text-2xl ">
-                  <ul>
-                    {courseType.classes.map((course) => {
-                      return (
-                        <li className="flex items-center justify-center flex-row gap-2 capitalize mb-1">
-                          <CheckOutlined color={courseType.color} />
-                          {course}
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </text>
-              </div>
-            );
-          })}
+        <div
+          data-aos="zoom-in-up"
+          className="flex items-center justify-center flex-col mt-4"
+        >
+          <text className="text-4xl font-bold mt-10 mb-20"> Coursework </text>
+          <div className="flex items-center justify-center gap-4 flex-wrap flex-row px-10">
+            {courses.map((courseType) => {
+              return courseType.classes.map((course) => {
+                return (
+                  <div className="flex items-center justify-center flex-row gap-2 capitalize text-xs bg-white text-slate-700 rounded-3xl px-6 py-4 font-bol text-center">
+                    {course}
+                  </div>
+                );
+              });
+            })}
+          </div>
         </div>
       </div>
     </Page>

@@ -4,6 +4,7 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import Page from "./Page";
+import blob from "../public/blobs/blob2.svg";
 
 const experiences: Array<{
   id: string;
@@ -88,61 +89,63 @@ const experiences: Array<{
 ];
 export default function Experiences() {
   return (
-    <Page>
-      <div className="text-5xl font-bold mb-10 text-center mt-80">
-        Experiences{" "}
+    <Page backgroundImage={`url(${blob.src})`}>
+      <div id="exp" className="text-5xl font-bold mb-10 text-center mt-32">
+        Experiences
       </div>
-      <VerticalTimeline className=" max-h-screen overflow-y-auto">
-        {experiences.map((experience) => {
-          return (
-            <VerticalTimelineElement
-              className="vertical-timeline-element--work text-[#1D061E]"
-              iconStyle={{
-                background: `url(${experience.image.default.src})`,
-                backgroundSize: "contain",
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "center",
-                padding: "1px",
-                backgroundColor: "white",
-              }}
-            >
-              <text className="vertical-timeline-element-title font-bold text-2xl text-[#1D061E]">
-                {" "}
-                {experience.company}
-              </text>
-              <br />
-              <text className="vertical-timeline-element-subtitle text-lg font-semibold text-darkPink">
-                {" "}
-                {experience.position}{" "}
-              </text>
-              <br />
-              <text className="vertical-timeline-element-subtitle text-md text-gray-500">
-                {" "}
-                {experience.date}{" "}
-              </text>
+      <div className="max-h-[95vh] overflow-y-auto">
+        <VerticalTimeline>
+          {experiences.map((experience) => {
+            return (
+              <VerticalTimelineElement
+                className="vertical-timeline-element--work text-[#1D061E]"
+                iconStyle={{
+                  background: `url(${experience.image.default.src})`,
+                  backgroundSize: "contain",
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "center",
+                  padding: "1px",
+                  backgroundColor: "white",
+                }}
+              >
+                <text className="vertical-timeline-element-title font-bold text-2xl text-[#1D061E]">
+                  {" "}
+                  {experience.company}
+                </text>
+                <br />
+                <text className="vertical-timeline-element-subtitle text-lg font-semibold text-darkPink">
+                  {" "}
+                  {experience.position}{" "}
+                </text>
+                <br />
+                <text className="vertical-timeline-element-subtitle text-md text-gray-500">
+                  {" "}
+                  {experience.date}{" "}
+                </text>
 
-              <div className="mt-3">
-                {experience.skills &&
-                  experience.skills.map((skill) => {
-                    return (
-                      <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                        {" "}
-                        {skill}{" "}
-                      </span>
-                    );
-                  })}
-              </div>
-              <p>
-                <ul className="list-disc text-left ml-3">
-                  {experience.information.map((info) => {
-                    return <li> {info} </li>;
-                  })}
-                </ul>
-              </p>
-            </VerticalTimelineElement>
-          );
-        })}
-      </VerticalTimeline>
+                <div className="mt-3">
+                  {experience.skills &&
+                    experience.skills.map((skill) => {
+                      return (
+                        <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                          {" "}
+                          {skill}{" "}
+                        </span>
+                      );
+                    })}
+                </div>
+                <p>
+                  <ul className="list-disc text-left ml-3">
+                    {experience.information.map((info) => {
+                      return <li> {info} </li>;
+                    })}
+                  </ul>
+                </p>
+              </VerticalTimelineElement>
+            );
+          })}
+        </VerticalTimeline>
+      </div>
     </Page>
   );
 }
