@@ -1,12 +1,9 @@
 import {GithubFilled, LinkedinFilled} from "@ant-design/icons";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
-import {Divider, Col, Row, Menu, Button} from "antd";
+import {Divider, Col, Row, Button} from "antd";
 
 export default function NavBar() {
-  function goToSection(id: string) {
-    window.scrollTo(`#{id}`);
-  }
   return (
     <AppBar sx={{backgroundColor: "rgba(30, 6, 31, 0.85)", padding: 2}}>
       <Toolbar>
