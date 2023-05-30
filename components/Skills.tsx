@@ -130,7 +130,7 @@ export default function Skills() {
                 return (
                   <div
                     key={`course-${index}`}
-                    className="flex items-center justify-center flex-row gap-2 capitalize text-xs bg-white text-slate-700 rounded-3xl px-6 py-4 font-bol text-center"
+                    className="flex items-center justify-center flex-row gap-2 capitalize text-md font-semibold bg-white text-slate-700 rounded-3xl px-6 py-4 font-bol text-center"
                   >
                     {course}
                   </div>
