@@ -20,7 +20,12 @@ const experiences: Array<{
     company: "Google",
     position: "Software Engineering Intern",
     date: "May 2022 - August 2022",
-    information: ["did this"],
+    information: [
+      "Worked on a cross-functional team to add a feature to the Chrome Android application by using Java",
+      "Developed a new feature by creating a design doc listing recommended and alternative methods for implementation.",
+      "Designed a system following the Model View Controller (MVC) architecture and modeled it by creating UML diagrams.",
+      "Tested new functionality by developing unit tests with Mockito and JUnit",
+    ],
     image: require("../public/exp/google.png"),
     skills: ["MVC", "Android", "Java"],
   },

@@ -12,11 +12,10 @@ export default function NavBar() {
       <Toolbar className="flex  justify-center">
         <Row className="w-full py-2">
           {/* Page Links */}
-          <Col className="flex items-center gap-5 font-bold text-xl" span={18}>
-            {/* <button> About </button>
-              <button> Skills </button>
-              <button> Experiences </button> */}
-          </Col>
+          <Col
+            className="flex items-center gap-5 font-bold text-xl"
+            span={18}
+          ></Col>
           {/* Container for Resume + Socials */}
           <Col span={6} className="flex flex-row w-full gap-5 justify-end">
             <LinkedinFilled className="text-4xl hover:opacity-75" />
