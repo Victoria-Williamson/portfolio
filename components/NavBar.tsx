@@ -18,12 +18,20 @@ export default function NavBar() {
           ></Col>
           {/* Container for Resume + Socials */}
           <Col span={6} className="flex flex-row w-full gap-5 justify-end">
-            <LinkedinFilled className="text-4xl hover:opacity-75" />
-            <GithubFilled className="text-4xl hover:opacity-75" />
-            <Divider type="vertical" className="bg-white h-full w-[2px]" />
-            <Button className="bg-transparent text-white p-5 flex flex-row items-center justify-center gap-3 text-lg font-bold border-[2px] rounded-lg hover:brightness-75 hover:border-[#6D1A72] focus:border-[#6D1A72] focus-within:border-[#6D1A72]">
+            <a href="https://www.linkedin.com/in/victoria-nw/" target="_blank">
+              <LinkedinFilled className="text-4xl hover:opacity-75" />
+            </a>
+            <a target="_blank">
+              <GithubFilled
+                href={"https://github.com/Victoria-Williamson"}
+                className="text-4xl hover:opacity-75"
+              />
+            </a>
+
+            {/* <Divider type="vertical" className="bg-white h-full w-[2px]" /> */}
+            {/* <Button className="bg-transparent text-white p-5 flex flex-row items-center justify-center gap-3 text-lg font-bold border-[2px] rounded-lg hover:brightness-75 hover:border-[#6D1A72] focus:border-[#6D1A72] focus-within:border-[#6D1A72]">
               resume
-            </Button>
+            </Button> */}
           </Col>
         </Row>
       </Toolbar>
