@@ -50,7 +50,7 @@ const experiences: Array<{
     date: "November 2020 - December 2021",
     information: [
       "Created and executed a 36 hour hackathon that typically hosts 600+ students by creating spring tasks to lead a team of 20+ students",
-      "Worked on making project development more inclusive by reaching out to multiple registered student organizations and making the event more begineer friendly",
+      "Worked on making project development more inclusive by reaching out to multiple registered student organizations and making the event more beginner friendly",
     ],
     skills: ["project management", "leadership", "organization"],
     image: require("../public/exp/knighthacks.png"),
@@ -86,7 +86,7 @@ const experiences: Array<{
     date: "August 2020 - May 2021",
     information: [
       "Over two semesters I mentored a total of five freshmen majoring in computer science or statistics",
-      "Provided direct 1-on-1 support for internship preperation and organization.",
+      "Provided direct 1-on-1 support for internship preparation and organization.",
     ],
     skills: ["Diversity and Inclusion", "Leadership"],
     image: require("../public/exp/acmw.png"),

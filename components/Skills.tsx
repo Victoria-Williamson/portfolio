@@ -1,6 +1,5 @@
 import Page from "./Page";
 import blob from "../public/blobs/blob1.svg";
-import {CheckOutlined} from "@ant-design/icons";
 
 const languages = [
   {
@@ -69,7 +68,7 @@ const courses = [
     title: "software engineering",
     classes: [
       "senior design (capstone project)",
-      "processes of object oritened software",
+      "processes of object oriented software",
       "managing IT integration",
       "algorithm analysis",
       "data structures",
@@ -90,7 +89,6 @@ export default function Skills() {
         >
           <text className="text-5xl font-bold mb-2"> Skills</text>
           <text className="text-4xl font-bold my-10 text-center">
-            {" "}
             Languages and Frameworks
           </text>
           <div className="flex items-center justify-center flex-wrap gap-8 lg:w-3/4">
