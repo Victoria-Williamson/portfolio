@@ -3,6 +3,7 @@ import Page from "./Page";
 import blob from "../public/blobs/blob3.svg";
 
 export default function About() {
+  const vic = require("../public/blobs/vic.png");
   return (
     <Page
       id="about"
@@ -36,13 +37,17 @@ export default function About() {
           data-aos-delay="100"
           data-aos-duration="800"
           data-aos="fade-down-left"
-          className={" flex items-center justify-center"}
+          className={" flex items-center justify-center h-full w-full"}
         >
-          <Image
-            className="max-h-[1750px] w-auto"
-            src={require("../public/blobs/vic.png")}
-            alt="vic"
-          />
+          <div
+            style={{
+              backgroundImage: `url(${vic.default.src})`,
+              backgroundSize: "contain",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+            }}
+            className="h-full max-h-[1750px] w-full"
+          ></div>
         </div>
       </div>
     </Page>
