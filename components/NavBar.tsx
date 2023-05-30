@@ -10,7 +10,7 @@ export default function NavBar() {
   return (
     <AppBar sx={{backgroundColor: "rgba(30, 6, 31, 0.85)"}}>
       <Toolbar className="flex  justify-center">
-        <Row className="w-full py-2">
+        <Row className="w-full py-4">
           {/* Page Links */}
           <Col
             className="flex items-center gap-5 font-bold text-xl"

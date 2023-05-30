@@ -1,5 +1,3 @@
-import {Row, Col} from "antd";
-import pic from "../public/blobs/vic.png";
 import Image from "next/image";
 import Page from "./Page";
 import blob from "../public/blobs/blob3.svg";
@@ -40,7 +38,11 @@ export default function About() {
           data-aos="fade-down-left"
           className={" flex items-center justify-center"}
         >
-          <Image className="max-h-[1750px] w-auto" src={pic} alt="vic" />
+          <Image
+            className="max-h-[1750px] w-auto"
+            src={require("../public/blobs/vic.png")}
+            alt="vic"
+          />
         </div>
       </div>
     </Page>
