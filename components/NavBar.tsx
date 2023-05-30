@@ -1,14 +1,14 @@
 import {GithubFilled, LinkedinFilled, MenuOutlined} from "@ant-design/icons";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
-import {Col, Row} from "antd";
+import {Divider, Col, Row, Button} from "antd";
 import React from "react";
 
 export default function NavBar() {
   const [showMenu, setShowMenu] = React.useState(false);
 
   return (
-    <AppBar sx={{backgroundColor: "transparent"}}>
+    <AppBar sx={{backgroundColor: "rgba(30, 6, 31, 0.85)"}}>
       <Toolbar className="flex  justify-center">
         <Row className="w-full py-4">
           {/* Page Links */}
@@ -33,3 +33,5 @@ export default function NavBar() {
     </AppBar>
   );
 }
+
+const $notSelected = "w-full justify-center";

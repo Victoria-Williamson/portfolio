@@ -98,7 +98,7 @@ export default function Experiences() {
       <div className="text-5xl font-bold mb-10 text-center mt-32">
         Experiences
       </div>
-      <div className="max-h-[95vh] overflow-y-auto">
+      <div className="max-h-[95vh] overflow-y-auto mb-24">
         <VerticalTimeline>
           {experiences.map((experience) => {
             return (
