@@ -21,8 +21,8 @@ export default function About() {
           data-aos-duration="800"
           className="flex justify-center items-center h-full flex-col px-20"
         >
-          <text className="text-3xl lg:text-6xl font-bold mb-4 text-left ">
-            Hi, I'm Victoria
+          <text className="text-3xl lg:text-6xl font-bold mb-4 text-left">
+            {"Hi, I'm Victoria"}
           </text>
           <text className="text-xl lg:text-2xl text-justify  ">
             I am a recent graduate from the University of Central Florida with a

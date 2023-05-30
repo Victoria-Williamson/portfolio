@@ -97,9 +97,12 @@ export default function Skills() {
             Languages and Frameworks
           </text>
           <div className="flex items-center justify-center flex-wrap gap-8 lg:w-3/4">
-            {languages.map((skill) => {
+            {languages.map((skill, index) => {
               return (
-                <div className="flex items-center justify-center gap-2 flex-col">
+                <div
+                  key={`skills-skills-${index}`}
+                  className="flex items-center justify-center gap-2 flex-col"
+                >
                   <div className="bg-white h-24 w-24 lg:h-32 lg:w-32 rounded-full flex items-center justify-center p-6">
                     <div
                       style={{
@@ -125,10 +128,13 @@ export default function Skills() {
         >
           <text className="text-4xl font-bold mt-10 mb-20"> Coursework </text>
           <div className="flex items-center justify-center gap-4 flex-wrap flex-row px-10">
-            {courses.map((courseType) => {
+            {courses.map((courseType, index) => {
               return courseType.classes.map((course) => {
                 return (
-                  <div className="flex items-center justify-center flex-row gap-2 capitalize text-xs bg-white text-slate-700 rounded-3xl px-6 py-4 font-bol text-center">
+                  <div
+                    key={`course-${index}`}
+                    className="flex items-center justify-center flex-row gap-2 capitalize text-xs bg-white text-slate-700 rounded-3xl px-6 py-4 font-bol text-center"
+                  >
                     {course}
                   </div>
                 );

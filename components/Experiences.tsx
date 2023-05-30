@@ -98,6 +98,7 @@ export default function Experiences() {
           {experiences.map((experience) => {
             return (
               <VerticalTimelineElement
+                key={experience.id}
                 className="vertical-timeline-element--work text-[#1D061E]"
                 iconStyle={{
                   background: `url(${experience.image.default.src})`,
@@ -125,9 +126,12 @@ export default function Experiences() {
 
                 <div className="mt-3">
                   {experience.skills &&
-                    experience.skills.map((skill) => {
+                    experience.skills.map((skill, index) => {
                       return (
-                        <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                        <span
+                          key={`slill${index}`}
+                          className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                        >
                           {" "}
                           {skill}{" "}
                         </span>
@@ -136,8 +140,8 @@ export default function Experiences() {
                 </div>
                 <p>
                   <ul className="list-disc text-left ml-3">
-                    {experience.information.map((info) => {
-                      return <li> {info} </li>;
+                    {experience.information.map((info, index) => {
+                      return <li key={`info${index}`}> {info} </li>;
                     })}
                   </ul>
                 </p>

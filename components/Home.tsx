@@ -10,10 +10,10 @@ export default function Home() {
           Victoria Williamson
         </text>
         <text className="text-white xl:text-6xl lg:text-5xl md:text-4xl text-3xl  font-medium">
-          Computer Science B.S '23
+          {"Computer Science B.S '23"}
         </text>
         <text className="text-white xl:text-6xl lg:text-5xl md:text-4xl text-3xl  font-medium">
-          Statistics B.S '23
+          {"Statistics B.S '23"}
         </text>
       </div>
     </div>
