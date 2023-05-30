@@ -89,8 +89,8 @@ const experiences: Array<{
 ];
 export default function Experiences() {
   return (
-    <Page backgroundImage={`url(${blob.src})`}>
-      <div id="exp" className="text-5xl font-bold mb-10 text-center mt-32">
+    <Page id="exp" backgroundImage={`url(${blob.src})`}>
+      <div className="text-5xl font-bold mb-10 text-center mt-32">
         Experiences
       </div>
       <div className="max-h-[95vh] overflow-y-auto">

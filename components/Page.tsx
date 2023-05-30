@@ -1,16 +1,19 @@
 import React from "react";
 
 export default function Page({
+  id,
   children,
   backgroundImage,
   showBackgroundImageForAll,
 }: {
+  id: string;
   children: React.ReactNode;
   backgroundImage?: string;
   showBackgroundImageForAll?: boolean;
 }) {
   return showBackgroundImageForAll !== false ? (
     <div
+      id={id}
       style={
         backgroundImage
           ? {backgroundImage: backgroundImage, backgroundSize: "cover"}

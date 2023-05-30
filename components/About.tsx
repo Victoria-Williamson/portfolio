@@ -1,5 +1,5 @@
 import {Row, Col} from "antd";
-import pic from "../public/vic.png";
+import pic from "../public/blobs/vic.png";
 import Image from "next/image";
 import Page from "./Page";
 import blob from "../public/blobs/blob3.svg";
@@ -7,13 +7,11 @@ import blob from "../public/blobs/blob3.svg";
 export default function About() {
   return (
     <Page
+      id="about"
       backgroundImage={`url(${blob.src})`}
       showBackgroundImageForAll={false}
     >
-      <div
-        id="about"
-        className="min-h-screen grid items-center xl:grid-cols-2 xl:grid-rows-none grid-cols-none grid-rows-2 "
-      >
+      <div className="min-h-screen grid items-center xl:grid-cols-2 xl:grid-rows-none grid-cols-none grid-rows-2 ">
         {/* Name and Description */}
         <div
           data-aos="fade-down-right"

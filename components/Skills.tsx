@@ -82,11 +82,8 @@ const courses = [
 
 export default function Skills() {
   return (
-    <Page backgroundImage={`url(${blob.src})`}>
-      <div
-        id="skills"
-        className="flex items-center justify-center flex-col mx-10"
-      >
+    <Page id="skills" backgroundImage={`url(${blob.src})`}>
+      <div className="flex items-center justify-center flex-col mx-10">
         <div
           className="flex items-center justify-center flex-col"
           data-aos="zoom-in-up"
