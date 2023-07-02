@@ -21,11 +21,8 @@ export default function NavBar() {
             <a href="https://www.linkedin.com/in/victoria-nw/" target="_blank">
               <LinkedinFilled className="text-4xl hover:opacity-75" />
             </a>
-            <a target="_blank">
-              <GithubFilled
-                href={"https://github.com/Victoria-Williamson"}
-                className="text-4xl hover:opacity-75"
-              />
+            <a href={"https://github.com/Victoria-Williamson"} target="_blank">
+              <GithubFilled className="text-4xl hover:opacity-75" />
             </a>
           </Col>
         </Row>
